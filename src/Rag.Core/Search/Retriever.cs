@@ -21,12 +21,17 @@ public sealed record RetrievedChunk(
     double Score,
     double? RerankerScore);
 
-public sealed class Retriever(SearchClient search, IEmbeddingGenerator<string, Embedding<float>> embeddings)
+public interface IRetriever
+{
+    Task<IReadOnlyList<RetrievedChunk>> SearchAsync(string query, SearchMode mode, int top, CancellationToken ct = default);
+}
+
+public sealed class Retriever(SearchClient search, IEmbeddingGenerator<string, Embedding<float>> embeddings) : IRetriever
 {
     private static readonly string[] Fields = ["id", "url", "title", "sectionPath", "content"];
 
     public async Task<IReadOnlyList<RetrievedChunk>> SearchAsync(
-        string query, SearchMode mode, int top = 5, CancellationToken ct = default)
+        string query, SearchMode mode, int top, CancellationToken ct = default)
     {
         var options = new SearchOptions { Size = top };
         foreach (var f in Fields) options.Select.Add(f);

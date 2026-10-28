@@ -2,7 +2,7 @@
 
 A grounded Q&A and search service over public Microsoft Learn documentation, built on Azure.
 
-**Status:** ingestion, retrieval and the retrieval eval are working against a live Azure AI Search index. The answer API, UI, MCP server and Bicep are not built yet.
+**Status:** ingestion, retrieval, the retrieval eval and the answer API are working against a live Azure AI Search index. The answer API works locally (`POST /ask`, `GET /search`). The UI, groundedness eval, MCP server and Bicep are not built yet.
 
 ## Planned scope
 
