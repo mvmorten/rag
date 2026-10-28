@@ -1,0 +1,26 @@
+# .NET
+bin/
+obj/
+*.user
+.vs/
+TestResults/
+
+# Node
+node_modules/
+dist/
+.vite/
+
+# Secrets / local config
+.env
+.env.*
+appsettings.Development.json
+appsettings.Local.json
+local.settings.json
+*.pfx
+
+# Data / caches
+/data/
+.cache/
+
+# Bicep
+*.parameters.local.json
