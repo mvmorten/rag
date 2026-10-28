@@ -79,7 +79,7 @@ public class MarkdownChunkerTests
     public void Splits_oversized_sections_with_overlap()
     {
         var paragraphs = Enumerable.Range(0, 20).Select(i => $"Paragraph {i}: " + new string('x', 150));
-        var md = "## Big\n\n" + string.Join("\n\n", paragraphs);
+        var md = "## Large section\n\n" + string.Join("\n\n", paragraphs);
 
         var chunks = new MarkdownChunker(new ChunkerOptions(MaxChars: 600, OverlapChars: 100)).Chunk("big.md", md);
 
