@@ -2,7 +2,7 @@
 
 A grounded Q&A and search service over public Microsoft Learn documentation, built on Azure.
 
-**Status:** ingestion, retrieval, the retrieval eval and the answer API are working against a live Azure AI Search index. The answer API works locally (`POST /ask`, `GET /search`). The UI, MCP server, CI and Bicep are not built yet.
+**Status:** ingestion, retrieval, the retrieval eval and the answer API are working against a live Azure AI Search index. The answer API works locally (`POST /ask`, `GET /search`). The React UI works locally. The MCP server, CI and Bicep are not built yet.
 
 ## Planned scope
 
@@ -13,6 +13,16 @@ A grounded Q&A and search service over public Microsoft Learn documentation, bui
 5. **Evaluation harness**: hand-written question/expected-source pairs; retrieval hit rate, groundedness, citation accuracy; runs in CI.
 6. **MCP server**: search and answer exposed as MCP tools.
 7. **Infrastructure as code** (Bicep): AI Search, Azure OpenAI, Container Apps, Key Vault, managed identity.
+
+## Run locally
+
+Needs the Azure resources in [infra/](infra/README.md) and `az login` (auth is `DefaultAzureCredential`).
+
+```
+dotnet run --project src/Rag.Ingest      # chunk, embed, index (incremental)
+dotnet run --project src/Rag.Api         # http://localhost:5062
+cd web && npm install && npm run dev     # http://localhost:5173, proxies /api to the API
+```
 
 ## Results
 
