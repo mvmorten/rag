@@ -2,7 +2,7 @@
 
 A grounded Q&A and search service over public Microsoft Learn documentation, built on Azure.
 
-**Status:** early scaffolding. Nothing here is deployed or measured yet.
+**Status:** ingestion, retrieval and the retrieval eval are working against a live Azure AI Search index. The answer API, UI, MCP server and Bicep are not built yet.
 
 ## Planned scope
 
@@ -16,4 +16,23 @@ A grounded Q&A and search service over public Microsoft Learn documentation, bui
 
 ## Results
 
-_To be filled in with measured eval numbers._
+### Retrieval (40 hand-written questions over 236 Container Apps docs, 3,641 chunks)
+
+Chunk-level: a hit means one of the top-k retrieved chunks comes from a doc labelled as containing the answer.
+
+| Mode | hit@1 | hit@3 | hit@5 | MRR |
+|---|---|---|---|---|
+| Keyword (BM25) | 65% | 78% | 88% | 0.736 |
+| Vector | 70% | 93% | 93% | 0.815 |
+| Hybrid (keyword + vector, RRF) | 68% | 93% | 97% | 0.817 |
+| Hybrid + semantic ranker | 70% | 88% | 93% | 0.804 |
+
+Caveats, stated plainly:
+- n = 40, so one question is 2.5 points. Differences of a few points are noise. What is clear: vector and hybrid beat keyword-only on hit@3 (93% vs 78%), and hybrid gave the best hit@5.
+- The semantic ranker did **not** help on this set (it lowered hit@3 and hit@5). I have not tuned it.
+- Labels were checked against the corpus (`dotnet run --project src/Rag.Eval -- validate`). One label (q27) was widened after seeing results because a retrieved doc was a legitimate answer; the metrics above are from after that change.
+- Questions are written by the project author, not sampled from real user queries.
+
+Reproduce: `dotnet run --project src/Rag.Ingest`, then `dotnet run --project src/Rag.Eval -- run`. Requires the Azure resources in [infra/](infra/README.md).
+
+Corpus: [MicrosoftDocs/azure-docs](https://github.com/MicrosoftDocs/azure-docs) `articles/container-apps/` (CC BY 4.0).

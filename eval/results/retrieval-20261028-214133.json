@@ -1,0 +1,2582 @@
+[
+  {
+    "Mode": "Keyword",
+    "Outcomes": [
+      {
+        "Id": "q01",
+        "Rank": 6,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/billing",
+          "https://learn.microsoft.com/en-us/azure/container-apps/billing",
+          "https://learn.microsoft.com/en-us/azure/container-apps/custom-virtual-networks",
+          "https://learn.microsoft.com/en-us/azure/container-apps/ingress-environment-configuration",
+          "https://learn.microsoft.com/en-us/azure/container-apps/java-memory-fit",
+          "https://learn.microsoft.com/en-us/azure/container-apps/scale-app",
+          "https://learn.microsoft.com/en-us/azure/container-apps/ingress-environment-configuration",
+          "https://learn.microsoft.com/en-us/azure/container-apps/custom-virtual-networks",
+          "https://learn.microsoft.com/en-us/azure/container-apps/ingress-environment-configuration",
+          "https://learn.microsoft.com/en-us/azure/container-apps/scale-app"
+        ]
+      },
+      {
+        "Id": "q02",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/scale-app",
+          "https://learn.microsoft.com/en-us/azure/container-apps/dapr-keda-scaling",
+          "https://learn.microsoft.com/en-us/azure/container-apps/dapr-keda-scaling",
+          "https://learn.microsoft.com/en-us/azure/container-apps/scale-app",
+          "https://learn.microsoft.com/en-us/azure/container-apps/scale-app",
+          "https://learn.microsoft.com/en-us/azure/container-apps/scale-app",
+          "https://learn.microsoft.com/en-us/azure/container-apps/scale-app",
+          "https://learn.microsoft.com/en-us/azure/container-apps/tutorial-scaling",
+          "https://learn.microsoft.com/en-us/azure/container-apps/scale-app",
+          "https://learn.microsoft.com/en-us/azure/container-apps/gpu-serverless-overview"
+        ]
+      },
+      {
+        "Id": "q03",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/traffic-splitting",
+          "https://learn.microsoft.com/en-us/azure/container-apps/traffic-splitting",
+          "https://learn.microsoft.com/en-us/azure/container-apps/connect-apps",
+          "https://learn.microsoft.com/en-us/azure/container-apps/traffic-splitting",
+          "https://learn.microsoft.com/en-us/azure/container-apps/revisions-manage",
+          "https://learn.microsoft.com/en-us/azure/container-apps/traffic-splitting",
+          "https://learn.microsoft.com/en-us/azure/container-apps/ingress-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/traffic-splitting",
+          "https://learn.microsoft.com/en-us/azure/container-apps/traffic-splitting",
+          "https://learn.microsoft.com/en-us/azure/container-apps/traffic-splitting"
+        ]
+      },
+      {
+        "Id": "q04",
+        "Rank": 3,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/connect-apps",
+          "https://learn.microsoft.com/en-us/azure/container-apps/revisions-manage",
+          "https://learn.microsoft.com/en-us/azure/container-apps/revisions",
+          "https://learn.microsoft.com/en-us/azure/container-apps/revisions",
+          "https://learn.microsoft.com/en-us/azure/container-apps/revisions",
+          "https://learn.microsoft.com/en-us/azure/container-apps/revisions",
+          "https://learn.microsoft.com/en-us/azure/container-apps/application-lifecycle-management",
+          "https://learn.microsoft.com/en-us/azure/container-apps/revisions",
+          "https://learn.microsoft.com/en-us/azure/container-apps/revisions",
+          "https://learn.microsoft.com/en-us/azure/container-apps/revisions-manage"
+        ]
+      },
+      {
+        "Id": "q05",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/blue-green-deployment",
+          "https://learn.microsoft.com/en-us/azure/container-apps/blue-green-deployment",
+          "https://learn.microsoft.com/en-us/azure/container-apps/blue-green-deployment",
+          "https://learn.microsoft.com/en-us/azure/container-apps/blue-green-deployment",
+          "https://learn.microsoft.com/en-us/azure/container-apps/blue-green-deployment",
+          "https://learn.microsoft.com/en-us/azure/container-apps/blue-green-deployment",
+          "https://learn.microsoft.com/en-us/azure/container-apps/blue-green-deployment",
+          "https://learn.microsoft.com/en-us/azure/container-apps/deployment-labels",
+          "https://learn.microsoft.com/en-us/azure/container-apps/blue-green-deployment",
+          "https://learn.microsoft.com/en-us/azure/container-apps/blue-green-deployment"
+        ]
+      },
+      {
+        "Id": "q06",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/managed-identity-image-pull",
+          "https://learn.microsoft.com/en-us/azure/container-apps/managed-identity-image-pull",
+          "https://learn.microsoft.com/en-us/azure/container-apps/managed-identity-image-pull",
+          "https://learn.microsoft.com/en-us/azure/container-apps/managed-identity-image-pull",
+          "https://learn.microsoft.com/en-us/azure/container-apps/managed-identity-image-pull",
+          "https://learn.microsoft.com/en-us/azure/container-apps/managed-identity-image-pull",
+          "https://learn.microsoft.com/en-us/azure/container-apps/managed-identity-image-pull",
+          "https://learn.microsoft.com/en-us/azure/container-apps/managed-identity-image-pull",
+          "https://learn.microsoft.com/en-us/azure/container-apps/managed-identity-image-pull",
+          "https://learn.microsoft.com/en-us/azure/container-apps/managed-identity-image-pull"
+        ]
+      },
+      {
+        "Id": "q07",
+        "Rank": 9,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/functions-secrets-app-level",
+          "https://learn.microsoft.com/en-us/azure/container-apps/functions-secrets-app-level",
+          "https://learn.microsoft.com/en-us/azure/container-apps/functions-secrets-app-level",
+          "https://learn.microsoft.com/en-us/azure/container-apps/environment-variables",
+          "https://learn.microsoft.com/en-us/azure/container-apps/functions-secrets-app-level",
+          "https://learn.microsoft.com/en-us/azure/container-apps/environment-variables",
+          "https://learn.microsoft.com/en-us/azure/container-apps/environment-variables",
+          "https://learn.microsoft.com/en-us/azure/container-apps/environment-variables",
+          "https://learn.microsoft.com/en-us/azure/container-apps/manage-secrets",
+          "https://learn.microsoft.com/en-us/azure/container-apps/functions-secrets-app-level"
+        ]
+      },
+      {
+        "Id": "q08",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/manage-secrets",
+          "https://learn.microsoft.com/en-us/azure/container-apps/functions-secrets-app-level",
+          "https://learn.microsoft.com/en-us/azure/container-apps/functions-secrets-app-level",
+          "https://learn.microsoft.com/en-us/azure/container-apps/functions-secrets-app-level",
+          "https://learn.microsoft.com/en-us/azure/container-apps/functions-secrets-app-level",
+          "https://learn.microsoft.com/en-us/azure/container-apps/functions-secrets-app-level",
+          "https://learn.microsoft.com/en-us/azure/container-apps/functions-secrets-app-level",
+          "https://learn.microsoft.com/en-us/azure/container-apps/manage-secrets",
+          "https://learn.microsoft.com/en-us/azure/container-apps/functions-secrets-app-level",
+          "https://learn.microsoft.com/en-us/azure/container-apps/manage-secrets"
+        ]
+      },
+      {
+        "Id": "q09",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/ip-restrictions",
+          "https://learn.microsoft.com/en-us/azure/container-apps/ip-restrictions",
+          "https://learn.microsoft.com/en-us/azure/container-apps/ip-restrictions",
+          "https://learn.microsoft.com/en-us/azure/container-apps/networking",
+          "https://learn.microsoft.com/en-us/azure/container-apps/ip-restrictions",
+          "https://learn.microsoft.com/en-us/azure/container-apps/ip-restrictions",
+          "https://learn.microsoft.com/en-us/azure/container-apps/ip-restrictions",
+          "https://learn.microsoft.com/en-us/azure/container-apps/ip-restrictions",
+          "https://learn.microsoft.com/en-us/azure/container-apps/environment-type-consumption-only",
+          "https://learn.microsoft.com/en-us/azure/container-apps/user-defined-routes"
+        ]
+      },
+      {
+        "Id": "q10",
+        "Rank": 2,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/ingress-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/cors",
+          "https://learn.microsoft.com/en-us/azure/container-apps/cors",
+          "https://learn.microsoft.com/en-us/azure/container-apps/cors",
+          "https://learn.microsoft.com/en-us/azure/container-apps/cors",
+          "https://learn.microsoft.com/en-us/azure/container-apps/java-metrics",
+          "https://learn.microsoft.com/en-us/azure/container-apps/java-metrics",
+          "https://learn.microsoft.com/en-us/azure/container-apps/java-metrics",
+          "https://learn.microsoft.com/en-us/azure/container-apps/java-metrics",
+          "https://learn.microsoft.com/en-us/azure/container-apps/networking"
+        ]
+      },
+      {
+        "Id": "q11",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/custom-domains-managed-certificates",
+          "https://learn.microsoft.com/en-us/azure/container-apps/custom-domains-managed-certificates",
+          "https://learn.microsoft.com/en-us/azure/container-apps/custom-domains-certificates",
+          "https://learn.microsoft.com/en-us/azure/container-apps/custom-domains-managed-certificates",
+          "https://learn.microsoft.com/en-us/azure/container-apps/custom-domains-managed-certificates",
+          "https://learn.microsoft.com/en-us/azure/container-apps/custom-domains-managed-certificates",
+          "https://learn.microsoft.com/en-us/azure/container-apps/custom-domains-certificates",
+          "https://learn.microsoft.com/en-us/azure/container-apps/custom-domains-managed-certificates",
+          "https://learn.microsoft.com/en-us/azure/container-apps/custom-domains-managed-certificates",
+          "https://learn.microsoft.com/en-us/azure/container-apps/custom-domains-managed-certificates"
+        ]
+      },
+      {
+        "Id": "q12",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/health-probes",
+          "https://learn.microsoft.com/en-us/azure/container-apps/health-probes",
+          "https://learn.microsoft.com/en-us/azure/container-apps/health-probes",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-health-probe-failures",
+          "https://learn.microsoft.com/en-us/azure/container-apps/health-probes",
+          "https://learn.microsoft.com/en-us/azure/container-apps/health-probes",
+          "https://learn.microsoft.com/en-us/azure/container-apps/health-probes",
+          "https://learn.microsoft.com/en-us/azure/container-apps/health-probes",
+          "https://learn.microsoft.com/en-us/azure/container-apps/health-probes",
+          "https://learn.microsoft.com/en-us/azure/container-apps/health-probes"
+        ]
+      },
+      {
+        "Id": "q13",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-image-pull-failures",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-image-pull-failures",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-image-pull-failures",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-image-pull-failures",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-image-pull-failures",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-image-pull-failures",
+          "https://learn.microsoft.com/en-us/azure/container-apps/managed-identity-image-pull",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-image-pull-failures",
+          "https://learn.microsoft.com/en-us/azure/container-apps/managed-identity-image-pull",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-image-pull-failures"
+        ]
+      },
+      {
+        "Id": "q14",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-container-create-failures",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-container-create-failures",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-container-create-failures",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-deployment-errors",
+          "https://learn.microsoft.com/en-us/azure/container-apps/diagnose-solve",
+          "https://learn.microsoft.com/en-us/azure/container-apps/diagnose-solve",
+          "https://learn.microsoft.com/en-us/azure/container-apps/sessions-usage",
+          "https://learn.microsoft.com/en-us/azure/container-apps/user-defined-routes",
+          "https://learn.microsoft.com/en-us/azure/container-apps/dapr-component-connection",
+          "https://learn.microsoft.com/en-us/azure/container-apps/workflows-overview"
+        ]
+      },
+      {
+        "Id": "q15",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/storage-mounts-azure-files",
+          "https://learn.microsoft.com/en-us/azure/container-apps/storage-mounts-azure-files",
+          "https://learn.microsoft.com/en-us/azure/container-apps/storage-mounts-azure-files",
+          "https://learn.microsoft.com/en-us/azure/container-apps/storage-mounts-azure-files",
+          "https://learn.microsoft.com/en-us/azure/container-apps/storage-mounts-azure-files",
+          "https://learn.microsoft.com/en-us/azure/container-apps/storage-mounts-azure-files",
+          "https://learn.microsoft.com/en-us/azure/container-apps/storage-mounts-azure-files",
+          "https://learn.microsoft.com/en-us/azure/container-apps/storage-mounts-azure-files",
+          "https://learn.microsoft.com/en-us/azure/container-apps/storage-mounts",
+          "https://learn.microsoft.com/en-us/azure/container-apps/storage-mounts"
+        ]
+      },
+      {
+        "Id": "q16",
+        "Rank": 4,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/microservices-dapr-bindings",
+          "https://learn.microsoft.com/en-us/azure/container-apps/microservices-dapr-bindings",
+          "https://learn.microsoft.com/en-us/azure/container-apps/microservices-dapr-bindings",
+          "https://learn.microsoft.com/en-us/azure/container-apps/dapr-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/microservices-dapr-bindings",
+          "https://learn.microsoft.com/en-us/azure/container-apps/microservices-dapr-bindings",
+          "https://learn.microsoft.com/en-us/azure/container-apps/microservices-dapr-bindings",
+          "https://learn.microsoft.com/en-us/azure/container-apps/microservices-dapr-pubsub",
+          "https://learn.microsoft.com/en-us/azure/container-apps/microservices-dapr-pubsub",
+          "https://learn.microsoft.com/en-us/azure/container-apps/microservices-dapr-bindings"
+        ]
+      },
+      {
+        "Id": "q17",
+        "Rank": 4,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/jobs-get-started-cli",
+          "https://learn.microsoft.com/en-us/azure/container-apps/migrate-tomcat",
+          "https://learn.microsoft.com/en-us/azure/container-apps/migrate-spring-boot",
+          "https://learn.microsoft.com/en-us/azure/container-apps/jobs",
+          "https://learn.microsoft.com/en-us/azure/container-apps/functions-unified-platform",
+          "https://learn.microsoft.com/en-us/azure/container-apps/migrate-heroku-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/jobs-get-started-portal",
+          "https://learn.microsoft.com/en-us/azure/container-apps/functions-unified-platform",
+          "https://learn.microsoft.com/en-us/azure/container-apps/migrate-java-github-copilot-app-modernization",
+          "https://learn.microsoft.com/en-us/azure/container-apps/workflows-overview"
+        ]
+      },
+      {
+        "Id": "q18",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/tutorial-ci-cd-runners-jobs",
+          "https://learn.microsoft.com/en-us/azure/container-apps/tutorial-ci-cd-runners-jobs",
+          "https://learn.microsoft.com/en-us/azure/container-apps/jobs",
+          "https://learn.microsoft.com/en-us/azure/container-apps/tutorial-ci-cd-runners-jobs",
+          "https://learn.microsoft.com/en-us/azure/container-apps/tutorial-ci-cd-runners-jobs",
+          "https://learn.microsoft.com/en-us/azure/container-apps/tutorial-ci-cd-runners-jobs",
+          "https://learn.microsoft.com/en-us/azure/container-apps/tutorial-ci-cd-runners-jobs",
+          "https://learn.microsoft.com/en-us/azure/container-apps/tutorial-ci-cd-runners-jobs",
+          "https://learn.microsoft.com/en-us/azure/container-apps/tutorial-ci-cd-runners-jobs",
+          "https://learn.microsoft.com/en-us/azure/container-apps/jobs"
+        ]
+      },
+      {
+        "Id": "q19",
+        "Rank": 3,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/github-actions-cli",
+          "https://learn.microsoft.com/en-us/azure/container-apps/github-actions-cli",
+          "https://learn.microsoft.com/en-us/azure/container-apps/github-actions",
+          "https://learn.microsoft.com/en-us/azure/container-apps/github-actions",
+          "https://learn.microsoft.com/en-us/azure/container-apps/github-actions",
+          "https://learn.microsoft.com/en-us/azure/container-apps/github-actions",
+          "https://learn.microsoft.com/en-us/azure/container-apps/github-actions",
+          "https://learn.microsoft.com/en-us/azure/container-apps/github-actions",
+          "https://learn.microsoft.com/en-us/azure/container-apps/github-actions",
+          "https://learn.microsoft.com/en-us/azure/container-apps/github-actions"
+        ]
+      },
+      {
+        "Id": "q20",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/workload-profiles-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/workload-profiles-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/workload-profiles-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/workload-profiles-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/workload-profiles-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/environment-type-consumption-only",
+          "https://learn.microsoft.com/en-us/azure/container-apps/environment-type-consumption-only",
+          "https://learn.microsoft.com/en-us/azure/container-apps/structure",
+          "https://learn.microsoft.com/en-us/azure/container-apps/workload-profiles-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/workload-profiles-overview"
+        ]
+      },
+      {
+        "Id": "q21",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/billing",
+          "https://learn.microsoft.com/en-us/azure/container-apps/billing",
+          "https://learn.microsoft.com/en-us/azure/container-apps/structure",
+          "https://learn.microsoft.com/en-us/azure/container-apps/billing",
+          "https://learn.microsoft.com/en-us/azure/container-apps/billing",
+          "https://learn.microsoft.com/en-us/azure/container-apps/billing",
+          "https://learn.microsoft.com/en-us/azure/container-apps/billing",
+          "https://learn.microsoft.com/en-us/azure/container-apps/billing",
+          "https://learn.microsoft.com/en-us/azure/container-apps/billing",
+          "https://learn.microsoft.com/en-us/azure/container-apps/billing"
+        ]
+      },
+      {
+        "Id": "q22",
+        "Rank": 7,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/aspire-dashboard",
+          "https://learn.microsoft.com/en-us/azure/container-apps/aspire-dashboard",
+          "https://learn.microsoft.com/en-us/azure/container-apps/express-local-testing",
+          "https://learn.microsoft.com/en-us/azure/container-apps/logging",
+          "https://learn.microsoft.com/en-us/azure/container-apps/log-options",
+          "https://learn.microsoft.com/en-us/azure/container-apps/aspire-dashboard",
+          "https://learn.microsoft.com/en-us/azure/container-apps/log-streaming",
+          "https://learn.microsoft.com/en-us/azure/container-apps/aspire-dashboard",
+          "https://learn.microsoft.com/en-us/azure/container-apps/aspire-dashboard",
+          "https://learn.microsoft.com/en-us/azure/container-apps/microservices-dapr-bindings"
+        ]
+      },
+      {
+        "Id": "q23",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/opentelemetry-export-datadog",
+          "https://learn.microsoft.com/en-us/azure/container-apps/opentelemetry-agents",
+          "https://learn.microsoft.com/en-us/azure/container-apps/opentelemetry-export-datadog",
+          "https://learn.microsoft.com/en-us/azure/container-apps/opentelemetry-agents",
+          "https://learn.microsoft.com/en-us/azure/container-apps/opentelemetry-export-datadog",
+          "https://learn.microsoft.com/en-us/azure/container-apps/opentelemetry-agents",
+          "https://learn.microsoft.com/en-us/azure/container-apps/opentelemetry-export-datadog",
+          "https://learn.microsoft.com/en-us/azure/container-apps/opentelemetry-export-datadog",
+          "https://learn.microsoft.com/en-us/azure/container-apps/opentelemetry-agents",
+          "https://learn.microsoft.com/en-us/azure/container-apps/opentelemetry-export-datadog"
+        ]
+      },
+      {
+        "Id": "q24",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/gpu-serverless-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/gpu-serverless-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/gpu-image-generation",
+          "https://learn.microsoft.com/en-us/azure/container-apps/gpu-serverless-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/gpu-serverless-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/deploy-openai-gpt-oss-ollama",
+          "https://learn.microsoft.com/en-us/azure/container-apps/gpu-serverless-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/gpu-serverless-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/gpu-image-generation",
+          "https://learn.microsoft.com/en-us/azure/container-apps/tutorial-gpu-image-generation"
+        ]
+      },
+      {
+        "Id": "q25",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/mcp-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/mcp-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/mcp-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/mcp-choosing-azure-service",
+          "https://learn.microsoft.com/en-us/azure/container-apps/mcp-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/tutorial-mcp-server-nodejs",
+          "https://learn.microsoft.com/en-us/azure/container-apps/mcp-choosing-azure-service",
+          "https://learn.microsoft.com/en-us/azure/container-apps/tutorial-mcp-server-java",
+          "https://learn.microsoft.com/en-us/azure/container-apps/tutorial-mcp-server-python",
+          "https://learn.microsoft.com/en-us/azure/container-apps/tutorial-mcp-server-dotnet"
+        ]
+      },
+      {
+        "Id": "q26",
+        "Rank": 3,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/mcp-choosing-azure-service",
+          "https://learn.microsoft.com/en-us/azure/container-apps/sessions-tutorial-semantic-kernel",
+          "https://learn.microsoft.com/en-us/azure/container-apps/sessions-code-interpreter",
+          "https://learn.microsoft.com/en-us/azure/container-apps/sessions-tutorial-nodejs",
+          "https://learn.microsoft.com/en-us/azure/container-apps/sessions-tutorial-llamaindex",
+          "https://learn.microsoft.com/en-us/azure/container-apps/sessions-tutorial-autogen",
+          "https://learn.microsoft.com/en-us/azure/container-apps/sessions-tutorial-langchain",
+          "https://learn.microsoft.com/en-us/azure/container-apps/sessions-tutorial-llamaindex",
+          "https://learn.microsoft.com/en-us/azure/container-apps/sessions-tutorial-nodejs",
+          "https://learn.microsoft.com/en-us/azure/container-apps/sessions-tutorial-nodejs"
+        ]
+      },
+      {
+        "Id": "q27",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/vnet-custom",
+          "https://learn.microsoft.com/en-us/azure/container-apps/vnet-custom",
+          "https://learn.microsoft.com/en-us/azure/container-apps/custom-virtual-networks",
+          "https://learn.microsoft.com/en-us/azure/container-apps/vnet-custom",
+          "https://learn.microsoft.com/en-us/azure/container-apps/vnet-custom",
+          "https://learn.microsoft.com/en-us/azure/container-apps/private-endpoints-with-dns",
+          "https://learn.microsoft.com/en-us/azure/container-apps/vnet-custom",
+          "https://learn.microsoft.com/en-us/azure/container-apps/vnet-custom",
+          "https://learn.microsoft.com/en-us/azure/container-apps/vnet-custom",
+          "https://learn.microsoft.com/en-us/azure/container-apps/vnet-custom"
+        ]
+      },
+      {
+        "Id": "q28",
+        "Rank": 4,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/private-endpoints-with-dns",
+          "https://learn.microsoft.com/en-us/azure/container-apps/private-endpoints-with-dns",
+          "https://learn.microsoft.com/en-us/azure/container-apps/private-endpoints-with-dns",
+          "https://learn.microsoft.com/en-us/azure/container-apps/how-to-use-private-endpoint",
+          "https://learn.microsoft.com/en-us/azure/container-apps/how-to-use-private-endpoint",
+          "https://learn.microsoft.com/en-us/azure/container-apps/private-endpoints-with-dns",
+          "https://learn.microsoft.com/en-us/azure/container-apps/how-to-use-private-endpoint",
+          "https://learn.microsoft.com/en-us/azure/container-apps/how-to-use-private-endpoint",
+          "https://learn.microsoft.com/en-us/azure/container-apps/how-to-use-private-endpoint",
+          "https://learn.microsoft.com/en-us/azure/container-apps/private-endpoints-with-dns"
+        ]
+      },
+      {
+        "Id": "q29",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/how-to-zone-redundancy",
+          "https://learn.microsoft.com/en-us/azure/container-apps/how-to-zone-redundancy",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-environment-capacity",
+          "https://learn.microsoft.com/en-us/azure/container-apps/how-to-zone-redundancy",
+          "https://learn.microsoft.com/en-us/azure/container-apps/how-to-zone-redundancy",
+          "https://learn.microsoft.com/en-us/azure/container-apps/java-feature-switch",
+          "https://learn.microsoft.com/en-us/azure/container-apps/diagnose-solve",
+          "https://learn.microsoft.com/en-us/azure/container-apps/how-to-zone-redundancy",
+          "https://learn.microsoft.com/en-us/azure/container-apps/how-to-zone-redundancy",
+          "https://learn.microsoft.com/en-us/azure/container-apps/java-feature-switch"
+        ]
+      },
+      {
+        "Id": "q30",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/authentication-entra",
+          "https://learn.microsoft.com/en-us/azure/container-apps/authentication-entra",
+          "https://learn.microsoft.com/en-us/azure/container-apps/authentication-entra",
+          "https://learn.microsoft.com/en-us/azure/container-apps/authentication-entra",
+          "https://learn.microsoft.com/en-us/azure/container-apps/authentication-entra",
+          "https://learn.microsoft.com/en-us/azure/container-apps/authentication-entra",
+          "https://learn.microsoft.com/en-us/azure/container-apps/authentication-entra",
+          "https://learn.microsoft.com/en-us/azure/container-apps/authentication-entra",
+          "https://learn.microsoft.com/en-us/azure/container-apps/authentication-entra",
+          "https://learn.microsoft.com/en-us/azure/container-apps/authentication-entra"
+        ]
+      },
+      {
+        "Id": "q31",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/client-certificate-authorization",
+          "https://learn.microsoft.com/en-us/azure/container-apps/client-certificate-authorization",
+          "https://learn.microsoft.com/en-us/azure/container-apps/client-certificate-authorization",
+          "https://learn.microsoft.com/en-us/azure/container-apps/client-certificate-authorization",
+          "https://learn.microsoft.com/en-us/azure/container-apps/client-certificate-authorization",
+          "https://learn.microsoft.com/en-us/azure/container-apps/mtls",
+          "https://learn.microsoft.com/en-us/azure/container-apps/client-certificate-authorization",
+          "https://learn.microsoft.com/en-us/azure/container-apps/custom-domains-certificates",
+          "https://learn.microsoft.com/en-us/azure/container-apps/client-certificate-authorization",
+          "https://learn.microsoft.com/en-us/azure/container-apps/key-vault-certificates-manage"
+        ]
+      },
+      {
+        "Id": "q32",
+        "Rank": null,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/dapr-authentication-token",
+          "https://learn.microsoft.com/en-us/azure/container-apps/dapr-authentication-token",
+          "https://learn.microsoft.com/en-us/azure/container-apps/dapr-authentication-token",
+          "https://learn.microsoft.com/en-us/azure/container-apps/quota-requests",
+          "https://learn.microsoft.com/en-us/azure/container-apps/quota-requests",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshooting",
+          "https://learn.microsoft.com/en-us/azure/container-apps/dapr-authentication-token",
+          "https://learn.microsoft.com/en-us/azure/container-apps/quota-requests",
+          "https://learn.microsoft.com/en-us/azure/container-apps/dapr-authentication-token",
+          "https://learn.microsoft.com/en-us/azure/container-apps/sessions-usage"
+        ]
+      },
+      {
+        "Id": "q33",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/ingress-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/connect-apps",
+          "https://learn.microsoft.com/en-us/azure/container-apps/scale-app",
+          "https://learn.microsoft.com/en-us/azure/container-apps/ingress-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/scale-app",
+          "https://learn.microsoft.com/en-us/azure/container-apps/whats-new",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshooting",
+          "https://learn.microsoft.com/en-us/azure/container-apps/ingress-how-to",
+          "https://learn.microsoft.com/en-us/azure/container-apps/health-probes",
+          "https://learn.microsoft.com/en-us/azure/container-apps/ingress-overview"
+        ]
+      },
+      {
+        "Id": "q34",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-target-port-settings",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-target-port-settings",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-target-port-settings",
+          "https://learn.microsoft.com/en-us/azure/container-apps/ingress-how-to",
+          "https://learn.microsoft.com/en-us/azure/container-apps/dotnet-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/mcp-troubleshooting",
+          "https://learn.microsoft.com/en-us/azure/container-apps/ingress-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/ingress-how-to",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-container-start-failures",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-deployment-errors"
+        ]
+      },
+      {
+        "Id": "q35",
+        "Rank": 2,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/functions-keda-mappings",
+          "https://learn.microsoft.com/en-us/azure/container-apps/scale-app",
+          "https://learn.microsoft.com/en-us/azure/container-apps/functions-keda-mappings",
+          "https://learn.microsoft.com/en-us/azure/container-apps/functions-keda-mappings",
+          "https://learn.microsoft.com/en-us/azure/container-apps/scale-app",
+          "https://learn.microsoft.com/en-us/azure/container-apps/scale-app",
+          "https://learn.microsoft.com/en-us/azure/container-apps/scale-app",
+          "https://learn.microsoft.com/en-us/azure/container-apps/functions-keda-mappings",
+          "https://learn.microsoft.com/en-us/azure/container-apps/scale-app",
+          "https://learn.microsoft.com/en-us/azure/container-apps/scale-app"
+        ]
+      },
+      {
+        "Id": "q36",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/migrate-heroku",
+          "https://learn.microsoft.com/en-us/azure/container-apps/migrate-heroku",
+          "https://learn.microsoft.com/en-us/azure/container-apps/migrate-heroku",
+          "https://learn.microsoft.com/en-us/azure/container-apps/migrate-heroku",
+          "https://learn.microsoft.com/en-us/azure/container-apps/migrate-heroku",
+          "https://learn.microsoft.com/en-us/azure/container-apps/migrate-heroku",
+          "https://learn.microsoft.com/en-us/azure/container-apps/migrate-heroku",
+          "https://learn.microsoft.com/en-us/azure/container-apps/migrate-heroku-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/migrate-heroku",
+          "https://learn.microsoft.com/en-us/azure/container-apps/migrate-heroku"
+        ]
+      },
+      {
+        "Id": "q37",
+        "Rank": null,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/sessions-tutorial-shell-mcp",
+          "https://learn.microsoft.com/en-us/azure/container-apps/sessions-tutorial-shell-mcp",
+          "https://learn.microsoft.com/en-us/azure/container-apps/sessions-tutorial-shell-mcp",
+          "https://learn.microsoft.com/en-us/azure/container-apps/sessions-tutorial-shell",
+          "https://learn.microsoft.com/en-us/azure/container-apps/sessions-tutorial-shell",
+          "https://learn.microsoft.com/en-us/azure/container-apps/sessions-tutorial-shell",
+          "https://learn.microsoft.com/en-us/azure/container-apps/sessions-tutorial-shell-mcp",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-open-container-initiative-errors",
+          "https://learn.microsoft.com/en-us/azure/container-apps/sessions-tutorial-shell-mcp",
+          "https://learn.microsoft.com/en-us/azure/container-apps/storage-mounts-azure-files"
+        ]
+      },
+      {
+        "Id": "q38",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/planned-maintenance",
+          "https://learn.microsoft.com/en-us/azure/container-apps/planned-maintenance",
+          "https://learn.microsoft.com/en-us/azure/container-apps/planned-maintenance",
+          "https://learn.microsoft.com/en-us/azure/container-apps/planned-maintenance",
+          "https://learn.microsoft.com/en-us/azure/container-apps/planned-maintenance",
+          "https://learn.microsoft.com/en-us/azure/container-apps/planned-maintenance",
+          "https://learn.microsoft.com/en-us/azure/container-apps/planned-maintenance",
+          "https://learn.microsoft.com/en-us/azure/container-apps/planned-maintenance",
+          "https://learn.microsoft.com/en-us/azure/container-apps/planned-maintenance",
+          "https://learn.microsoft.com/en-us/azure/container-apps/planned-maintenance"
+        ]
+      },
+      {
+        "Id": "q39",
+        "Rank": 4,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-deployment-errors",
+          "https://learn.microsoft.com/en-us/azure/container-apps/health-probes",
+          "https://learn.microsoft.com/en-us/azure/container-apps/health-probes",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-health-probe-failures",
+          "https://learn.microsoft.com/en-us/azure/container-apps/health-probes",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-health-probe-failures",
+          "https://learn.microsoft.com/en-us/azure/container-apps/health-probes",
+          "https://learn.microsoft.com/en-us/azure/container-apps/health-probes",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-container-start-failures",
+          "https://learn.microsoft.com/en-us/azure/container-apps/diagnose-solve"
+        ]
+      },
+      {
+        "Id": "q40",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/managed-identity",
+          "https://learn.microsoft.com/en-us/azure/container-apps/managed-identity-image-pull",
+          "https://learn.microsoft.com/en-us/azure/container-apps/managed-identity-image-pull",
+          "https://learn.microsoft.com/en-us/azure/container-apps/managed-identity-image-pull",
+          "https://learn.microsoft.com/en-us/azure/container-apps/managed-identity-image-pull",
+          "https://learn.microsoft.com/en-us/azure/container-apps/managed-identity-image-pull",
+          "https://learn.microsoft.com/en-us/azure/container-apps/managed-identity-image-pull",
+          "https://learn.microsoft.com/en-us/azure/container-apps/managed-identity",
+          "https://learn.microsoft.com/en-us/azure/container-apps/managed-identity",
+          "https://learn.microsoft.com/en-us/azure/container-apps/managed-identity-image-pull"
+        ]
+      }
+    ]
+  },
+  {
+    "Mode": "Vector",
+    "Outcomes": [
+      {
+        "Id": "q01",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/scale-app",
+          "https://learn.microsoft.com/en-us/azure/container-apps/migrate-heroku",
+          "https://learn.microsoft.com/en-us/azure/container-apps/azure-arc-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/migrate-heroku-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/scale-app",
+          "https://learn.microsoft.com/en-us/azure/container-apps/scale-app",
+          "https://learn.microsoft.com/en-us/azure/container-apps/azure-arc-plan",
+          "https://learn.microsoft.com/en-us/azure/container-apps/scale-app",
+          "https://learn.microsoft.com/en-us/azure/container-apps/billing",
+          "https://learn.microsoft.com/en-us/azure/container-apps/ingress-environment-configuration"
+        ]
+      },
+      {
+        "Id": "q02",
+        "Rank": 6,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/billing",
+          "https://learn.microsoft.com/en-us/azure/container-apps/dapr-keda-scaling",
+          "https://learn.microsoft.com/en-us/azure/container-apps/overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/java-metrics-scale-with-keda",
+          "https://learn.microsoft.com/en-us/azure/container-apps/functions-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/scale-app",
+          "https://learn.microsoft.com/en-us/azure/container-apps/cold-start",
+          "https://learn.microsoft.com/en-us/azure/container-apps/application-lifecycle-management",
+          "https://learn.microsoft.com/en-us/azure/container-apps/sandboxes-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/java-overview"
+        ]
+      },
+      {
+        "Id": "q03",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/traffic-splitting",
+          "https://learn.microsoft.com/en-us/azure/container-apps/traffic-splitting",
+          "https://learn.microsoft.com/en-us/azure/container-apps/traffic-splitting",
+          "https://learn.microsoft.com/en-us/azure/container-apps/traffic-splitting",
+          "https://learn.microsoft.com/en-us/azure/container-apps/revisions",
+          "https://learn.microsoft.com/en-us/azure/container-apps/revisions-manage",
+          "https://learn.microsoft.com/en-us/azure/container-apps/traffic-splitting",
+          "https://learn.microsoft.com/en-us/azure/container-apps/ingress-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/traffic-splitting",
+          "https://learn.microsoft.com/en-us/azure/container-apps/connect-apps"
+        ]
+      },
+      {
+        "Id": "q04",
+        "Rank": 2,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/revisions-manage",
+          "https://learn.microsoft.com/en-us/azure/container-apps/revisions",
+          "https://learn.microsoft.com/en-us/azure/container-apps/revisions",
+          "https://learn.microsoft.com/en-us/azure/container-apps/application-lifecycle-management",
+          "https://learn.microsoft.com/en-us/azure/container-apps/revisions",
+          "https://learn.microsoft.com/en-us/azure/container-apps/revisions",
+          "https://learn.microsoft.com/en-us/azure/container-apps/revisions-manage",
+          "https://learn.microsoft.com/en-us/azure/container-apps/revisions",
+          "https://learn.microsoft.com/en-us/azure/container-apps/revisions-manage",
+          "https://learn.microsoft.com/en-us/azure/container-apps/revisions"
+        ]
+      },
+      {
+        "Id": "q05",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/blue-green-deployment",
+          "https://learn.microsoft.com/en-us/azure/container-apps/deployment-labels",
+          "https://learn.microsoft.com/en-us/azure/container-apps/blue-green-deployment",
+          "https://learn.microsoft.com/en-us/azure/container-apps/deployment-labels",
+          "https://learn.microsoft.com/en-us/azure/container-apps/blue-green-deployment",
+          "https://learn.microsoft.com/en-us/azure/container-apps/deployment-labels",
+          "https://learn.microsoft.com/en-us/azure/container-apps/blue-green-deployment",
+          "https://learn.microsoft.com/en-us/azure/container-apps/deployment-labels",
+          "https://learn.microsoft.com/en-us/azure/container-apps/blue-green-deployment",
+          "https://learn.microsoft.com/en-us/azure/container-apps/blue-green-deployment"
+        ]
+      },
+      {
+        "Id": "q06",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/managed-identity-image-pull",
+          "https://learn.microsoft.com/en-us/azure/container-apps/managed-identity-image-pull",
+          "https://learn.microsoft.com/en-us/azure/container-apps/managed-identity-image-pull",
+          "https://learn.microsoft.com/en-us/azure/container-apps/managed-identity-image-pull",
+          "https://learn.microsoft.com/en-us/azure/container-apps/managed-identity-image-pull",
+          "https://learn.microsoft.com/en-us/azure/container-apps/managed-identity-image-pull",
+          "https://learn.microsoft.com/en-us/azure/container-apps/managed-identity-image-pull",
+          "https://learn.microsoft.com/en-us/azure/container-apps/managed-identity-image-pull",
+          "https://learn.microsoft.com/en-us/azure/container-apps/managed-identity-image-pull",
+          "https://learn.microsoft.com/en-us/azure/container-apps/managed-identity-image-pull"
+        ]
+      },
+      {
+        "Id": "q07",
+        "Rank": 2,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/functions-secrets-app-level",
+          "https://learn.microsoft.com/en-us/azure/container-apps/manage-secrets",
+          "https://learn.microsoft.com/en-us/azure/container-apps/environment-variables",
+          "https://learn.microsoft.com/en-us/azure/container-apps/manage-secrets",
+          "https://learn.microsoft.com/en-us/azure/container-apps/manage-secrets",
+          "https://learn.microsoft.com/en-us/azure/container-apps/manage-secrets",
+          "https://learn.microsoft.com/en-us/azure/container-apps/javascript-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/functions-secrets-app-level",
+          "https://learn.microsoft.com/en-us/azure/container-apps/environment-variables",
+          "https://learn.microsoft.com/en-us/azure/container-apps/manage-secrets"
+        ]
+      },
+      {
+        "Id": "q08",
+        "Rank": 3,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/functions-secrets-app-level",
+          "https://learn.microsoft.com/en-us/azure/container-apps/functions-secrets-app-level",
+          "https://learn.microsoft.com/en-us/azure/container-apps/manage-secrets",
+          "https://learn.microsoft.com/en-us/azure/container-apps/functions-secrets-app-level",
+          "https://learn.microsoft.com/en-us/azure/container-apps/functions-secrets-app-level",
+          "https://learn.microsoft.com/en-us/azure/container-apps/functions-secrets-app-level",
+          "https://learn.microsoft.com/en-us/azure/container-apps/manage-secrets",
+          "https://learn.microsoft.com/en-us/azure/container-apps/functions-secrets-app-level",
+          "https://learn.microsoft.com/en-us/azure/container-apps/manage-secrets",
+          "https://learn.microsoft.com/en-us/azure/container-apps/functions-secrets-app-level"
+        ]
+      },
+      {
+        "Id": "q09",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/ip-restrictions",
+          "https://learn.microsoft.com/en-us/azure/container-apps/ip-restrictions",
+          "https://learn.microsoft.com/en-us/azure/container-apps/ip-restrictions",
+          "https://learn.microsoft.com/en-us/azure/container-apps/ip-restrictions",
+          "https://learn.microsoft.com/en-us/azure/container-apps/ip-restrictions",
+          "https://learn.microsoft.com/en-us/azure/container-apps/ip-restrictions",
+          "https://learn.microsoft.com/en-us/azure/container-apps/ingress-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/ip-restrictions",
+          "https://learn.microsoft.com/en-us/azure/container-apps/ip-restrictions",
+          "https://learn.microsoft.com/en-us/azure/container-apps/ip-restrictions"
+        ]
+      },
+      {
+        "Id": "q10",
+        "Rank": 2,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/ingress-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/cors",
+          "https://learn.microsoft.com/en-us/azure/container-apps/cors",
+          "https://learn.microsoft.com/en-us/azure/container-apps/cors",
+          "https://learn.microsoft.com/en-us/azure/container-apps/cors",
+          "https://learn.microsoft.com/en-us/azure/container-apps/cors",
+          "https://learn.microsoft.com/en-us/azure/container-apps/mcp-authentication",
+          "https://learn.microsoft.com/en-us/azure/container-apps/cors",
+          "https://learn.microsoft.com/en-us/azure/container-apps/cors",
+          "https://learn.microsoft.com/en-us/azure/container-apps/java-overview"
+        ]
+      },
+      {
+        "Id": "q11",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/custom-domains-managed-certificates",
+          "https://learn.microsoft.com/en-us/azure/container-apps/custom-domains-managed-certificates",
+          "https://learn.microsoft.com/en-us/azure/container-apps/custom-domains-certificates",
+          "https://learn.microsoft.com/en-us/azure/container-apps/custom-domains-managed-certificates",
+          "https://learn.microsoft.com/en-us/azure/container-apps/custom-domains-managed-certificates",
+          "https://learn.microsoft.com/en-us/azure/container-apps/custom-domains-managed-certificates",
+          "https://learn.microsoft.com/en-us/azure/container-apps/custom-domains-certificates",
+          "https://learn.microsoft.com/en-us/azure/container-apps/custom-domains-certificates",
+          "https://learn.microsoft.com/en-us/azure/container-apps/custom-domains-managed-certificates",
+          "https://learn.microsoft.com/en-us/azure/container-apps/custom-domains-certificates"
+        ]
+      },
+      {
+        "Id": "q12",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/health-probes",
+          "https://learn.microsoft.com/en-us/azure/container-apps/health-probes",
+          "https://learn.microsoft.com/en-us/azure/container-apps/health-probes",
+          "https://learn.microsoft.com/en-us/azure/container-apps/health-probes",
+          "https://learn.microsoft.com/en-us/azure/container-apps/health-probes",
+          "https://learn.microsoft.com/en-us/azure/container-apps/health-probes",
+          "https://learn.microsoft.com/en-us/azure/container-apps/health-probes",
+          "https://learn.microsoft.com/en-us/azure/container-apps/health-probes",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-health-probe-failures",
+          "https://learn.microsoft.com/en-us/azure/container-apps/health-probes"
+        ]
+      },
+      {
+        "Id": "q13",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-image-pull-failures",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-image-pull-failures",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-image-pull-failures",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-image-pull-failures",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-image-pull-failures",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-image-pull-failures",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshooting",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-image-pull-failures",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-image-pull-failures",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-deployment-errors"
+        ]
+      },
+      {
+        "Id": "q14",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-container-create-failures",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-container-create-failures",
+          "https://learn.microsoft.com/en-us/azure/container-apps/java-containers-intro",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-container-create-failures",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-deployment-errors",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-container-start-failures",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-deployment-errors",
+          "https://learn.microsoft.com/en-us/azure/container-apps/java-containers-intro",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-container-start-failures",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-container-start-failures"
+        ]
+      },
+      {
+        "Id": "q15",
+        "Rank": 2,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/storage-mounts",
+          "https://learn.microsoft.com/en-us/azure/container-apps/storage-mounts-azure-files",
+          "https://learn.microsoft.com/en-us/azure/container-apps/storage-mounts",
+          "https://learn.microsoft.com/en-us/azure/container-apps/storage-mounts",
+          "https://learn.microsoft.com/en-us/azure/container-apps/storage-mounts",
+          "https://learn.microsoft.com/en-us/azure/container-apps/storage-mounts-azure-files",
+          "https://learn.microsoft.com/en-us/azure/container-apps/storage-mounts",
+          "https://learn.microsoft.com/en-us/azure/container-apps/storage-mounts",
+          "https://learn.microsoft.com/en-us/azure/container-apps/storage-mounts",
+          "https://learn.microsoft.com/en-us/azure/container-apps/storage-mounts-azure-files"
+        ]
+      },
+      {
+        "Id": "q16",
+        "Rank": 2,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/connect-apps",
+          "https://learn.microsoft.com/en-us/azure/container-apps/dapr-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/connect-apps",
+          "https://learn.microsoft.com/en-us/azure/container-apps/connect-apps",
+          "https://learn.microsoft.com/en-us/azure/container-apps/enable-dapr",
+          "https://learn.microsoft.com/en-us/azure/container-apps/enable-dapr",
+          "https://learn.microsoft.com/en-us/azure/container-apps/dapr-components",
+          "https://learn.microsoft.com/en-us/azure/container-apps/enable-dapr",
+          "https://learn.microsoft.com/en-us/azure/container-apps/microservices-dapr",
+          "https://learn.microsoft.com/en-us/azure/container-apps/enable-dapr"
+        ]
+      },
+      {
+        "Id": "q17",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/jobs",
+          "https://learn.microsoft.com/en-us/azure/container-apps/jobs-get-started-cli",
+          "https://learn.microsoft.com/en-us/azure/container-apps/jobs",
+          "https://learn.microsoft.com/en-us/azure/container-apps/jobs",
+          "https://learn.microsoft.com/en-us/azure/container-apps/tutorial-ci-cd-runners-jobs",
+          "https://learn.microsoft.com/en-us/azure/container-apps/migrate-tomcat",
+          "https://learn.microsoft.com/en-us/azure/container-apps/microservices-dapr-bindings",
+          "https://learn.microsoft.com/en-us/azure/container-apps/jobs-get-started-portal",
+          "https://learn.microsoft.com/en-us/azure/container-apps/tutorial-ci-cd-runners-jobs",
+          "https://learn.microsoft.com/en-us/azure/container-apps/tutorial-ci-cd-runners-jobs"
+        ]
+      },
+      {
+        "Id": "q18",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/tutorial-ci-cd-runners-jobs",
+          "https://learn.microsoft.com/en-us/azure/container-apps/jobs",
+          "https://learn.microsoft.com/en-us/azure/container-apps/tutorial-ci-cd-runners-jobs",
+          "https://learn.microsoft.com/en-us/azure/container-apps/tutorial-ci-cd-runners-jobs",
+          "https://learn.microsoft.com/en-us/azure/container-apps/functions-unified-platform",
+          "https://learn.microsoft.com/en-us/azure/container-apps/tutorial-ci-cd-runners-jobs",
+          "https://learn.microsoft.com/en-us/azure/container-apps/tutorial-ci-cd-runners-jobs",
+          "https://learn.microsoft.com/en-us/azure/container-apps/tutorial-ci-cd-runners-jobs",
+          "https://learn.microsoft.com/en-us/azure/container-apps/tutorial-event-driven-jobs",
+          "https://learn.microsoft.com/en-us/azure/container-apps/tutorial-event-driven-jobs"
+        ]
+      },
+      {
+        "Id": "q19",
+        "Rank": 3,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/migrate-heroku",
+          "https://learn.microsoft.com/en-us/azure/container-apps/github-actions-cli",
+          "https://learn.microsoft.com/en-us/azure/container-apps/github-actions",
+          "https://learn.microsoft.com/en-us/azure/container-apps/quickstart-repo-to-cloud",
+          "https://learn.microsoft.com/en-us/azure/container-apps/migrate-heroku",
+          "https://learn.microsoft.com/en-us/azure/container-apps/github-actions",
+          "https://learn.microsoft.com/en-us/azure/container-apps/quickstart-repo-to-cloud",
+          "https://learn.microsoft.com/en-us/azure/container-apps/github-actions-cli",
+          "https://learn.microsoft.com/en-us/azure/container-apps/github-actions",
+          "https://learn.microsoft.com/en-us/azure/container-apps/github-actions"
+        ]
+      },
+      {
+        "Id": "q20",
+        "Rank": 2,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/environment-type-consumption-only",
+          "https://learn.microsoft.com/en-us/azure/container-apps/workload-profiles-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/workload-profiles-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/structure",
+          "https://learn.microsoft.com/en-us/azure/container-apps/structure",
+          "https://learn.microsoft.com/en-us/azure/container-apps/environment-type-consumption-only",
+          "https://learn.microsoft.com/en-us/azure/container-apps/workload-profiles-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/workload-profiles-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/structure",
+          "https://learn.microsoft.com/en-us/azure/container-apps/structure"
+        ]
+      },
+      {
+        "Id": "q21",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/billing",
+          "https://learn.microsoft.com/en-us/azure/container-apps/billing",
+          "https://learn.microsoft.com/en-us/azure/container-apps/billing",
+          "https://learn.microsoft.com/en-us/azure/container-apps/billing",
+          "https://learn.microsoft.com/en-us/azure/container-apps/billing",
+          "https://learn.microsoft.com/en-us/azure/container-apps/billing",
+          "https://learn.microsoft.com/en-us/azure/container-apps/billing",
+          "https://learn.microsoft.com/en-us/azure/container-apps/billing",
+          "https://learn.microsoft.com/en-us/azure/container-apps/billing",
+          "https://learn.microsoft.com/en-us/azure/container-apps/billing"
+        ]
+      },
+      {
+        "Id": "q22",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/log-streaming",
+          "https://learn.microsoft.com/en-us/azure/container-apps/tutorial-update-from-code",
+          "https://learn.microsoft.com/en-us/azure/container-apps/log-streaming",
+          "https://learn.microsoft.com/en-us/azure/container-apps/log-streaming",
+          "https://learn.microsoft.com/en-us/azure/container-apps/log-streaming",
+          "https://learn.microsoft.com/en-us/azure/container-apps/express-local-testing",
+          "https://learn.microsoft.com/en-us/azure/container-apps/log-streaming",
+          "https://learn.microsoft.com/en-us/azure/container-apps/log-streaming",
+          "https://learn.microsoft.com/en-us/azure/container-apps/log-streaming",
+          "https://learn.microsoft.com/en-us/azure/container-apps/log-streaming"
+        ]
+      },
+      {
+        "Id": "q23",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/opentelemetry-export-datadog",
+          "https://learn.microsoft.com/en-us/azure/container-apps/opentelemetry-export-datadog",
+          "https://learn.microsoft.com/en-us/azure/container-apps/opentelemetry-export-datadog",
+          "https://learn.microsoft.com/en-us/azure/container-apps/opentelemetry-export-datadog",
+          "https://learn.microsoft.com/en-us/azure/container-apps/opentelemetry-export-datadog",
+          "https://learn.microsoft.com/en-us/azure/container-apps/opentelemetry-export-datadog",
+          "https://learn.microsoft.com/en-us/azure/container-apps/opentelemetry-export-dynatrace",
+          "https://learn.microsoft.com/en-us/azure/container-apps/opentelemetry-agents",
+          "https://learn.microsoft.com/en-us/azure/container-apps/opentelemetry-export-dynatrace",
+          "https://learn.microsoft.com/en-us/azure/container-apps/opentelemetry-agents"
+        ]
+      },
+      {
+        "Id": "q24",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/gpu-serverless-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/gpu-serverless-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/gpu-serverless-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/gpu-serverless-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/gpu-serverless-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/functions-gpu-container-apps",
+          "https://learn.microsoft.com/en-us/azure/container-apps/gpu-serverless-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/gpu-image-generation",
+          "https://learn.microsoft.com/en-us/azure/container-apps/functions-gpu-container-apps",
+          "https://learn.microsoft.com/en-us/azure/container-apps/gpu-serverless-overview"
+        ]
+      },
+      {
+        "Id": "q25",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/mcp-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/mcp-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/mcp-choosing-azure-service",
+          "https://learn.microsoft.com/en-us/azure/container-apps/mcp-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/tutorial-mcp-server-dotnet",
+          "https://learn.microsoft.com/en-us/azure/container-apps/tutorial-mcp-server-dotnet",
+          "https://learn.microsoft.com/en-us/azure/container-apps/tutorial-mcp-server-java",
+          "https://learn.microsoft.com/en-us/azure/container-apps/tutorial-mcp-server-nodejs",
+          "https://learn.microsoft.com/en-us/azure/container-apps/tutorial-mcp-server-java",
+          "https://learn.microsoft.com/en-us/azure/container-apps/tutorial-mcp-server-python"
+        ]
+      },
+      {
+        "Id": "q26",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/sessions-code-interpreter",
+          "https://learn.microsoft.com/en-us/azure/container-apps/mcp-choosing-azure-service",
+          "https://learn.microsoft.com/en-us/azure/container-apps/sessions-tutorial-llamaindex",
+          "https://learn.microsoft.com/en-us/azure/container-apps/sessions-tutorial-llamaindex",
+          "https://learn.microsoft.com/en-us/azure/container-apps/sessions-code-interpreter",
+          "https://learn.microsoft.com/en-us/azure/container-apps/sessions-tutorial-llamaindex",
+          "https://learn.microsoft.com/en-us/azure/container-apps/mcp-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/sessions-tutorial-autogen",
+          "https://learn.microsoft.com/en-us/azure/container-apps/sessions-code-interpreter",
+          "https://learn.microsoft.com/en-us/azure/container-apps/sessions-code-interpreter"
+        ]
+      },
+      {
+        "Id": "q27",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/vnet-custom",
+          "https://learn.microsoft.com/en-us/azure/container-apps/vnet-custom",
+          "https://learn.microsoft.com/en-us/azure/container-apps/vnet-custom",
+          "https://learn.microsoft.com/en-us/azure/container-apps/vnet-custom",
+          "https://learn.microsoft.com/en-us/azure/container-apps/vnet-custom",
+          "https://learn.microsoft.com/en-us/azure/container-apps/vnet-custom",
+          "https://learn.microsoft.com/en-us/azure/container-apps/vnet-custom",
+          "https://learn.microsoft.com/en-us/azure/container-apps/vnet-custom",
+          "https://learn.microsoft.com/en-us/azure/container-apps/vnet-custom",
+          "https://learn.microsoft.com/en-us/azure/container-apps/vnet-custom"
+        ]
+      },
+      {
+        "Id": "q28",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/how-to-use-private-endpoint",
+          "https://learn.microsoft.com/en-us/azure/container-apps/how-to-use-private-endpoint",
+          "https://learn.microsoft.com/en-us/azure/container-apps/how-to-use-private-endpoint",
+          "https://learn.microsoft.com/en-us/azure/container-apps/how-to-use-private-endpoint",
+          "https://learn.microsoft.com/en-us/azure/container-apps/how-to-use-private-endpoint",
+          "https://learn.microsoft.com/en-us/azure/container-apps/how-to-use-private-endpoint",
+          "https://learn.microsoft.com/en-us/azure/container-apps/how-to-use-private-endpoint",
+          "https://learn.microsoft.com/en-us/azure/container-apps/private-endpoints-with-dns",
+          "https://learn.microsoft.com/en-us/azure/container-apps/private-endpoints-with-dns",
+          "https://learn.microsoft.com/en-us/azure/container-apps/how-to-use-private-endpoint"
+        ]
+      },
+      {
+        "Id": "q29",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/how-to-zone-redundancy",
+          "https://learn.microsoft.com/en-us/azure/container-apps/how-to-zone-redundancy",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-environment-capacity",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-environment-capacity",
+          "https://learn.microsoft.com/en-us/azure/container-apps/how-to-zone-redundancy",
+          "https://learn.microsoft.com/en-us/azure/container-apps/how-to-zone-redundancy",
+          "https://learn.microsoft.com/en-us/azure/container-apps/how-to-zone-redundancy",
+          "https://learn.microsoft.com/en-us/azure/container-apps/how-to-zone-redundancy",
+          "https://learn.microsoft.com/en-us/azure/container-apps/secure-deployment",
+          "https://learn.microsoft.com/en-us/azure/container-apps/how-to-zone-redundancy"
+        ]
+      },
+      {
+        "Id": "q30",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/authentication-entra",
+          "https://learn.microsoft.com/en-us/azure/container-apps/authentication-entra",
+          "https://learn.microsoft.com/en-us/azure/container-apps/authentication-entra",
+          "https://learn.microsoft.com/en-us/azure/container-apps/authentication-entra",
+          "https://learn.microsoft.com/en-us/azure/container-apps/authentication-entra",
+          "https://learn.microsoft.com/en-us/azure/container-apps/authentication-entra",
+          "https://learn.microsoft.com/en-us/azure/container-apps/authentication-entra",
+          "https://learn.microsoft.com/en-us/azure/container-apps/authentication-entra",
+          "https://learn.microsoft.com/en-us/azure/container-apps/mcp-authentication",
+          "https://learn.microsoft.com/en-us/azure/container-apps/authentication-entra"
+        ]
+      },
+      {
+        "Id": "q31",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/client-certificate-authorization",
+          "https://learn.microsoft.com/en-us/azure/container-apps/client-certificate-authorization",
+          "https://learn.microsoft.com/en-us/azure/container-apps/mtls",
+          "https://learn.microsoft.com/en-us/azure/container-apps/client-certificate-authorization",
+          "https://learn.microsoft.com/en-us/azure/container-apps/client-certificate-authorization",
+          "https://learn.microsoft.com/en-us/azure/container-apps/client-certificate-authorization",
+          "https://learn.microsoft.com/en-us/azure/container-apps/client-certificate-authorization",
+          "https://learn.microsoft.com/en-us/azure/container-apps/client-certificate-authorization",
+          "https://learn.microsoft.com/en-us/azure/container-apps/mtls",
+          "https://learn.microsoft.com/en-us/azure/container-apps/mtls"
+        ]
+      },
+      {
+        "Id": "q32",
+        "Rank": 7,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/log-monitoring",
+          "https://learn.microsoft.com/en-us/azure/container-apps/traffic-splitting",
+          "https://learn.microsoft.com/en-us/azure/container-apps/scale-app",
+          "https://learn.microsoft.com/en-us/azure/container-apps/tutorial-scaling",
+          "https://learn.microsoft.com/en-us/azure/container-apps/storage-mounts",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-deployment-errors",
+          "https://learn.microsoft.com/en-us/azure/container-apps/sticky-sessions",
+          "https://learn.microsoft.com/en-us/azure/container-apps/jobs",
+          "https://learn.microsoft.com/en-us/azure/container-apps/java-metrics-scale-with-keda",
+          "https://learn.microsoft.com/en-us/azure/container-apps/dapr-keda-scaling"
+        ]
+      },
+      {
+        "Id": "q33",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/ingress-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/ingress-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/ingress-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/ingress-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/connect-apps",
+          "https://learn.microsoft.com/en-us/azure/container-apps/networking",
+          "https://learn.microsoft.com/en-us/azure/container-apps/health-probes",
+          "https://learn.microsoft.com/en-us/azure/container-apps/scale-app",
+          "https://learn.microsoft.com/en-us/azure/container-apps/ingress-how-to",
+          "https://learn.microsoft.com/en-us/azure/container-apps/ingress-overview"
+        ]
+      },
+      {
+        "Id": "q34",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-target-port-settings",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-target-port-settings",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-target-port-settings",
+          "https://learn.microsoft.com/en-us/azure/container-apps/ingress-how-to",
+          "https://learn.microsoft.com/en-us/azure/container-apps/mcp-troubleshooting",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshooting",
+          "https://learn.microsoft.com/en-us/azure/container-apps/dotnet-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-deployment-errors",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshooting",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshooting"
+        ]
+      },
+      {
+        "Id": "q35",
+        "Rank": 2,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/functions-keda-mappings",
+          "https://learn.microsoft.com/en-us/azure/container-apps/scale-app",
+          "https://learn.microsoft.com/en-us/azure/container-apps/functions-keda-mappings",
+          "https://learn.microsoft.com/en-us/azure/container-apps/scale-app",
+          "https://learn.microsoft.com/en-us/azure/container-apps/functions-keda-mappings",
+          "https://learn.microsoft.com/en-us/azure/container-apps/functions-keda-mappings",
+          "https://learn.microsoft.com/en-us/azure/container-apps/scale-app",
+          "https://learn.microsoft.com/en-us/azure/container-apps/functions-keda-mappings",
+          "https://learn.microsoft.com/en-us/azure/container-apps/functions-keda-mappings",
+          "https://learn.microsoft.com/en-us/azure/container-apps/scale-app"
+        ]
+      },
+      {
+        "Id": "q36",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/migrate-heroku",
+          "https://learn.microsoft.com/en-us/azure/container-apps/migrate-heroku",
+          "https://learn.microsoft.com/en-us/azure/container-apps/migrate-heroku-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/migrate-heroku",
+          "https://learn.microsoft.com/en-us/azure/container-apps/migrate-heroku",
+          "https://learn.microsoft.com/en-us/azure/container-apps/migrate-heroku-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/migrate-heroku",
+          "https://learn.microsoft.com/en-us/azure/container-apps/migrate-heroku",
+          "https://learn.microsoft.com/en-us/azure/container-apps/migrate-heroku",
+          "https://learn.microsoft.com/en-us/azure/container-apps/migrate-heroku"
+        ]
+      },
+      {
+        "Id": "q37",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/container-debug-console",
+          "https://learn.microsoft.com/en-us/azure/container-apps/container-console",
+          "https://learn.microsoft.com/en-us/azure/container-apps/java-containers-intro",
+          "https://learn.microsoft.com/en-us/azure/container-apps/container-console",
+          "https://learn.microsoft.com/en-us/azure/container-apps/java-containers-intro",
+          "https://learn.microsoft.com/en-us/azure/container-apps/container-console",
+          "https://learn.microsoft.com/en-us/azure/container-apps/container-console",
+          "https://learn.microsoft.com/en-us/azure/container-apps/quickstart-code-to-cloud",
+          "https://learn.microsoft.com/en-us/azure/container-apps/container-console",
+          "https://learn.microsoft.com/en-us/azure/container-apps/container-debug-console"
+        ]
+      },
+      {
+        "Id": "q38",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/planned-maintenance",
+          "https://learn.microsoft.com/en-us/azure/container-apps/planned-maintenance",
+          "https://learn.microsoft.com/en-us/azure/container-apps/planned-maintenance",
+          "https://learn.microsoft.com/en-us/azure/container-apps/planned-maintenance",
+          "https://learn.microsoft.com/en-us/azure/container-apps/planned-maintenance",
+          "https://learn.microsoft.com/en-us/azure/container-apps/planned-maintenance",
+          "https://learn.microsoft.com/en-us/azure/container-apps/planned-maintenance",
+          "https://learn.microsoft.com/en-us/azure/container-apps/planned-maintenance",
+          "https://learn.microsoft.com/en-us/azure/container-apps/planned-maintenance",
+          "https://learn.microsoft.com/en-us/azure/container-apps/planned-maintenance"
+        ]
+      },
+      {
+        "Id": "q39",
+        "Rank": 7,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/health-probes",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshooting",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-deployment-errors",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-container-start-failures",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-container-start-failures",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-deployment-errors",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-health-probe-failures",
+          "https://learn.microsoft.com/en-us/azure/container-apps/health-probes",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshooting",
+          "https://learn.microsoft.com/en-us/azure/container-apps/health-probes"
+        ]
+      },
+      {
+        "Id": "q40",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/managed-identity",
+          "https://learn.microsoft.com/en-us/azure/container-apps/managed-identity",
+          "https://learn.microsoft.com/en-us/azure/container-apps/managed-identity",
+          "https://learn.microsoft.com/en-us/azure/container-apps/managed-identity",
+          "https://learn.microsoft.com/en-us/azure/container-apps/managed-identity",
+          "https://learn.microsoft.com/en-us/azure/container-apps/managed-identity",
+          "https://learn.microsoft.com/en-us/azure/container-apps/security",
+          "https://learn.microsoft.com/en-us/azure/container-apps/managed-identity",
+          "https://learn.microsoft.com/en-us/azure/container-apps/managed-identity",
+          "https://learn.microsoft.com/en-us/azure/container-apps/managed-identity"
+        ]
+      }
+    ]
+  },
+  {
+    "Mode": "Hybrid",
+    "Outcomes": [
+      {
+        "Id": "q01",
+        "Rank": 2,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/billing",
+          "https://learn.microsoft.com/en-us/azure/container-apps/scale-app",
+          "https://learn.microsoft.com/en-us/azure/container-apps/ingress-environment-configuration",
+          "https://learn.microsoft.com/en-us/azure/container-apps/billing",
+          "https://learn.microsoft.com/en-us/azure/container-apps/custom-virtual-networks",
+          "https://learn.microsoft.com/en-us/azure/container-apps/scale-app",
+          "https://learn.microsoft.com/en-us/azure/container-apps/dapr-keda-scaling",
+          "https://learn.microsoft.com/en-us/azure/container-apps/ingress-environment-configuration",
+          "https://learn.microsoft.com/en-us/azure/container-apps/migrate-heroku",
+          "https://learn.microsoft.com/en-us/azure/container-apps/javascript-overview"
+        ]
+      },
+      {
+        "Id": "q02",
+        "Rank": 2,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/dapr-keda-scaling",
+          "https://learn.microsoft.com/en-us/azure/container-apps/scale-app",
+          "https://learn.microsoft.com/en-us/azure/container-apps/functions-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/scale-app",
+          "https://learn.microsoft.com/en-us/azure/container-apps/tutorial-scaling",
+          "https://learn.microsoft.com/en-us/azure/container-apps/scale-app",
+          "https://learn.microsoft.com/en-us/azure/container-apps/scale-app",
+          "https://learn.microsoft.com/en-us/azure/container-apps/tutorial-scaling",
+          "https://learn.microsoft.com/en-us/azure/container-apps/tutorial-scaling",
+          "https://learn.microsoft.com/en-us/azure/container-apps/scale-app"
+        ]
+      },
+      {
+        "Id": "q03",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/traffic-splitting",
+          "https://learn.microsoft.com/en-us/azure/container-apps/traffic-splitting",
+          "https://learn.microsoft.com/en-us/azure/container-apps/traffic-splitting",
+          "https://learn.microsoft.com/en-us/azure/container-apps/traffic-splitting",
+          "https://learn.microsoft.com/en-us/azure/container-apps/revisions-manage",
+          "https://learn.microsoft.com/en-us/azure/container-apps/connect-apps",
+          "https://learn.microsoft.com/en-us/azure/container-apps/ingress-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/revisions",
+          "https://learn.microsoft.com/en-us/azure/container-apps/traffic-splitting",
+          "https://learn.microsoft.com/en-us/azure/container-apps/traffic-splitting"
+        ]
+      },
+      {
+        "Id": "q04",
+        "Rank": 2,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/revisions-manage",
+          "https://learn.microsoft.com/en-us/azure/container-apps/revisions",
+          "https://learn.microsoft.com/en-us/azure/container-apps/revisions",
+          "https://learn.microsoft.com/en-us/azure/container-apps/application-lifecycle-management",
+          "https://learn.microsoft.com/en-us/azure/container-apps/revisions",
+          "https://learn.microsoft.com/en-us/azure/container-apps/revisions",
+          "https://learn.microsoft.com/en-us/azure/container-apps/revisions",
+          "https://learn.microsoft.com/en-us/azure/container-apps/connect-apps",
+          "https://learn.microsoft.com/en-us/azure/container-apps/revisions-manage",
+          "https://learn.microsoft.com/en-us/azure/container-apps/revisions-manage"
+        ]
+      },
+      {
+        "Id": "q05",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/blue-green-deployment",
+          "https://learn.microsoft.com/en-us/azure/container-apps/blue-green-deployment",
+          "https://learn.microsoft.com/en-us/azure/container-apps/blue-green-deployment",
+          "https://learn.microsoft.com/en-us/azure/container-apps/deployment-labels",
+          "https://learn.microsoft.com/en-us/azure/container-apps/blue-green-deployment",
+          "https://learn.microsoft.com/en-us/azure/container-apps/blue-green-deployment",
+          "https://learn.microsoft.com/en-us/azure/container-apps/blue-green-deployment",
+          "https://learn.microsoft.com/en-us/azure/container-apps/blue-green-deployment",
+          "https://learn.microsoft.com/en-us/azure/container-apps/blue-green-deployment",
+          "https://learn.microsoft.com/en-us/azure/container-apps/blue-green-deployment"
+        ]
+      },
+      {
+        "Id": "q06",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/managed-identity-image-pull",
+          "https://learn.microsoft.com/en-us/azure/container-apps/managed-identity-image-pull",
+          "https://learn.microsoft.com/en-us/azure/container-apps/managed-identity-image-pull",
+          "https://learn.microsoft.com/en-us/azure/container-apps/managed-identity-image-pull",
+          "https://learn.microsoft.com/en-us/azure/container-apps/managed-identity-image-pull",
+          "https://learn.microsoft.com/en-us/azure/container-apps/managed-identity-image-pull",
+          "https://learn.microsoft.com/en-us/azure/container-apps/managed-identity-image-pull",
+          "https://learn.microsoft.com/en-us/azure/container-apps/managed-identity-image-pull",
+          "https://learn.microsoft.com/en-us/azure/container-apps/managed-identity-image-pull",
+          "https://learn.microsoft.com/en-us/azure/container-apps/managed-identity-image-pull"
+        ]
+      },
+      {
+        "Id": "q07",
+        "Rank": 2,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/functions-secrets-app-level",
+          "https://learn.microsoft.com/en-us/azure/container-apps/manage-secrets",
+          "https://learn.microsoft.com/en-us/azure/container-apps/functions-secrets-app-level",
+          "https://learn.microsoft.com/en-us/azure/container-apps/environment-variables",
+          "https://learn.microsoft.com/en-us/azure/container-apps/environment-variables",
+          "https://learn.microsoft.com/en-us/azure/container-apps/environment-variables",
+          "https://learn.microsoft.com/en-us/azure/container-apps/functions-secrets-app-level",
+          "https://learn.microsoft.com/en-us/azure/container-apps/functions-secrets-app-level",
+          "https://learn.microsoft.com/en-us/azure/container-apps/functions-secrets-app-level",
+          "https://learn.microsoft.com/en-us/azure/container-apps/manage-secrets"
+        ]
+      },
+      {
+        "Id": "q08",
+        "Rank": 2,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/functions-secrets-app-level",
+          "https://learn.microsoft.com/en-us/azure/container-apps/manage-secrets",
+          "https://learn.microsoft.com/en-us/azure/container-apps/functions-secrets-app-level",
+          "https://learn.microsoft.com/en-us/azure/container-apps/functions-secrets-app-level",
+          "https://learn.microsoft.com/en-us/azure/container-apps/functions-secrets-app-level",
+          "https://learn.microsoft.com/en-us/azure/container-apps/functions-secrets-app-level",
+          "https://learn.microsoft.com/en-us/azure/container-apps/functions-secrets-app-level",
+          "https://learn.microsoft.com/en-us/azure/container-apps/functions-secrets-app-level",
+          "https://learn.microsoft.com/en-us/azure/container-apps/functions-secrets-app-level",
+          "https://learn.microsoft.com/en-us/azure/container-apps/functions-secrets-app-level"
+        ]
+      },
+      {
+        "Id": "q09",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/ip-restrictions",
+          "https://learn.microsoft.com/en-us/azure/container-apps/ip-restrictions",
+          "https://learn.microsoft.com/en-us/azure/container-apps/ip-restrictions",
+          "https://learn.microsoft.com/en-us/azure/container-apps/ip-restrictions",
+          "https://learn.microsoft.com/en-us/azure/container-apps/ip-restrictions",
+          "https://learn.microsoft.com/en-us/azure/container-apps/ip-restrictions",
+          "https://learn.microsoft.com/en-us/azure/container-apps/networking",
+          "https://learn.microsoft.com/en-us/azure/container-apps/user-defined-routes",
+          "https://learn.microsoft.com/en-us/azure/container-apps/ingress-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/ip-restrictions"
+        ]
+      },
+      {
+        "Id": "q10",
+        "Rank": 2,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/ingress-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/cors",
+          "https://learn.microsoft.com/en-us/azure/container-apps/cors",
+          "https://learn.microsoft.com/en-us/azure/container-apps/cors",
+          "https://learn.microsoft.com/en-us/azure/container-apps/cors",
+          "https://learn.microsoft.com/en-us/azure/container-apps/connect-apps",
+          "https://learn.microsoft.com/en-us/azure/container-apps/authentication-twitter",
+          "https://learn.microsoft.com/en-us/azure/container-apps/environment",
+          "https://learn.microsoft.com/en-us/azure/container-apps/authentication-github",
+          "https://learn.microsoft.com/en-us/azure/container-apps/authentication-facebook"
+        ]
+      },
+      {
+        "Id": "q11",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/custom-domains-managed-certificates",
+          "https://learn.microsoft.com/en-us/azure/container-apps/custom-domains-managed-certificates",
+          "https://learn.microsoft.com/en-us/azure/container-apps/custom-domains-managed-certificates",
+          "https://learn.microsoft.com/en-us/azure/container-apps/custom-domains-certificates",
+          "https://learn.microsoft.com/en-us/azure/container-apps/custom-domains-managed-certificates",
+          "https://learn.microsoft.com/en-us/azure/container-apps/custom-domains-managed-certificates",
+          "https://learn.microsoft.com/en-us/azure/container-apps/custom-domains-certificates",
+          "https://learn.microsoft.com/en-us/azure/container-apps/custom-domains-certificates",
+          "https://learn.microsoft.com/en-us/azure/container-apps/custom-domains-managed-certificates",
+          "https://learn.microsoft.com/en-us/azure/container-apps/custom-domains-managed-certificates"
+        ]
+      },
+      {
+        "Id": "q12",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/health-probes",
+          "https://learn.microsoft.com/en-us/azure/container-apps/health-probes",
+          "https://learn.microsoft.com/en-us/azure/container-apps/health-probes",
+          "https://learn.microsoft.com/en-us/azure/container-apps/health-probes",
+          "https://learn.microsoft.com/en-us/azure/container-apps/health-probes",
+          "https://learn.microsoft.com/en-us/azure/container-apps/health-probes",
+          "https://learn.microsoft.com/en-us/azure/container-apps/health-probes",
+          "https://learn.microsoft.com/en-us/azure/container-apps/health-probes",
+          "https://learn.microsoft.com/en-us/azure/container-apps/health-probes",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-health-probe-failures"
+        ]
+      },
+      {
+        "Id": "q13",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-image-pull-failures",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-image-pull-failures",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-image-pull-failures",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-image-pull-failures",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-image-pull-failures",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-image-pull-failures",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-image-pull-failures",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-image-pull-failures",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-image-pull-failures",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshooting"
+        ]
+      },
+      {
+        "Id": "q14",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-container-create-failures",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-container-create-failures",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-container-create-failures",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-deployment-errors",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-container-start-failures",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-deployment-errors",
+          "https://learn.microsoft.com/en-us/azure/container-apps/diagnose-solve",
+          "https://learn.microsoft.com/en-us/azure/container-apps/diagnose-solve",
+          "https://learn.microsoft.com/en-us/azure/container-apps/java-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-deployment-errors"
+        ]
+      },
+      {
+        "Id": "q15",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/storage-mounts-azure-files",
+          "https://learn.microsoft.com/en-us/azure/container-apps/storage-mounts-azure-files",
+          "https://learn.microsoft.com/en-us/azure/container-apps/storage-mounts",
+          "https://learn.microsoft.com/en-us/azure/container-apps/storage-mounts",
+          "https://learn.microsoft.com/en-us/azure/container-apps/storage-mounts-azure-files",
+          "https://learn.microsoft.com/en-us/azure/container-apps/storage-mounts-azure-files",
+          "https://learn.microsoft.com/en-us/azure/container-apps/storage-mounts",
+          "https://learn.microsoft.com/en-us/azure/container-apps/storage-mounts",
+          "https://learn.microsoft.com/en-us/azure/container-apps/storage-mounts",
+          "https://learn.microsoft.com/en-us/azure/container-apps/storage-mounts-azure-files"
+        ]
+      },
+      {
+        "Id": "q16",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/dapr-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/connect-apps",
+          "https://learn.microsoft.com/en-us/azure/container-apps/connect-apps",
+          "https://learn.microsoft.com/en-us/azure/container-apps/microservices-dapr",
+          "https://learn.microsoft.com/en-us/azure/container-apps/enable-dapr",
+          "https://learn.microsoft.com/en-us/azure/container-apps/microservices-dapr-bindings",
+          "https://learn.microsoft.com/en-us/azure/container-apps/connect-apps",
+          "https://learn.microsoft.com/en-us/azure/container-apps/dapr-components",
+          "https://learn.microsoft.com/en-us/azure/container-apps/whats-new",
+          "https://learn.microsoft.com/en-us/azure/container-apps/dapr-overview"
+        ]
+      },
+      {
+        "Id": "q17",
+        "Rank": 2,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/jobs-get-started-cli",
+          "https://learn.microsoft.com/en-us/azure/container-apps/jobs",
+          "https://learn.microsoft.com/en-us/azure/container-apps/migrate-tomcat",
+          "https://learn.microsoft.com/en-us/azure/container-apps/jobs-get-started-portal",
+          "https://learn.microsoft.com/en-us/azure/container-apps/migrate-spring-boot",
+          "https://learn.microsoft.com/en-us/azure/container-apps/jobs",
+          "https://learn.microsoft.com/en-us/azure/container-apps/microservices-dapr-bindings",
+          "https://learn.microsoft.com/en-us/azure/container-apps/jobs",
+          "https://learn.microsoft.com/en-us/azure/container-apps/jobs-get-started-cli",
+          "https://learn.microsoft.com/en-us/azure/container-apps/microservices-dapr-bindings"
+        ]
+      },
+      {
+        "Id": "q18",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/tutorial-ci-cd-runners-jobs",
+          "https://learn.microsoft.com/en-us/azure/container-apps/jobs",
+          "https://learn.microsoft.com/en-us/azure/container-apps/tutorial-ci-cd-runners-jobs",
+          "https://learn.microsoft.com/en-us/azure/container-apps/tutorial-ci-cd-runners-jobs",
+          "https://learn.microsoft.com/en-us/azure/container-apps/tutorial-ci-cd-runners-jobs",
+          "https://learn.microsoft.com/en-us/azure/container-apps/tutorial-ci-cd-runners-jobs",
+          "https://learn.microsoft.com/en-us/azure/container-apps/functions-unified-platform",
+          "https://learn.microsoft.com/en-us/azure/container-apps/tutorial-event-driven-jobs",
+          "https://learn.microsoft.com/en-us/azure/container-apps/tutorial-ci-cd-runners-jobs",
+          "https://learn.microsoft.com/en-us/azure/container-apps/tutorial-ci-cd-runners-jobs"
+        ]
+      },
+      {
+        "Id": "q19",
+        "Rank": 2,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/github-actions-cli",
+          "https://learn.microsoft.com/en-us/azure/container-apps/github-actions",
+          "https://learn.microsoft.com/en-us/azure/container-apps/github-actions",
+          "https://learn.microsoft.com/en-us/azure/container-apps/github-actions",
+          "https://learn.microsoft.com/en-us/azure/container-apps/github-actions",
+          "https://learn.microsoft.com/en-us/azure/container-apps/github-actions-cli",
+          "https://learn.microsoft.com/en-us/azure/container-apps/github-actions",
+          "https://learn.microsoft.com/en-us/azure/container-apps/migrate-heroku",
+          "https://learn.microsoft.com/en-us/azure/container-apps/github-actions",
+          "https://learn.microsoft.com/en-us/azure/container-apps/github-actions"
+        ]
+      },
+      {
+        "Id": "q20",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/workload-profiles-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/workload-profiles-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/environment-type-consumption-only",
+          "https://learn.microsoft.com/en-us/azure/container-apps/workload-profiles-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/workload-profiles-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/environment-type-consumption-only",
+          "https://learn.microsoft.com/en-us/azure/container-apps/structure",
+          "https://learn.microsoft.com/en-us/azure/container-apps/structure",
+          "https://learn.microsoft.com/en-us/azure/container-apps/environment-type-consumption-only",
+          "https://learn.microsoft.com/en-us/azure/container-apps/structure"
+        ]
+      },
+      {
+        "Id": "q21",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/billing",
+          "https://learn.microsoft.com/en-us/azure/container-apps/billing",
+          "https://learn.microsoft.com/en-us/azure/container-apps/billing",
+          "https://learn.microsoft.com/en-us/azure/container-apps/billing",
+          "https://learn.microsoft.com/en-us/azure/container-apps/billing",
+          "https://learn.microsoft.com/en-us/azure/container-apps/billing",
+          "https://learn.microsoft.com/en-us/azure/container-apps/billing",
+          "https://learn.microsoft.com/en-us/azure/container-apps/billing",
+          "https://learn.microsoft.com/en-us/azure/container-apps/billing",
+          "https://learn.microsoft.com/en-us/azure/container-apps/billing"
+        ]
+      },
+      {
+        "Id": "q22",
+        "Rank": 2,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/express-local-testing",
+          "https://learn.microsoft.com/en-us/azure/container-apps/log-streaming",
+          "https://learn.microsoft.com/en-us/azure/container-apps/log-options",
+          "https://learn.microsoft.com/en-us/azure/container-apps/logging",
+          "https://learn.microsoft.com/en-us/azure/container-apps/log-monitoring",
+          "https://learn.microsoft.com/en-us/azure/container-apps/observability",
+          "https://learn.microsoft.com/en-us/azure/container-apps/logging",
+          "https://learn.microsoft.com/en-us/azure/container-apps/tutorial-update-from-code",
+          "https://learn.microsoft.com/en-us/azure/container-apps/log-monitoring",
+          "https://learn.microsoft.com/en-us/azure/container-apps/log-streaming"
+        ]
+      },
+      {
+        "Id": "q23",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/opentelemetry-export-datadog",
+          "https://learn.microsoft.com/en-us/azure/container-apps/opentelemetry-export-datadog",
+          "https://learn.microsoft.com/en-us/azure/container-apps/opentelemetry-export-datadog",
+          "https://learn.microsoft.com/en-us/azure/container-apps/opentelemetry-export-datadog",
+          "https://learn.microsoft.com/en-us/azure/container-apps/opentelemetry-agents",
+          "https://learn.microsoft.com/en-us/azure/container-apps/opentelemetry-export-datadog",
+          "https://learn.microsoft.com/en-us/azure/container-apps/opentelemetry-export-datadog",
+          "https://learn.microsoft.com/en-us/azure/container-apps/opentelemetry-export-datadog",
+          "https://learn.microsoft.com/en-us/azure/container-apps/opentelemetry-agents",
+          "https://learn.microsoft.com/en-us/azure/container-apps/opentelemetry-agents"
+        ]
+      },
+      {
+        "Id": "q24",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/gpu-serverless-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/gpu-serverless-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/gpu-serverless-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/gpu-serverless-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/gpu-serverless-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/gpu-serverless-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/gpu-serverless-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/gpu-image-generation",
+          "https://learn.microsoft.com/en-us/azure/container-apps/gpu-serverless-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/gpu-image-generation"
+        ]
+      },
+      {
+        "Id": "q25",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/mcp-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/mcp-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/mcp-choosing-azure-service",
+          "https://learn.microsoft.com/en-us/azure/container-apps/tutorial-mcp-server-nodejs",
+          "https://learn.microsoft.com/en-us/azure/container-apps/tutorial-mcp-server-dotnet",
+          "https://learn.microsoft.com/en-us/azure/container-apps/tutorial-mcp-server-java",
+          "https://learn.microsoft.com/en-us/azure/container-apps/mcp-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/mcp-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/tutorial-mcp-server-python",
+          "https://learn.microsoft.com/en-us/azure/container-apps/mcp-choosing-azure-service"
+        ]
+      },
+      {
+        "Id": "q26",
+        "Rank": 2,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/mcp-choosing-azure-service",
+          "https://learn.microsoft.com/en-us/azure/container-apps/sessions-code-interpreter",
+          "https://learn.microsoft.com/en-us/azure/container-apps/sessions-tutorial-llamaindex",
+          "https://learn.microsoft.com/en-us/azure/container-apps/sessions-tutorial-llamaindex",
+          "https://learn.microsoft.com/en-us/azure/container-apps/sessions-tutorial-autogen",
+          "https://learn.microsoft.com/en-us/azure/container-apps/sessions-code-interpreter",
+          "https://learn.microsoft.com/en-us/azure/container-apps/sessions-tutorial-langchain",
+          "https://learn.microsoft.com/en-us/azure/container-apps/sessions-code-interpreter",
+          "https://learn.microsoft.com/en-us/azure/container-apps/sessions-tutorial-semantic-kernel",
+          "https://learn.microsoft.com/en-us/azure/container-apps/sessions-tutorial-nodejs"
+        ]
+      },
+      {
+        "Id": "q27",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/vnet-custom",
+          "https://learn.microsoft.com/en-us/azure/container-apps/vnet-custom",
+          "https://learn.microsoft.com/en-us/azure/container-apps/vnet-custom",
+          "https://learn.microsoft.com/en-us/azure/container-apps/vnet-custom",
+          "https://learn.microsoft.com/en-us/azure/container-apps/vnet-custom",
+          "https://learn.microsoft.com/en-us/azure/container-apps/vnet-custom",
+          "https://learn.microsoft.com/en-us/azure/container-apps/vnet-custom",
+          "https://learn.microsoft.com/en-us/azure/container-apps/vnet-custom",
+          "https://learn.microsoft.com/en-us/azure/container-apps/vnet-custom",
+          "https://learn.microsoft.com/en-us/azure/container-apps/vnet-custom"
+        ]
+      },
+      {
+        "Id": "q28",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/how-to-use-private-endpoint",
+          "https://learn.microsoft.com/en-us/azure/container-apps/private-endpoints-with-dns",
+          "https://learn.microsoft.com/en-us/azure/container-apps/how-to-use-private-endpoint",
+          "https://learn.microsoft.com/en-us/azure/container-apps/private-endpoints-with-dns",
+          "https://learn.microsoft.com/en-us/azure/container-apps/how-to-use-private-endpoint",
+          "https://learn.microsoft.com/en-us/azure/container-apps/how-to-use-private-endpoint",
+          "https://learn.microsoft.com/en-us/azure/container-apps/private-endpoints-with-dns",
+          "https://learn.microsoft.com/en-us/azure/container-apps/how-to-use-private-endpoint",
+          "https://learn.microsoft.com/en-us/azure/container-apps/how-to-use-private-endpoint",
+          "https://learn.microsoft.com/en-us/azure/container-apps/how-to-use-private-endpoint"
+        ]
+      },
+      {
+        "Id": "q29",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/how-to-zone-redundancy",
+          "https://learn.microsoft.com/en-us/azure/container-apps/how-to-zone-redundancy",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-environment-capacity",
+          "https://learn.microsoft.com/en-us/azure/container-apps/how-to-zone-redundancy",
+          "https://learn.microsoft.com/en-us/azure/container-apps/how-to-zone-redundancy",
+          "https://learn.microsoft.com/en-us/azure/container-apps/how-to-zone-redundancy",
+          "https://learn.microsoft.com/en-us/azure/container-apps/how-to-zone-redundancy",
+          "https://learn.microsoft.com/en-us/azure/container-apps/secure-deployment",
+          "https://learn.microsoft.com/en-us/azure/container-apps/how-to-zone-redundancy",
+          "https://learn.microsoft.com/en-us/azure/container-apps/how-to-zone-redundancy"
+        ]
+      },
+      {
+        "Id": "q30",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/authentication-entra",
+          "https://learn.microsoft.com/en-us/azure/container-apps/authentication-entra",
+          "https://learn.microsoft.com/en-us/azure/container-apps/authentication-entra",
+          "https://learn.microsoft.com/en-us/azure/container-apps/authentication-entra",
+          "https://learn.microsoft.com/en-us/azure/container-apps/authentication-entra",
+          "https://learn.microsoft.com/en-us/azure/container-apps/authentication-entra",
+          "https://learn.microsoft.com/en-us/azure/container-apps/authentication-entra",
+          "https://learn.microsoft.com/en-us/azure/container-apps/authentication-entra",
+          "https://learn.microsoft.com/en-us/azure/container-apps/authentication-entra",
+          "https://learn.microsoft.com/en-us/azure/container-apps/authentication-entra"
+        ]
+      },
+      {
+        "Id": "q31",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/client-certificate-authorization",
+          "https://learn.microsoft.com/en-us/azure/container-apps/client-certificate-authorization",
+          "https://learn.microsoft.com/en-us/azure/container-apps/client-certificate-authorization",
+          "https://learn.microsoft.com/en-us/azure/container-apps/client-certificate-authorization",
+          "https://learn.microsoft.com/en-us/azure/container-apps/mtls",
+          "https://learn.microsoft.com/en-us/azure/container-apps/client-certificate-authorization",
+          "https://learn.microsoft.com/en-us/azure/container-apps/client-certificate-authorization",
+          "https://learn.microsoft.com/en-us/azure/container-apps/client-certificate-authorization",
+          "https://learn.microsoft.com/en-us/azure/container-apps/certificates-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/certificates-overview"
+        ]
+      },
+      {
+        "Id": "q32",
+        "Rank": 4,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/storage-mounts",
+          "https://learn.microsoft.com/en-us/azure/container-apps/log-monitoring",
+          "https://learn.microsoft.com/en-us/azure/container-apps/sessions-usage",
+          "https://learn.microsoft.com/en-us/azure/container-apps/sticky-sessions",
+          "https://learn.microsoft.com/en-us/azure/container-apps/java-metrics-scale-with-keda",
+          "https://learn.microsoft.com/en-us/azure/container-apps/billing",
+          "https://learn.microsoft.com/en-us/azure/container-apps/ingress-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/scale-app",
+          "https://learn.microsoft.com/en-us/azure/container-apps/sessions-usage",
+          "https://learn.microsoft.com/en-us/azure/container-apps/tutorial-scaling"
+        ]
+      },
+      {
+        "Id": "q33",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/ingress-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/ingress-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/connect-apps",
+          "https://learn.microsoft.com/en-us/azure/container-apps/scale-app",
+          "https://learn.microsoft.com/en-us/azure/container-apps/ingress-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/health-probes",
+          "https://learn.microsoft.com/en-us/azure/container-apps/whats-new",
+          "https://learn.microsoft.com/en-us/azure/container-apps/networking",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshooting",
+          "https://learn.microsoft.com/en-us/azure/container-apps/ingress-how-to"
+        ]
+      },
+      {
+        "Id": "q34",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-target-port-settings",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-target-port-settings",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-target-port-settings",
+          "https://learn.microsoft.com/en-us/azure/container-apps/ingress-how-to",
+          "https://learn.microsoft.com/en-us/azure/container-apps/mcp-troubleshooting",
+          "https://learn.microsoft.com/en-us/azure/container-apps/dotnet-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-deployment-errors",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshooting",
+          "https://learn.microsoft.com/en-us/azure/container-apps/ingress-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/ingress-how-to"
+        ]
+      },
+      {
+        "Id": "q35",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/scale-app",
+          "https://learn.microsoft.com/en-us/azure/container-apps/functions-keda-mappings",
+          "https://learn.microsoft.com/en-us/azure/container-apps/scale-app",
+          "https://learn.microsoft.com/en-us/azure/container-apps/functions-keda-mappings",
+          "https://learn.microsoft.com/en-us/azure/container-apps/functions-keda-mappings",
+          "https://learn.microsoft.com/en-us/azure/container-apps/functions-keda-mappings",
+          "https://learn.microsoft.com/en-us/azure/container-apps/scale-app",
+          "https://learn.microsoft.com/en-us/azure/container-apps/scale-app",
+          "https://learn.microsoft.com/en-us/azure/container-apps/scale-app",
+          "https://learn.microsoft.com/en-us/azure/container-apps/scale-app"
+        ]
+      },
+      {
+        "Id": "q36",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/migrate-heroku",
+          "https://learn.microsoft.com/en-us/azure/container-apps/migrate-heroku",
+          "https://learn.microsoft.com/en-us/azure/container-apps/migrate-heroku",
+          "https://learn.microsoft.com/en-us/azure/container-apps/migrate-heroku-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/migrate-heroku",
+          "https://learn.microsoft.com/en-us/azure/container-apps/migrate-heroku",
+          "https://learn.microsoft.com/en-us/azure/container-apps/migrate-heroku",
+          "https://learn.microsoft.com/en-us/azure/container-apps/migrate-heroku",
+          "https://learn.microsoft.com/en-us/azure/container-apps/migrate-heroku-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/migrate-heroku"
+        ]
+      },
+      {
+        "Id": "q37",
+        "Rank": 6,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/java-containers-intro",
+          "https://learn.microsoft.com/en-us/azure/container-apps/sessions-tutorial-shell",
+          "https://learn.microsoft.com/en-us/azure/container-apps/sessions-tutorial-shell",
+          "https://learn.microsoft.com/en-us/azure/container-apps/sessions-tutorial-shell",
+          "https://learn.microsoft.com/en-us/azure/container-apps/java-containers-intro",
+          "https://learn.microsoft.com/en-us/azure/container-apps/container-debug-console",
+          "https://learn.microsoft.com/en-us/azure/container-apps/sessions-tutorial-shell-mcp",
+          "https://learn.microsoft.com/en-us/azure/container-apps/container-console",
+          "https://learn.microsoft.com/en-us/azure/container-apps/sessions-tutorial-shell-mcp",
+          "https://learn.microsoft.com/en-us/azure/container-apps/java-containers-intro"
+        ]
+      },
+      {
+        "Id": "q38",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/planned-maintenance",
+          "https://learn.microsoft.com/en-us/azure/container-apps/planned-maintenance",
+          "https://learn.microsoft.com/en-us/azure/container-apps/planned-maintenance",
+          "https://learn.microsoft.com/en-us/azure/container-apps/planned-maintenance",
+          "https://learn.microsoft.com/en-us/azure/container-apps/planned-maintenance",
+          "https://learn.microsoft.com/en-us/azure/container-apps/planned-maintenance",
+          "https://learn.microsoft.com/en-us/azure/container-apps/planned-maintenance",
+          "https://learn.microsoft.com/en-us/azure/container-apps/planned-maintenance",
+          "https://learn.microsoft.com/en-us/azure/container-apps/planned-maintenance",
+          "https://learn.microsoft.com/en-us/azure/container-apps/planned-maintenance"
+        ]
+      },
+      {
+        "Id": "q39",
+        "Rank": 4,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/health-probes",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-deployment-errors",
+          "https://learn.microsoft.com/en-us/azure/container-apps/health-probes",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-health-probe-failures",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-container-start-failures",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-health-probe-failures",
+          "https://learn.microsoft.com/en-us/azure/container-apps/health-probes",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshooting",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-deployment-errors",
+          "https://learn.microsoft.com/en-us/azure/container-apps/health-probes"
+        ]
+      },
+      {
+        "Id": "q40",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/managed-identity",
+          "https://learn.microsoft.com/en-us/azure/container-apps/managed-identity",
+          "https://learn.microsoft.com/en-us/azure/container-apps/managed-identity-image-pull",
+          "https://learn.microsoft.com/en-us/azure/container-apps/managed-identity",
+          "https://learn.microsoft.com/en-us/azure/container-apps/managed-identity",
+          "https://learn.microsoft.com/en-us/azure/container-apps/managed-identity-image-pull",
+          "https://learn.microsoft.com/en-us/azure/container-apps/managed-identity-image-pull",
+          "https://learn.microsoft.com/en-us/azure/container-apps/managed-identity",
+          "https://learn.microsoft.com/en-us/azure/container-apps/managed-identity",
+          "https://learn.microsoft.com/en-us/azure/container-apps/managed-identity"
+        ]
+      }
+    ]
+  },
+  {
+    "Mode": "HybridSemantic",
+    "Outcomes": [
+      {
+        "Id": "q01",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/scale-app",
+          "https://learn.microsoft.com/en-us/azure/container-apps/scale-app",
+          "https://learn.microsoft.com/en-us/azure/container-apps/scale-app",
+          "https://learn.microsoft.com/en-us/azure/container-apps/tutorial-scaling",
+          "https://learn.microsoft.com/en-us/azure/container-apps/dapr-keda-scaling",
+          "https://learn.microsoft.com/en-us/azure/container-apps/tutorial-mcp-server-dotnet",
+          "https://learn.microsoft.com/en-us/azure/container-apps/migrate-heroku",
+          "https://learn.microsoft.com/en-us/azure/container-apps/scale-app",
+          "https://learn.microsoft.com/en-us/azure/container-apps/javascript-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/tutorial-mcp-server-nodejs"
+        ]
+      },
+      {
+        "Id": "q02",
+        "Rank": 8,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/gpu-serverless-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/cold-start",
+          "https://learn.microsoft.com/en-us/azure/container-apps/tutorial-scaling",
+          "https://learn.microsoft.com/en-us/azure/container-apps/migrate-heroku-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/dapr-keda-scaling",
+          "https://learn.microsoft.com/en-us/azure/container-apps/dapr-keda-scaling",
+          "https://learn.microsoft.com/en-us/azure/container-apps/tutorial-scaling",
+          "https://learn.microsoft.com/en-us/azure/container-apps/scale-app",
+          "https://learn.microsoft.com/en-us/azure/container-apps/scale-app",
+          "https://learn.microsoft.com/en-us/azure/container-apps/java-overview"
+        ]
+      },
+      {
+        "Id": "q03",
+        "Rank": 2,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/ingress-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/traffic-splitting",
+          "https://learn.microsoft.com/en-us/azure/container-apps/traffic-splitting",
+          "https://learn.microsoft.com/en-us/azure/container-apps/traffic-splitting",
+          "https://learn.microsoft.com/en-us/azure/container-apps/traffic-splitting",
+          "https://learn.microsoft.com/en-us/azure/container-apps/revisions",
+          "https://learn.microsoft.com/en-us/azure/container-apps/revisions",
+          "https://learn.microsoft.com/en-us/azure/container-apps/revisions-manage",
+          "https://learn.microsoft.com/en-us/azure/container-apps/traffic-splitting",
+          "https://learn.microsoft.com/en-us/azure/container-apps/ingress-overview"
+        ]
+      },
+      {
+        "Id": "q04",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/revisions",
+          "https://learn.microsoft.com/en-us/azure/container-apps/revisions-manage",
+          "https://learn.microsoft.com/en-us/azure/container-apps/revisions",
+          "https://learn.microsoft.com/en-us/azure/container-apps/revisions",
+          "https://learn.microsoft.com/en-us/azure/container-apps/connect-apps",
+          "https://learn.microsoft.com/en-us/azure/container-apps/application-lifecycle-management",
+          "https://learn.microsoft.com/en-us/azure/container-apps/traffic-splitting",
+          "https://learn.microsoft.com/en-us/azure/container-apps/revisions",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshooting",
+          "https://learn.microsoft.com/en-us/azure/container-apps/traffic-splitting"
+        ]
+      },
+      {
+        "Id": "q05",
+        "Rank": 2,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/deployment-labels",
+          "https://learn.microsoft.com/en-us/azure/container-apps/blue-green-deployment",
+          "https://learn.microsoft.com/en-us/azure/container-apps/blue-green-deployment",
+          "https://learn.microsoft.com/en-us/azure/container-apps/blue-green-deployment",
+          "https://learn.microsoft.com/en-us/azure/container-apps/blue-green-deployment",
+          "https://learn.microsoft.com/en-us/azure/container-apps/blue-green-deployment",
+          "https://learn.microsoft.com/en-us/azure/container-apps/blue-green-deployment",
+          "https://learn.microsoft.com/en-us/azure/container-apps/blue-green-deployment",
+          "https://learn.microsoft.com/en-us/azure/container-apps/blue-green-deployment",
+          "https://learn.microsoft.com/en-us/azure/container-apps/blue-green-deployment"
+        ]
+      },
+      {
+        "Id": "q06",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/managed-identity-image-pull",
+          "https://learn.microsoft.com/en-us/azure/container-apps/managed-identity-image-pull",
+          "https://learn.microsoft.com/en-us/azure/container-apps/managed-identity-image-pull",
+          "https://learn.microsoft.com/en-us/azure/container-apps/managed-identity-image-pull",
+          "https://learn.microsoft.com/en-us/azure/container-apps/managed-identity-image-pull",
+          "https://learn.microsoft.com/en-us/azure/container-apps/managed-identity-image-pull",
+          "https://learn.microsoft.com/en-us/azure/container-apps/managed-identity-image-pull",
+          "https://learn.microsoft.com/en-us/azure/container-apps/managed-identity-image-pull",
+          "https://learn.microsoft.com/en-us/azure/container-apps/managed-identity-image-pull",
+          "https://learn.microsoft.com/en-us/azure/container-apps/managed-identity-image-pull"
+        ]
+      },
+      {
+        "Id": "q07",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/manage-secrets",
+          "https://learn.microsoft.com/en-us/azure/container-apps/environment-variables",
+          "https://learn.microsoft.com/en-us/azure/container-apps/functions-secrets-app-level",
+          "https://learn.microsoft.com/en-us/azure/container-apps/functions-secrets-app-level",
+          "https://learn.microsoft.com/en-us/azure/container-apps/environment-variables",
+          "https://learn.microsoft.com/en-us/azure/container-apps/manage-secrets",
+          "https://learn.microsoft.com/en-us/azure/container-apps/functions-secrets-app-level",
+          "https://learn.microsoft.com/en-us/azure/container-apps/functions-secrets-app-level",
+          "https://learn.microsoft.com/en-us/azure/container-apps/environment-variables",
+          "https://learn.microsoft.com/en-us/azure/container-apps/dotnet-overview"
+        ]
+      },
+      {
+        "Id": "q08",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/manage-secrets",
+          "https://learn.microsoft.com/en-us/azure/container-apps/manage-secrets",
+          "https://learn.microsoft.com/en-us/azure/container-apps/security",
+          "https://learn.microsoft.com/en-us/azure/container-apps/functions-secrets-app-level",
+          "https://learn.microsoft.com/en-us/azure/container-apps/functions-secrets-app-level",
+          "https://learn.microsoft.com/en-us/azure/container-apps/functions-secrets-app-level",
+          "https://learn.microsoft.com/en-us/azure/container-apps/functions-secrets-app-level",
+          "https://learn.microsoft.com/en-us/azure/container-apps/manage-secrets",
+          "https://learn.microsoft.com/en-us/azure/container-apps/functions-secrets-app-level",
+          "https://learn.microsoft.com/en-us/azure/container-apps/functions-secrets-app-level"
+        ]
+      },
+      {
+        "Id": "q09",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/ip-restrictions",
+          "https://learn.microsoft.com/en-us/azure/container-apps/ip-restrictions",
+          "https://learn.microsoft.com/en-us/azure/container-apps/ip-restrictions",
+          "https://learn.microsoft.com/en-us/azure/container-apps/whats-new",
+          "https://learn.microsoft.com/en-us/azure/container-apps/networking",
+          "https://learn.microsoft.com/en-us/azure/container-apps/ip-restrictions",
+          "https://learn.microsoft.com/en-us/azure/container-apps/ip-restrictions",
+          "https://learn.microsoft.com/en-us/azure/container-apps/ip-restrictions",
+          "https://learn.microsoft.com/en-us/azure/container-apps/firewall-integration",
+          "https://learn.microsoft.com/en-us/azure/container-apps/ingress-overview"
+        ]
+      },
+      {
+        "Id": "q10",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/cors",
+          "https://learn.microsoft.com/en-us/azure/container-apps/cors",
+          "https://learn.microsoft.com/en-us/azure/container-apps/ingress-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/cors",
+          "https://learn.microsoft.com/en-us/azure/container-apps/cors",
+          "https://learn.microsoft.com/en-us/azure/container-apps/cors",
+          "https://learn.microsoft.com/en-us/azure/container-apps/whats-new",
+          "https://learn.microsoft.com/en-us/azure/container-apps/networking",
+          "https://learn.microsoft.com/en-us/azure/container-apps/connect-apps",
+          "https://learn.microsoft.com/en-us/azure/container-apps/cors"
+        ]
+      },
+      {
+        "Id": "q11",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/custom-domains-managed-certificates",
+          "https://learn.microsoft.com/en-us/azure/container-apps/custom-domains-managed-certificates",
+          "https://learn.microsoft.com/en-us/azure/container-apps/certificates-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/custom-domains-certificates",
+          "https://learn.microsoft.com/en-us/azure/container-apps/custom-domains-managed-certificates",
+          "https://learn.microsoft.com/en-us/azure/container-apps/certificates-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/custom-domains-managed-certificates",
+          "https://learn.microsoft.com/en-us/azure/container-apps/custom-domains-managed-certificates",
+          "https://learn.microsoft.com/en-us/azure/container-apps/migrate-tomcat",
+          "https://learn.microsoft.com/en-us/azure/container-apps/custom-domains-managed-certificates"
+        ]
+      },
+      {
+        "Id": "q12",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/health-probes",
+          "https://learn.microsoft.com/en-us/azure/container-apps/health-probes",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshooting",
+          "https://learn.microsoft.com/en-us/azure/container-apps/express-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/health-probes",
+          "https://learn.microsoft.com/en-us/azure/container-apps/health-probes",
+          "https://learn.microsoft.com/en-us/azure/container-apps/dotnet-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/session-pool",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshooting",
+          "https://learn.microsoft.com/en-us/azure/container-apps/health-probes"
+        ]
+      },
+      {
+        "Id": "q13",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-image-pull-failures",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshooting",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-image-pull-failures",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-image-pull-failures",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-deployment-errors",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-image-pull-failures",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-image-pull-failures",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-image-pull-failures",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-container-start-failures",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-image-pull-failures"
+        ]
+      },
+      {
+        "Id": "q14",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-container-create-failures",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-container-create-failures",
+          "https://learn.microsoft.com/en-us/azure/container-apps/diagnose-solve",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-container-start-failures",
+          "https://learn.microsoft.com/en-us/azure/container-apps/diagnose-solve",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-deployment-errors",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-container-start-failures",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-container-create-failures",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-deployment-errors",
+          "https://learn.microsoft.com/en-us/azure/container-apps/java-overview"
+        ]
+      },
+      {
+        "Id": "q15",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/storage-mounts-azure-files",
+          "https://learn.microsoft.com/en-us/azure/container-apps/storage-mounts",
+          "https://learn.microsoft.com/en-us/azure/container-apps/storage-mounts",
+          "https://learn.microsoft.com/en-us/azure/container-apps/storage-mounts",
+          "https://learn.microsoft.com/en-us/azure/container-apps/storage-mounts",
+          "https://learn.microsoft.com/en-us/azure/container-apps/storage-mounts",
+          "https://learn.microsoft.com/en-us/azure/container-apps/storage-mounts",
+          "https://learn.microsoft.com/en-us/azure/container-apps/storage-mounts-azure-files",
+          "https://learn.microsoft.com/en-us/azure/container-apps/storage-mounts-azure-files",
+          "https://learn.microsoft.com/en-us/azure/container-apps/storage-mounts"
+        ]
+      },
+      {
+        "Id": "q16",
+        "Rank": 3,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/connect-apps",
+          "https://learn.microsoft.com/en-us/azure/container-apps/connect-apps",
+          "https://learn.microsoft.com/en-us/azure/container-apps/dapr-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/microservices-dapr",
+          "https://learn.microsoft.com/en-us/azure/container-apps/connect-apps",
+          "https://learn.microsoft.com/en-us/azure/container-apps/connect-apps",
+          "https://learn.microsoft.com/en-us/azure/container-apps/microservices-dapr-azure-resource-manager",
+          "https://learn.microsoft.com/en-us/azure/container-apps/dapr-component-resiliency",
+          "https://learn.microsoft.com/en-us/azure/container-apps/enable-dapr",
+          "https://learn.microsoft.com/en-us/azure/container-apps/enable-dapr"
+        ]
+      },
+      {
+        "Id": "q17",
+        "Rank": 2,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/jobs-get-started-cli",
+          "https://learn.microsoft.com/en-us/azure/container-apps/jobs",
+          "https://learn.microsoft.com/en-us/azure/container-apps/jobs",
+          "https://learn.microsoft.com/en-us/azure/container-apps/jobs-get-started-portal",
+          "https://learn.microsoft.com/en-us/azure/container-apps/jobs",
+          "https://learn.microsoft.com/en-us/azure/container-apps/migrate-heroku-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/jobs",
+          "https://learn.microsoft.com/en-us/azure/container-apps/jobs",
+          "https://learn.microsoft.com/en-us/azure/container-apps/jobs",
+          "https://learn.microsoft.com/en-us/azure/container-apps/migrate-spring-boot"
+        ]
+      },
+      {
+        "Id": "q18",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/tutorial-ci-cd-runners-jobs",
+          "https://learn.microsoft.com/en-us/azure/container-apps/tutorial-ci-cd-runners-jobs",
+          "https://learn.microsoft.com/en-us/azure/container-apps/jobs",
+          "https://learn.microsoft.com/en-us/azure/container-apps/tutorial-ci-cd-runners-jobs",
+          "https://learn.microsoft.com/en-us/azure/container-apps/tutorial-ci-cd-runners-jobs",
+          "https://learn.microsoft.com/en-us/azure/container-apps/jobs",
+          "https://learn.microsoft.com/en-us/azure/container-apps/tutorial-ci-cd-runners-jobs",
+          "https://learn.microsoft.com/en-us/azure/container-apps/functions-unified-platform",
+          "https://learn.microsoft.com/en-us/azure/container-apps/tutorial-ci-cd-runners-jobs",
+          "https://learn.microsoft.com/en-us/azure/container-apps/tutorial-ci-cd-runners-jobs"
+        ]
+      },
+      {
+        "Id": "q19",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/github-actions",
+          "https://learn.microsoft.com/en-us/azure/container-apps/github-actions",
+          "https://learn.microsoft.com/en-us/azure/container-apps/deploy-visual-studio",
+          "https://learn.microsoft.com/en-us/azure/container-apps/github-actions-cli",
+          "https://learn.microsoft.com/en-us/azure/container-apps/github-actions",
+          "https://learn.microsoft.com/en-us/azure/container-apps/github-actions",
+          "https://learn.microsoft.com/en-us/azure/container-apps/github-actions",
+          "https://learn.microsoft.com/en-us/azure/container-apps/github-actions",
+          "https://learn.microsoft.com/en-us/azure/container-apps/quickstart-repo-to-cloud",
+          "https://learn.microsoft.com/en-us/azure/container-apps/quickstart-repo-to-cloud"
+        ]
+      },
+      {
+        "Id": "q20",
+        "Rank": 2,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/structure",
+          "https://learn.microsoft.com/en-us/azure/container-apps/workload-profiles-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/environment",
+          "https://learn.microsoft.com/en-us/azure/container-apps/plans",
+          "https://learn.microsoft.com/en-us/azure/container-apps/workload-profiles-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/structure",
+          "https://learn.microsoft.com/en-us/azure/container-apps/structure",
+          "https://learn.microsoft.com/en-us/azure/container-apps/environment-type-consumption-only",
+          "https://learn.microsoft.com/en-us/azure/container-apps/structure",
+          "https://learn.microsoft.com/en-us/azure/container-apps/plans"
+        ]
+      },
+      {
+        "Id": "q21",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/billing",
+          "https://learn.microsoft.com/en-us/azure/container-apps/billing",
+          "https://learn.microsoft.com/en-us/azure/container-apps/scale-app",
+          "https://learn.microsoft.com/en-us/azure/container-apps/billing",
+          "https://learn.microsoft.com/en-us/azure/container-apps/workload-profiles-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/tutorial-gpu-image-generation",
+          "https://learn.microsoft.com/en-us/azure/container-apps/billing",
+          "https://learn.microsoft.com/en-us/azure/container-apps/billing",
+          "https://learn.microsoft.com/en-us/azure/container-apps/migrate-heroku-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/billing"
+        ]
+      },
+      {
+        "Id": "q22",
+        "Rank": 2,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/express-local-testing",
+          "https://learn.microsoft.com/en-us/azure/container-apps/log-streaming",
+          "https://learn.microsoft.com/en-us/azure/container-apps/log-options",
+          "https://learn.microsoft.com/en-us/azure/container-apps/log-streaming",
+          "https://learn.microsoft.com/en-us/azure/container-apps/log-streaming",
+          "https://learn.microsoft.com/en-us/azure/container-apps/log-streaming",
+          "https://learn.microsoft.com/en-us/azure/container-apps/log-streaming",
+          "https://learn.microsoft.com/en-us/azure/container-apps/observability",
+          "https://learn.microsoft.com/en-us/azure/container-apps/log-streaming",
+          "https://learn.microsoft.com/en-us/azure/container-apps/log-streaming"
+        ]
+      },
+      {
+        "Id": "q23",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/opentelemetry-export-datadog",
+          "https://learn.microsoft.com/en-us/azure/container-apps/opentelemetry-export-datadog",
+          "https://learn.microsoft.com/en-us/azure/container-apps/opentelemetry-export-datadog",
+          "https://learn.microsoft.com/en-us/azure/container-apps/opentelemetry-export-datadog",
+          "https://learn.microsoft.com/en-us/azure/container-apps/opentelemetry-export-datadog",
+          "https://learn.microsoft.com/en-us/azure/container-apps/opentelemetry-export-datadog",
+          "https://learn.microsoft.com/en-us/azure/container-apps/opentelemetry-export-datadog",
+          "https://learn.microsoft.com/en-us/azure/container-apps/opentelemetry-export-datadog",
+          "https://learn.microsoft.com/en-us/azure/container-apps/opentelemetry-export-datadog",
+          "https://learn.microsoft.com/en-us/azure/container-apps/opentelemetry-export-datadog"
+        ]
+      },
+      {
+        "Id": "q24",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/gpu-serverless-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/gpu-serverless-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/functions-unified-platform",
+          "https://learn.microsoft.com/en-us/azure/container-apps/functions-gpu-container-apps",
+          "https://learn.microsoft.com/en-us/azure/container-apps/tutorial-gpu-image-generation",
+          "https://learn.microsoft.com/en-us/azure/container-apps/tutorial-gpu-image-generation",
+          "https://learn.microsoft.com/en-us/azure/container-apps/deploy-openai-gpt-oss-ollama",
+          "https://learn.microsoft.com/en-us/azure/container-apps/tutorial-gpu-image-generation",
+          "https://learn.microsoft.com/en-us/azure/container-apps/gpu-image-generation",
+          "https://learn.microsoft.com/en-us/azure/container-apps/gpu-image-generation"
+        ]
+      },
+      {
+        "Id": "q25",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/mcp-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/tutorial-mcp-server-dotnet",
+          "https://learn.microsoft.com/en-us/azure/container-apps/tutorial-mcp-server-java",
+          "https://learn.microsoft.com/en-us/azure/container-apps/tutorial-mcp-server-python",
+          "https://learn.microsoft.com/en-us/azure/container-apps/tutorial-mcp-server-nodejs",
+          "https://learn.microsoft.com/en-us/azure/container-apps/mcp-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/mcp-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/mcp-choosing-azure-service",
+          "https://learn.microsoft.com/en-us/azure/container-apps/tutorial-mcp-server-dotnet",
+          "https://learn.microsoft.com/en-us/azure/container-apps/tutorial-mcp-server-dotnet"
+        ]
+      },
+      {
+        "Id": "q26",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/sessions-code-interpreter",
+          "https://learn.microsoft.com/en-us/azure/container-apps/mcp-choosing-azure-service",
+          "https://learn.microsoft.com/en-us/azure/container-apps/sessions",
+          "https://learn.microsoft.com/en-us/azure/container-apps/sessions",
+          "https://learn.microsoft.com/en-us/azure/container-apps/mcp-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/sessions-tutorial-llamaindex",
+          "https://learn.microsoft.com/en-us/azure/container-apps/sessions-tutorial-llamaindex",
+          "https://learn.microsoft.com/en-us/azure/container-apps/sessions-tutorial-langchain",
+          "https://learn.microsoft.com/en-us/azure/container-apps/sessions-tutorial-autogen",
+          "https://learn.microsoft.com/en-us/azure/container-apps/mcp-choosing-azure-service"
+        ]
+      },
+      {
+        "Id": "q27",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/vnet-custom",
+          "https://learn.microsoft.com/en-us/azure/container-apps/vnet-custom",
+          "https://learn.microsoft.com/en-us/azure/container-apps/vnet-custom",
+          "https://learn.microsoft.com/en-us/azure/container-apps/vnet-custom",
+          "https://learn.microsoft.com/en-us/azure/container-apps/vnet-custom",
+          "https://learn.microsoft.com/en-us/azure/container-apps/vnet-custom",
+          "https://learn.microsoft.com/en-us/azure/container-apps/vnet-custom",
+          "https://learn.microsoft.com/en-us/azure/container-apps/vnet-custom",
+          "https://learn.microsoft.com/en-us/azure/container-apps/vnet-custom",
+          "https://learn.microsoft.com/en-us/azure/container-apps/custom-virtual-networks"
+        ]
+      },
+      {
+        "Id": "q28",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/how-to-use-private-endpoint",
+          "https://learn.microsoft.com/en-us/azure/container-apps/how-to-use-private-endpoint",
+          "https://learn.microsoft.com/en-us/azure/container-apps/how-to-use-private-endpoint",
+          "https://learn.microsoft.com/en-us/azure/container-apps/private-endpoints-with-dns",
+          "https://learn.microsoft.com/en-us/azure/container-apps/private-endpoints-with-dns",
+          "https://learn.microsoft.com/en-us/azure/container-apps/how-to-use-private-endpoint",
+          "https://learn.microsoft.com/en-us/azure/container-apps/front-door-custom-virtual-network-private-link",
+          "https://learn.microsoft.com/en-us/azure/container-apps/how-to-use-private-endpoint",
+          "https://learn.microsoft.com/en-us/azure/container-apps/how-to-use-private-endpoint",
+          "https://learn.microsoft.com/en-us/azure/container-apps/how-to-use-private-endpoint"
+        ]
+      },
+      {
+        "Id": "q29",
+        "Rank": 5,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/secure-deployment",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-environment-capacity",
+          "https://learn.microsoft.com/en-us/azure/container-apps/migrate-java-github-copilot-app-modernization",
+          "https://learn.microsoft.com/en-us/azure/container-apps/relocate-region",
+          "https://learn.microsoft.com/en-us/azure/container-apps/how-to-zone-redundancy",
+          "https://learn.microsoft.com/en-us/azure/container-apps/traffic-splitting",
+          "https://learn.microsoft.com/en-us/azure/container-apps/traffic-splitting",
+          "https://learn.microsoft.com/en-us/azure/container-apps/how-to-zone-redundancy",
+          "https://learn.microsoft.com/en-us/azure/container-apps/environment",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-environment-capacity"
+        ]
+      },
+      {
+        "Id": "q30",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/authentication-entra",
+          "https://learn.microsoft.com/en-us/azure/container-apps/authentication-entra",
+          "https://learn.microsoft.com/en-us/azure/container-apps/authentication-entra",
+          "https://learn.microsoft.com/en-us/azure/container-apps/authentication-entra",
+          "https://learn.microsoft.com/en-us/azure/container-apps/authentication-entra",
+          "https://learn.microsoft.com/en-us/azure/container-apps/authentication-entra",
+          "https://learn.microsoft.com/en-us/azure/container-apps/authentication-entra",
+          "https://learn.microsoft.com/en-us/azure/container-apps/authentication-entra",
+          "https://learn.microsoft.com/en-us/azure/container-apps/authentication-entra",
+          "https://learn.microsoft.com/en-us/azure/container-apps/secure-deployment"
+        ]
+      },
+      {
+        "Id": "q31",
+        "Rank": 4,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/mtls",
+          "https://learn.microsoft.com/en-us/azure/container-apps/mtls",
+          "https://learn.microsoft.com/en-us/azure/container-apps/authentication-entra",
+          "https://learn.microsoft.com/en-us/azure/container-apps/client-certificate-authorization",
+          "https://learn.microsoft.com/en-us/azure/container-apps/client-certificate-authorization",
+          "https://learn.microsoft.com/en-us/azure/container-apps/client-certificate-authorization",
+          "https://learn.microsoft.com/en-us/azure/container-apps/authentication-entra",
+          "https://learn.microsoft.com/en-us/azure/container-apps/ingress-environment-configuration",
+          "https://learn.microsoft.com/en-us/azure/container-apps/ingress-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/mtls"
+        ]
+      },
+      {
+        "Id": "q32",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/sticky-sessions",
+          "https://learn.microsoft.com/en-us/azure/container-apps/ingress-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/dotnet-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/dotnet-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/tutorial-scaling",
+          "https://learn.microsoft.com/en-us/azure/container-apps/log-monitoring",
+          "https://learn.microsoft.com/en-us/azure/container-apps/storage-mounts",
+          "https://learn.microsoft.com/en-us/azure/container-apps/migrate-heroku-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/java-metrics-scale-with-keda",
+          "https://learn.microsoft.com/en-us/azure/container-apps/java-overview"
+        ]
+      },
+      {
+        "Id": "q33",
+        "Rank": 2,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/connect-apps",
+          "https://learn.microsoft.com/en-us/azure/container-apps/ingress-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/ingress-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/firewall-integration",
+          "https://learn.microsoft.com/en-us/azure/container-apps/whats-new",
+          "https://learn.microsoft.com/en-us/azure/container-apps/ingress-how-to",
+          "https://learn.microsoft.com/en-us/azure/container-apps/ingress-how-to",
+          "https://learn.microsoft.com/en-us/azure/container-apps/ingress-overview",
+          "https://learn.microsoft.com/en-us/azure/container-apps/whats-new",
+          "https://learn.microsoft.com/en-us/azure/container-apps/ingress-how-to"
+        ]
+      },
+      {
+        "Id": "q34",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-target-port-settings",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-target-port-settings",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-target-port-settings",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-deployment-errors",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-container-start-failures",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshooting",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshooting",
+          "https://learn.microsoft.com/en-us/azure/container-apps/ingress-how-to",
+          "https://learn.microsoft.com/en-us/azure/container-apps/mcp-troubleshooting",
+          "https://learn.microsoft.com/en-us/azure/container-apps/azure-arc-troubleshoot"
+        ]
+      },
+      {
+        "Id": "q35",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/scale-app",
+          "https://learn.microsoft.com/en-us/azure/container-apps/scale-app",
+          "https://learn.microsoft.com/en-us/azure/container-apps/scale-app",
+          "https://learn.microsoft.com/en-us/azure/container-apps/scale-app",
+          "https://learn.microsoft.com/en-us/azure/container-apps/scale-app",
+          "https://learn.microsoft.com/en-us/azure/container-apps/scale-app",
+          "https://learn.microsoft.com/en-us/azure/container-apps/functions-keda-mappings",
+          "https://learn.microsoft.com/en-us/azure/container-apps/scale-app",
+          "https://learn.microsoft.com/en-us/azure/container-apps/functions-keda-mappings",
+          "https://learn.microsoft.com/en-us/azure/container-apps/functions-keda-mappings"
+        ]
+      },
+      {
+        "Id": "q36",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/migrate-heroku",
+          "https://learn.microsoft.com/en-us/azure/container-apps/migrate-heroku",
+          "https://learn.microsoft.com/en-us/azure/container-apps/migrate-heroku",
+          "https://learn.microsoft.com/en-us/azure/container-apps/migrate-heroku",
+          "https://learn.microsoft.com/en-us/azure/container-apps/migrate-heroku",
+          "https://learn.microsoft.com/en-us/azure/container-apps/migrate-heroku",
+          "https://learn.microsoft.com/en-us/azure/container-apps/migrate-heroku",
+          "https://learn.microsoft.com/en-us/azure/container-apps/migrate-heroku",
+          "https://learn.microsoft.com/en-us/azure/container-apps/migrate-heroku",
+          "https://learn.microsoft.com/en-us/azure/container-apps/migrate-heroku"
+        ]
+      },
+      {
+        "Id": "q37",
+        "Rank": 8,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/storage-mounts-azure-files",
+          "https://learn.microsoft.com/en-us/azure/container-apps/sessions-tutorial-shell",
+          "https://learn.microsoft.com/en-us/azure/container-apps/sessions-tutorial-shell",
+          "https://learn.microsoft.com/en-us/azure/container-apps/java-containers-intro",
+          "https://learn.microsoft.com/en-us/azure/container-apps/java-containers-intro",
+          "https://learn.microsoft.com/en-us/azure/container-apps/sandboxes-quickstart-agent-skills",
+          "https://learn.microsoft.com/en-us/azure/container-apps/tutorial-scaling",
+          "https://learn.microsoft.com/en-us/azure/container-apps/container-console",
+          "https://learn.microsoft.com/en-us/azure/container-apps/sessions-tutorial-shell",
+          "https://learn.microsoft.com/en-us/azure/container-apps/sessions-tutorial-shell"
+        ]
+      },
+      {
+        "Id": "q38",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/planned-maintenance",
+          "https://learn.microsoft.com/en-us/azure/container-apps/planned-maintenance",
+          "https://learn.microsoft.com/en-us/azure/container-apps/planned-maintenance",
+          "https://learn.microsoft.com/en-us/azure/container-apps/planned-maintenance",
+          "https://learn.microsoft.com/en-us/azure/container-apps/planned-maintenance",
+          "https://learn.microsoft.com/en-us/azure/container-apps/planned-maintenance",
+          "https://learn.microsoft.com/en-us/azure/container-apps/planned-maintenance",
+          "https://learn.microsoft.com/en-us/azure/container-apps/planned-maintenance",
+          "https://learn.microsoft.com/en-us/azure/container-apps/planned-maintenance",
+          "https://learn.microsoft.com/en-us/azure/container-apps/javascript-overview"
+        ]
+      },
+      {
+        "Id": "q39",
+        "Rank": 7,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/diagnose-solve",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-container-start-failures",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-container-start-failures",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-deployment-errors",
+          "https://learn.microsoft.com/en-us/azure/container-apps/mcp-troubleshooting",
+          "https://learn.microsoft.com/en-us/azure/container-apps/sessions-custom-container",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-health-probe-failures",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-deployment-errors",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-health-probe-failures",
+          "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-deployment-errors"
+        ]
+      },
+      {
+        "Id": "q40",
+        "Rank": 1,
+        "RetrievedUrls": [
+          "https://learn.microsoft.com/en-us/azure/container-apps/managed-identity",
+          "https://learn.microsoft.com/en-us/azure/container-apps/managed-identity",
+          "https://learn.microsoft.com/en-us/azure/container-apps/sessions-tutorial-shell",
+          "https://learn.microsoft.com/en-us/azure/container-apps/managed-identity",
+          "https://learn.microsoft.com/en-us/azure/container-apps/managed-identity",
+          "https://learn.microsoft.com/en-us/azure/container-apps/managed-identity",
+          "https://learn.microsoft.com/en-us/azure/container-apps/managed-identity",
+          "https://learn.microsoft.com/en-us/azure/container-apps/managed-identity-image-pull",
+          "https://learn.microsoft.com/en-us/azure/container-apps/managed-identity",
+          "https://learn.microsoft.com/en-us/azure/container-apps/managed-identity-image-pull"
+        ]
+      }
+    ]
+  }
+]
