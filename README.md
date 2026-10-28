@@ -2,7 +2,7 @@
 
 A grounded Q&A and search service over public Microsoft Learn documentation, built on Azure.
 
-**Status:** ingestion, retrieval, the retrieval eval and the answer API are working against a live Azure AI Search index. The answer API works locally (`POST /ask`, `GET /search`). The React UI works locally. The MCP server, CI and Bicep are not built yet.
+**Status:** ingestion, retrieval, the retrieval eval and the answer API are working against a live Azure AI Search index. The answer API works locally (`POST /ask`, `GET /search`). The React UI and an MCP server work locally. CI and Bicep are not built yet.
 
 ## Planned scope
 
@@ -23,6 +23,15 @@ dotnet run --project src/Rag.Ingest      # chunk, embed, index (incremental)
 dotnet run --project src/Rag.Api         # http://localhost:5062
 cd web && npm install && npm run dev     # http://localhost:5173, proxies /api to the API
 ```
+
+## MCP server
+
+`src/Rag.Mcp` is a stdio [MCP](https://modelcontextprotocol.io) server exposing two read-only tools:
+
+- `search_docs(query, top?, mode?)`: relevant passages with source URLs.
+- `ask_docs(question)`: a grounded, cited answer, or a refusal with a reason.
+
+Build it once (`dotnet build`), then the repo's [.mcp.json](.mcp.json) lets Claude Code pick it up from the repo root. For other MCP clients, run `dotnet src/Rag.Mcp/bin/Debug/net10.0/Rag.Mcp.dll`. It uses your `az login` credentials. Use the built DLL rather than `dotnet run`, because build output on stdout would corrupt the protocol.
 
 ## Results
 
