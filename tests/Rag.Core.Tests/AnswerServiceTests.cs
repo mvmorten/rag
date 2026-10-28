@@ -106,4 +106,17 @@ public class AnswerServiceTests
 
         Assert.False(result.Answerable);
     }
+
+    [Theory]
+    [InlineData("{\"answerable\":false,\"answer\":\"\",\"citations\":null}")]
+    [InlineData("{\"answerable\":false,\"answer\":null,\"citations\":null}")]
+    [InlineData("{\"answerable\":true,\"answer\":\"x\",\"citations\":null}")]
+    public async Task Handles_null_fields_from_the_model(string json)
+    {
+        var service = new AnswerService(new FakeRetriever(Chunk(1)), new FakeChat(json));
+
+        var result = await service.AskAsync("q");
+
+        Assert.False(result.Answerable);
+    }
 }

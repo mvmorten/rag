@@ -1,0 +1,722 @@
+[
+  {
+    "Id": "q01",
+    "Question": "How do I configure the minimum and maximum number of replicas for my container app?",
+    "ExpectedAnswerable": true,
+    "Answered": true,
+    "Answer": "Configure scaling limits for the revision: the minimum number of replicas per revision defaults to 0 and can be set as low as 0, and the maximum number of replicas per revision defaults to 10 and can be set from 1 up to 1,000 [2]. If you want an instance to always be running, set the minimum number of replicas to 1 or higher [2].",
+    "CitationHit": true,
+    "Grounded": true,
+    "AnswersQuestion": true,
+    "UnsupportedClaims": [],
+    "CitedUrls": [
+      "https://learn.microsoft.com/en-us/azure/container-apps/scale-app"
+    ],
+    "Refusal": "None"
+  },
+  {
+    "Id": "q02",
+    "Question": "Can a container app scale down to zero when nothing is using it?",
+    "ExpectedAnswerable": true,
+    "Answered": true,
+    "Answer": "Yes. By default, if you don\u0027t create a scale rule, the default HTTP scale rule uses \u0060minReplicas\u0060 0, so the app scales to zero when idle [6]. Azure Functions on Container Apps also notes that idle apps scale in to zero [3]. However, some scenarios do not scale to zero, such as when \u0060minReplicas\u0060 is set to 1 [1] or when using Dapr actors [2] or memory scaling [5].",
+    "CitationHit": true,
+    "Grounded": true,
+    "AnswersQuestion": true,
+    "UnsupportedClaims": [],
+    "CitedUrls": [
+      "https://learn.microsoft.com/en-us/azure/container-apps/dapr-keda-scaling",
+      "https://learn.microsoft.com/en-us/azure/container-apps/scale-app",
+      "https://learn.microsoft.com/en-us/azure/container-apps/functions-overview",
+      "https://learn.microsoft.com/en-us/azure/container-apps/tutorial-scaling",
+      "https://learn.microsoft.com/en-us/azure/container-apps/scale-app"
+    ],
+    "Refusal": "None"
+  },
+  {
+    "Id": "q03",
+    "Question": "How do I split incoming traffic between two revisions?",
+    "ExpectedAnswerable": true,
+    "Answered": true,
+    "Answer": "Enable multiple revision mode and configure \u0060configuration.ingress.traffic\u0060 with weights for the two revisions so the combined weights equal 100% [2]. You can identify each revision by \u0060revisionName\u0060 or by \u0060label\u0060 [1][2]. For example, split traffic 50/50 between two revisions by name or by label [3].",
+    "CitationHit": true,
+    "Grounded": true,
+    "AnswersQuestion": true,
+    "UnsupportedClaims": [],
+    "CitedUrls": [
+      "https://learn.microsoft.com/en-us/azure/container-apps/traffic-splitting",
+      "https://learn.microsoft.com/en-us/azure/container-apps/traffic-splitting",
+      "https://learn.microsoft.com/en-us/azure/container-apps/traffic-splitting"
+    ],
+    "Refusal": "None"
+  },
+  {
+    "Id": "q04",
+    "Question": "What is the difference between single and multiple revision mode?",
+    "ExpectedAnswerable": true,
+    "Answered": true,
+    "Answer": "Single revision mode keeps only one active revision at a time; new revisions are automatically provisioned, activated, and the old revision is deprovisioned after the new one is ready [3][4][5]. Multiple revision mode allows multiple active revisions at once, lets you split traffic between them, and choose when to activate or deprovision revisions [2][3][5].",
+    "CitationHit": true,
+    "Grounded": true,
+    "AnswersQuestion": true,
+    "UnsupportedClaims": [],
+    "CitedUrls": [
+      "https://learn.microsoft.com/en-us/azure/container-apps/revisions",
+      "https://learn.microsoft.com/en-us/azure/container-apps/revisions",
+      "https://learn.microsoft.com/en-us/azure/container-apps/application-lifecycle-management",
+      "https://learn.microsoft.com/en-us/azure/container-apps/revisions"
+    ],
+    "Refusal": "None"
+  },
+  {
+    "Id": "q05",
+    "Question": "How do I do a blue-green deployment using labels?",
+    "ExpectedAnswerable": true,
+    "Answered": true,
+    "Answer": "Blue-green deployments in Azure Container Apps use labels to mark revisions and switch which revision receives production traffic [3][4]. Create a new revision for the new version, then assign it the \u0060green\u0060 label with \u0060az containerapp revision label add\u0060 [3]. The existing production revision is labeled \u0060blue\u0060 and takes 100% of production traffic, while the new \u0060green\u0060 revision takes 0% until you switch traffic or labels [1][3]. You can also test each revision through its label-specific FQDN, such as \u0060...---blue\u0060 and \u0060...---green\u0060 [1].",
+    "CitationHit": true,
+    "Grounded": true,
+    "AnswersQuestion": true,
+    "UnsupportedClaims": [],
+    "CitedUrls": [
+      "https://learn.microsoft.com/en-us/azure/container-apps/blue-green-deployment",
+      "https://learn.microsoft.com/en-us/azure/container-apps/blue-green-deployment",
+      "https://learn.microsoft.com/en-us/azure/container-apps/deployment-labels"
+    ],
+    "Refusal": "None"
+  },
+  {
+    "Id": "q06",
+    "Question": "How can I pull an image from Azure Container Registry using a managed identity?",
+    "ExpectedAnswerable": true,
+    "Answered": true,
+    "Answer": "To pull an image from Azure Container Registry using a managed identity, use a private ACR that contains the image [1]. For a system-assigned managed identity, set the registry server and enable system-assigned identity on the container app, then update the app image to \u0060${REGISTRY_NAME}.azurecr.io/${IMAGE_NAME}:latest\u0060 [3]. For a user-assigned managed identity, your ACR must allow ARM audience tokens, and the managed identity needs the \u0060AcrPull\u0060 role to pull the image [4][6].",
+    "CitationHit": true,
+    "Grounded": true,
+    "AnswersQuestion": true,
+    "UnsupportedClaims": [],
+    "CitedUrls": [
+      "https://learn.microsoft.com/en-us/azure/container-apps/managed-identity-image-pull",
+      "https://learn.microsoft.com/en-us/azure/container-apps/managed-identity-image-pull",
+      "https://learn.microsoft.com/en-us/azure/container-apps/managed-identity-image-pull",
+      "https://learn.microsoft.com/en-us/azure/container-apps/managed-identity-image-pull"
+    ],
+    "Refusal": "None"
+  },
+  {
+    "Id": "q07",
+    "Question": "How do I store a secret and expose it to my container as an environment variable?",
+    "ExpectedAnswerable": true,
+    "Answered": true,
+    "Answer": "Store the secret at the app level, then reference it in an environment variable so it is populated at runtime [2][3][6]. For Azure CLI, create or update the app and set the env var value to \u0060secretref:\u003CSECRET_NAME\u003E\u0060 after the secret already exists [4][5].",
+    "CitationHit": true,
+    "Grounded": true,
+    "AnswersQuestion": true,
+    "UnsupportedClaims": [],
+    "CitedUrls": [
+      "https://learn.microsoft.com/en-us/azure/container-apps/manage-secrets",
+      "https://learn.microsoft.com/en-us/azure/container-apps/functions-secrets-app-level",
+      "https://learn.microsoft.com/en-us/azure/container-apps/environment-variables",
+      "https://learn.microsoft.com/en-us/azure/container-apps/environment-variables",
+      "https://learn.microsoft.com/en-us/azure/container-apps/environment-variables"
+    ],
+    "Refusal": "None"
+  },
+  {
+    "Id": "q08",
+    "Question": "Can I reference a secret stored in Azure Key Vault?",
+    "ExpectedAnswerable": true,
+    "Answered": true,
+    "Answer": "Yes. Container Apps can reference a secret stored in Azure Key Vault using a Key Vault reference, and it automatically retrieves the secret value from Key Vault and makes it available as a secret in your container app [2]. To do this, you must enable managed identity in the container app and grant that identity access to Key Vault secrets [2]. You then create a Container Apps secret that references the Key Vault secret and bind it to an environment variable [4].",
+    "CitationHit": true,
+    "Grounded": true,
+    "AnswersQuestion": true,
+    "UnsupportedClaims": [],
+    "CitedUrls": [
+      "https://learn.microsoft.com/en-us/azure/container-apps/manage-secrets",
+      "https://learn.microsoft.com/en-us/azure/container-apps/functions-secrets-app-level"
+    ],
+    "Refusal": "None"
+  },
+  {
+    "Id": "q09",
+    "Question": "How do I allow inbound traffic only from certain IP address ranges?",
+    "ExpectedAnswerable": true,
+    "Answered": true,
+    "Answer": "Configure IP ingress restrictions with *Allow* rules so inbound traffic is allowed only from the address ranges you specify [1]. In the Azure portal, go to your container app, open **Networking** \u003E **Ingress**, select **Allow traffic from IPs configured below, deny all other traffic**, add the IPv4 address or range in CIDR notation, and save [2]. You can also use \u0060az containerapp ingress access-restriction set\u0060 with \u0060--action Allow\u0060, \u0060--ip-address\u0060 in CIDR notation, and a rule name [3][6].",
+    "CitationHit": true,
+    "Grounded": true,
+    "AnswersQuestion": true,
+    "UnsupportedClaims": [],
+    "CitedUrls": [
+      "https://learn.microsoft.com/en-us/azure/container-apps/ip-restrictions",
+      "https://learn.microsoft.com/en-us/azure/container-apps/ip-restrictions",
+      "https://learn.microsoft.com/en-us/azure/container-apps/ip-restrictions",
+      "https://learn.microsoft.com/en-us/azure/container-apps/ip-restrictions"
+    ],
+    "Refusal": "None"
+  },
+  {
+    "Id": "q10",
+    "Question": "How do I enable cross-origin resource sharing for my app?",
+    "ExpectedAnswerable": true,
+    "Answered": true,
+    "Answer": "You can enable CORS in Azure Container Apps to allow browser-based cross-origin requests [1][6]. In the Azure portal, go to your container app, then under *Networking* select **CORS**; once enabled, you can add, edit, and delete *Allowed Origins*, *Allowed Methods*, *Allowed Headers*, and *Expose Headers* [4]. You can also configure settings such as *Allow credentials*, *Max age*, *Allowed origins*, *Allowed methods*, *Allowed headers*, and *Expose headers* [2][3]. To allow any acceptable values for methods, headers, or origins, enter \u0060*\u0060 [4].",
+    "CitationHit": true,
+    "Grounded": true,
+    "AnswersQuestion": true,
+    "UnsupportedClaims": [],
+    "CitedUrls": [
+      "https://learn.microsoft.com/en-us/azure/container-apps/ingress-overview",
+      "https://learn.microsoft.com/en-us/azure/container-apps/cors",
+      "https://learn.microsoft.com/en-us/azure/container-apps/cors",
+      "https://learn.microsoft.com/en-us/azure/container-apps/cors",
+      "https://learn.microsoft.com/en-us/azure/container-apps/connect-apps"
+    ],
+    "Refusal": "None"
+  },
+  {
+    "Id": "q11",
+    "Question": "Can I get a free certificate for my custom domain?",
+    "ExpectedAnswerable": true,
+    "Answered": true,
+    "Answer": "Yes. Azure Container Apps provides a free managed certificate for your custom domain [6], and you can automatically configure it when your container app is publicly accessible from the DigiCert IP addresses [1].",
+    "CitationHit": true,
+    "Grounded": true,
+    "AnswersQuestion": true,
+    "UnsupportedClaims": [],
+    "CitedUrls": [
+      "https://learn.microsoft.com/en-us/azure/container-apps/custom-domains-managed-certificates",
+      "https://learn.microsoft.com/en-us/azure/container-apps/custom-domains-managed-certificates"
+    ],
+    "Refusal": "None"
+  },
+  {
+    "Id": "q12",
+    "Question": "What types of health probes are supported?",
+    "ExpectedAnswerable": true,
+    "Answered": true,
+    "Answer": "Azure Container Apps supports three probe types: Startup, Liveness, and Readiness [1].",
+    "CitationHit": true,
+    "Grounded": true,
+    "AnswersQuestion": true,
+    "UnsupportedClaims": [],
+    "CitedUrls": [
+      "https://learn.microsoft.com/en-us/azure/container-apps/health-probes"
+    ],
+    "Refusal": "None"
+  },
+  {
+    "Id": "q13",
+    "Question": "My container app can\u0027t pull its image. How do I troubleshoot that?",
+    "ExpectedAnswerable": true,
+    "Answered": true,
+    "Answer": "An image pull failure means Azure can\u2019t download the container image, so the app can\u2019t be created or run [1]. To troubleshoot, use Container Apps diagnostics in the Azure portal: go to your container app, select **Diagnose and solve problems**, choose **Availability and Performance**, then **Image Pull Failures** [2]. The report shows details, possible causes, and recommended resolutions, and you can also review failures per revision for the last 24 hours [2]. Common causes include an incorrect image name or tag, missing/expired authentication for a private registry, registry unavailability or network/DNS/firewall issues, rate limits or quota exhaustion, and the image not existing [3]. To verify the image exists, manually pull it with a Docker client, confirm the exact image name and tag, and verify the tag exists in the registry [4]. If rate limiting is suspected, wait a few minutes and try again; for Docker Hub consider a paid account or registry mirror, and for Azure Container Registry check quotas and limits [6].",
+    "CitationHit": true,
+    "Grounded": true,
+    "AnswersQuestion": true,
+    "UnsupportedClaims": [],
+    "CitedUrls": [
+      "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-image-pull-failures",
+      "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-image-pull-failures",
+      "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-image-pull-failures",
+      "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-image-pull-failures",
+      "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-image-pull-failures"
+    ],
+    "Refusal": "None"
+  },
+  {
+    "Id": "q14",
+    "Question": "Why does my container keep exiting unexpectedly?",
+    "ExpectedAnswerable": true,
+    "Answered": true,
+    "Answer": "Common reasons are an application crash or exception, out-of-memory errors, incorrect exit code or container misconfiguration, or a normal application termination for short-lived tasks [2]. Azure also recommends using the Container Exit Events diagnostic report to see exit codes, causes, and suggested resolutions [3].",
+    "CitationHit": true,
+    "Grounded": true,
+    "AnswersQuestion": true,
+    "UnsupportedClaims": [],
+    "CitedUrls": [
+      "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-container-create-failures",
+      "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-container-create-failures"
+    ],
+    "Refusal": "None"
+  },
+  {
+    "Id": "q15",
+    "Question": "How do I mount an Azure Files share into a container?",
+    "ExpectedAnswerable": true,
+    "Answered": true,
+    "Answer": "To mount an Azure Files share into a container app, first create a storage account and classic Azure file share, then create a storage link in the Container Apps environment with \u0060az containerapp env storage set\u0060 using \u0060--storage-type AzureFile\u0060, the storage account name, the file share name, and an identity option such as \u0060--azure-file-identity system\u0060 for managed identity authentication [1][2][3][5][6]. For SMB mounts, use managed identity authentication (recommended for new SMB mounts), and the environment\u2019s managed identity is used to authenticate to Azure Files [3][5]. In the Azure portal, you add the file share under **Settings** \u003E **Volume mounts**, choose SMB or NFS, and for SMB select **Managed identity** [4].",
+    "CitationHit": true,
+    "Grounded": true,
+    "AnswersQuestion": true,
+    "UnsupportedClaims": [],
+    "CitedUrls": [
+      "https://learn.microsoft.com/en-us/azure/container-apps/storage-mounts-azure-files",
+      "https://learn.microsoft.com/en-us/azure/container-apps/storage-mounts-azure-files",
+      "https://learn.microsoft.com/en-us/azure/container-apps/storage-mounts",
+      "https://learn.microsoft.com/en-us/azure/container-apps/storage-mounts",
+      "https://learn.microsoft.com/en-us/azure/container-apps/storage-mounts-azure-files",
+      "https://learn.microsoft.com/en-us/azure/container-apps/storage-mounts-azure-files"
+    ],
+    "Refusal": "None"
+  },
+  {
+    "Id": "q16",
+    "Question": "What does the Dapr sidecar do and how does it work with Container Apps?",
+    "ExpectedAnswerable": true,
+    "Answered": true,
+    "Answer": "In Azure Container Apps, the Dapr sidecar exposes the fully managed Dapr APIs to each container app, and those APIs can be invoked from the app via HTTP or gRPC [1]. Each Dapr-enabled container app runs a sidecar process alongside the application, and to call another Dapr-enabled app you send a local HTTP request to the sidecar at \u0060http://localhost:3500/v1.0/invoke/\u003CDAPR_APP_ID\u003E/method/\u003CMETHOD_NAME\u003E\u0060; the sidecar handles service discovery and routing to the target app [3]. The sidecar is configured through the container app\u2019s properties, including settings such as \u0060appId\u0060, \u0060appPort\u0060, \u0060appProtocol\u0060, \u0060logLevel\u0060, and request-size/logging options [2].",
+    "CitationHit": true,
+    "Grounded": true,
+    "AnswersQuestion": true,
+    "UnsupportedClaims": [],
+    "CitedUrls": [
+      "https://learn.microsoft.com/en-us/azure/container-apps/dapr-overview",
+      "https://learn.microsoft.com/en-us/azure/container-apps/connect-apps",
+      "https://learn.microsoft.com/en-us/azure/container-apps/connect-apps"
+    ],
+    "Refusal": "None"
+  },
+  {
+    "Id": "q17",
+    "Question": "How do I run a task on a schedule using cron syntax?",
+    "ExpectedAnswerable": true,
+    "Answered": true,
+    "Answer": "Create a Container Apps job with trigger type \u0060Schedule\u0060 and specify a cron expression for the schedule [1][2]. In the Azure portal, choose **Schedule** as the trigger type and enter a cron expression such as \u0060*/1 * * * *\u0060 to run every minute [6]. Container Apps jobs use the standard five-field cron format (minute, hour, day of month, month, day of week) [1][2].",
+    "CitationHit": true,
+    "Grounded": true,
+    "AnswersQuestion": true,
+    "UnsupportedClaims": [],
+    "CitedUrls": [
+      "https://learn.microsoft.com/en-us/azure/container-apps/jobs-get-started-cli",
+      "https://learn.microsoft.com/en-us/azure/container-apps/jobs",
+      "https://learn.microsoft.com/en-us/azure/container-apps/jobs"
+    ],
+    "Refusal": "None"
+  },
+  {
+    "Id": "q18",
+    "Question": "How do I run self-hosted CI/CD runners as event-driven jobs?",
+    "ExpectedAnswerable": true,
+    "Answered": true,
+    "Answer": "Run self-hosted GitHub Actions runners or Azure Pipelines agents by using event-driven Azure Container Apps jobs [1][2]. Create a Container Apps environment, build a container image that runs the runner or agent, and deploy it as a job with trigger type \u0060Event\u0060 [1][2][5]. Event-driven jobs use KEDA scalers and run when a workflow or pipeline queue triggers them [2]. For GitHub Actions, the job can use the \u0060github-runner\u0060 scale rule to create executions based on pending workflow runs [5].",
+    "CitationHit": true,
+    "Grounded": true,
+    "AnswersQuestion": true,
+    "UnsupportedClaims": [],
+    "CitedUrls": [
+      "https://learn.microsoft.com/en-us/azure/container-apps/tutorial-ci-cd-runners-jobs",
+      "https://learn.microsoft.com/en-us/azure/container-apps/jobs",
+      "https://learn.microsoft.com/en-us/azure/container-apps/tutorial-ci-cd-runners-jobs"
+    ],
+    "Refusal": "None"
+  },
+  {
+    "Id": "q19",
+    "Question": "How do I set up GitHub Actions to deploy my container app?",
+    "ExpectedAnswerable": true,
+    "Answered": true,
+    "Answer": "Set up GitHub Actions by creating a GitHub repository, creating a container app with managed identity enabled, assigning the \u0060AcrPull\u0060 role on your Azure Container Registry to the container app\u0027s managed identity, configuring secrets in your GitHub repository, and creating a GitHub Actions workflow [4]. To deploy, add the \u0060azure/container-apps-deploy-action@v1\u0060 action to the workflow, for example with \u0060azure/login@v1\u0060 and a step that builds and deploys the container app [3][5]. The workflow runs on commits to the branch you choose, and pushes to that branch trigger a new revision [6][2].",
+    "CitationHit": true,
+    "Grounded": true,
+    "AnswersQuestion": true,
+    "UnsupportedClaims": [],
+    "CitedUrls": [
+      "https://learn.microsoft.com/en-us/azure/container-apps/github-actions",
+      "https://learn.microsoft.com/en-us/azure/container-apps/github-actions",
+      "https://learn.microsoft.com/en-us/azure/container-apps/github-actions",
+      "https://learn.microsoft.com/en-us/azure/container-apps/github-actions",
+      "https://learn.microsoft.com/en-us/azure/container-apps/github-actions-cli"
+    ],
+    "Refusal": "None"
+  },
+  {
+    "Id": "q20",
+    "Question": "What is the difference between the Consumption and Dedicated workload profiles?",
+    "ExpectedAnswerable": true,
+    "Answered": true,
+    "Answer": "Consumption profiles use a serverless architecture, automatically scale in and out on-demand, can optionally scale to zero when idle, and are billed only for the resources your running apps use [1]. Dedicated profiles run on reserved compute resources in your own dedicated pool, let you choose the VM size and type, support multiple apps per profile, and are billed per profile instance [1]. Consumption profiles have a general-purpose form factor by default and also support GPU in serverless regions [2][5], while Dedicated profiles support general purpose, memory optimized, confidential compute, and GPU form factors [2][4].",
+    "CitationHit": true,
+    "Grounded": true,
+    "AnswersQuestion": true,
+    "UnsupportedClaims": [],
+    "CitedUrls": [
+      "https://learn.microsoft.com/en-us/azure/container-apps/workload-profiles-overview",
+      "https://learn.microsoft.com/en-us/azure/container-apps/workload-profiles-overview",
+      "https://learn.microsoft.com/en-us/azure/container-apps/workload-profiles-overview",
+      "https://learn.microsoft.com/en-us/azure/container-apps/workload-profiles-overview"
+    ],
+    "Refusal": "None"
+  },
+  {
+    "Id": "q21",
+    "Question": "How am I billed for replicas that are idle?",
+    "ExpectedAnswerable": true,
+    "Answered": true,
+    "Answer": "Idle replicas are billed at a reduced idle rate when the revision is eligible for idle charges and the replica meets the idle conditions; otherwise active rates apply [1][2]. To be eligible, the revision must have a minimum replica count greater than zero and be scaled to that minimum [1]. A replica is idle only if all containers are running, it is not processing HTTP requests, it uses less than 0.01 vCPU cores, and it receives less than 1,000 bytes/sec of network traffic [1].",
+    "CitationHit": true,
+    "Grounded": true,
+    "AnswersQuestion": true,
+    "UnsupportedClaims": [],
+    "CitedUrls": [
+      "https://learn.microsoft.com/en-us/azure/container-apps/billing",
+      "https://learn.microsoft.com/en-us/azure/container-apps/billing"
+    ],
+    "Refusal": "None"
+  },
+  {
+    "Id": "q22",
+    "Question": "How do I watch my container\u0027s log output in real time?",
+    "ExpectedAnswerable": true,
+    "Answered": true,
+    "Answer": "Use log streaming to view your container\u2019s output in real time in Azure Container Apps [2][4][6]. If you\u2019re testing locally with Docker, you can stream the container output with \u0060docker logs -f \u003CCONTAINER_APP_NAME\u003E\u0060 [1].",
+    "CitationHit": true,
+    "Grounded": true,
+    "AnswersQuestion": true,
+    "UnsupportedClaims": [],
+    "CitedUrls": [
+      "https://learn.microsoft.com/en-us/azure/container-apps/express-local-testing",
+      "https://learn.microsoft.com/en-us/azure/container-apps/log-streaming",
+      "https://learn.microsoft.com/en-us/azure/container-apps/logging",
+      "https://learn.microsoft.com/en-us/azure/container-apps/observability"
+    ],
+    "Refusal": "None"
+  },
+  {
+    "Id": "q23",
+    "Question": "How do I send OpenTelemetry data to Datadog?",
+    "ExpectedAnswerable": true,
+    "Answered": true,
+    "Answer": "Configure Datadog as an OpenTelemetry destination in your Container Apps environment, either with Bicep, Azure CLI, or the Azure portal, and create a Datadog API key for telemetry ingest [6]. In the Azure portal, open your Container Apps environment, go to **Monitoring** \u003E **OTel endpoints**, select **Datadog**, enter your Datadog site and API key, choose **Logs**, **Traces**, and **Metrics**, save, then update your container app revision with \u0060OTEL_SERVICE_NAME\u0060, \u0060OTEL_TRACES_EXPORTER=otlp\u0060, \u0060OTEL_METRICS_EXPORTER=otlp\u0060, \u0060OTEL_LOGS_EXPORTER=otlp\u0060, and \u0060OTEL_EXPORTER_OTLP_PROTOCOL=grpc\u0060 [2]. Your application must also be instrumented to emit traces, metrics, and logs with an OpenTelemetry SDK [3].",
+    "CitationHit": true,
+    "Grounded": true,
+    "AnswersQuestion": true,
+    "UnsupportedClaims": [],
+    "CitedUrls": [
+      "https://learn.microsoft.com/en-us/azure/container-apps/opentelemetry-export-datadog",
+      "https://learn.microsoft.com/en-us/azure/container-apps/opentelemetry-export-datadog",
+      "https://learn.microsoft.com/en-us/azure/container-apps/opentelemetry-export-datadog"
+    ],
+    "Refusal": "None"
+  },
+  {
+    "Id": "q24",
+    "Question": "How do I run a workload on serverless GPUs?",
+    "ExpectedAnswerable": true,
+    "Answered": true,
+    "Answer": "Run it on a Consumption workload profile in a workload profiles environment. Serverless GPUs are supported only for Consumption workload profiles, and you manage the consumption GPU workload profile the same way as any other workload profile using the CLI or Azure portal [1][2]. You must also create a workload profiles environment in a supported region and have sufficient serverless GPU quota before using the feature [2][3].",
+    "CitationHit": true,
+    "Grounded": true,
+    "AnswersQuestion": true,
+    "UnsupportedClaims": [],
+    "CitedUrls": [
+      "https://learn.microsoft.com/en-us/azure/container-apps/gpu-serverless-overview",
+      "https://learn.microsoft.com/en-us/azure/container-apps/gpu-serverless-overview",
+      "https://learn.microsoft.com/en-us/azure/container-apps/gpu-serverless-overview"
+    ],
+    "Refusal": "None"
+  },
+  {
+    "Id": "q25",
+    "Question": "How do I host a Model Context Protocol server?",
+    "ExpectedAnswerable": true,
+    "Answered": true,
+    "Answer": "Azure Container Apps supports two hosting models for MCP servers: a **standalone container app** that deploys any MCP server you build as a container with HTTP ingress, and **dynamic sessions** that use platform-managed session pools with built-in MCP tooling for sandboxed code execution [2]. MCP servers communicate with clients over HTTP using streamable HTTP transport and JSON-RPC 2.0 [1].",
+    "CitationHit": true,
+    "Grounded": true,
+    "AnswersQuestion": true,
+    "UnsupportedClaims": [],
+    "CitedUrls": [
+      "https://learn.microsoft.com/en-us/azure/container-apps/mcp-overview",
+      "https://learn.microsoft.com/en-us/azure/container-apps/mcp-overview"
+    ],
+    "Refusal": "None"
+  },
+  {
+    "Id": "q26",
+    "Question": "How can I safely run code that an LLM generated?",
+    "ExpectedAnswerable": true,
+    "Answered": true,
+    "Answer": "Use Azure Container Apps dynamic sessions or code interpreter sessions to run potentially malicious or LLM-generated code in isolated environments [1][2]. Azure Container Apps dynamic sessions provide Hyper-V-isolated environments for untrusted or LLM-generated code, and the platform manages the MCP server so you don\u2019t write or deploy server code [1]. Code interpreter sessions are also described as ideal for code generated by a large language model (LLM) [2].",
+    "CitationHit": true,
+    "Grounded": true,
+    "AnswersQuestion": true,
+    "UnsupportedClaims": [],
+    "CitedUrls": [
+      "https://learn.microsoft.com/en-us/azure/container-apps/mcp-choosing-azure-service",
+      "https://learn.microsoft.com/en-us/azure/container-apps/sessions-code-interpreter"
+    ],
+    "Refusal": "None"
+  },
+  {
+    "Id": "q27",
+    "Question": "How do I integrate my environment with a virtual network?",
+    "ExpectedAnswerable": true,
+    "Answered": true,
+    "Answer": "To integrate an Azure Container Apps environment with a virtual network, create or provide a VNet with a dedicated subnet for the environment [1][2]. For the default workload profiles environment, the subnet must be \u0060/27\u0060 or larger; for the legacy Consumption only environment, it must be \u0060/23\u0060 or larger [1]. In the CLI example, the VNet is created with \u0060az network vnet create\u0060, and the subnet is created as \u0060infrastructure-subnet\u0060 with \u0060az network vnet subnet create\u0060 [5]. The environment then uses that virtual network as part of its deployment [2].",
+    "CitationHit": true,
+    "Grounded": true,
+    "AnswersQuestion": true,
+    "UnsupportedClaims": [],
+    "CitedUrls": [
+      "https://learn.microsoft.com/en-us/azure/container-apps/vnet-custom",
+      "https://learn.microsoft.com/en-us/azure/container-apps/vnet-custom",
+      "https://learn.microsoft.com/en-us/azure/container-apps/vnet-custom"
+    ],
+    "Refusal": "None"
+  },
+  {
+    "Id": "q28",
+    "Question": "How do I make my environment reachable through a private endpoint?",
+    "ExpectedAnswerable": true,
+    "Answered": true,
+    "Answer": "To make the environment reachable through a private endpoint, create the private endpoint in the environment\u2019s subnet using \u0060az network private-endpoint create\u0060 with \u0060--private-connection-resource-id $ENVIRONMENT_ID\u0060 and \u0060--group-id managedEnvironments\u0060 [1]. You must disable public network access to use a private endpoint [2]. To connect through the private endpoint, configure a private DNS zone named \u0060privatelink.{regionName}.azurecontainerapps.io\u0060, create a VNet link, and add an A record pointing to the private endpoint\u2019s private IP address [2][5].",
+    "CitationHit": true,
+    "Grounded": true,
+    "AnswersQuestion": true,
+    "UnsupportedClaims": [],
+    "CitedUrls": [
+      "https://learn.microsoft.com/en-us/azure/container-apps/how-to-use-private-endpoint",
+      "https://learn.microsoft.com/en-us/azure/container-apps/private-endpoints-with-dns",
+      "https://learn.microsoft.com/en-us/azure/container-apps/how-to-use-private-endpoint"
+    ],
+    "Refusal": "None"
+  },
+  {
+    "Id": "q29",
+    "Question": "How do I spread my app across availability zones?",
+    "ExpectedAnswerable": true,
+    "Answered": true,
+    "Answer": "Create the Container Apps environment with zone redundancy enabled; zone-redundant environments distribute infrastructure across multiple availability zones within a region [3]. In the Azure portal, when creating the environment, select **Enabled** for **Zone redundancy** [5]. Zone redundancy requires a virtual network with an infrastructure subnet [5].",
+    "CitationHit": true,
+    "Grounded": true,
+    "AnswersQuestion": true,
+    "UnsupportedClaims": [],
+    "CitedUrls": [
+      "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-environment-capacity",
+      "https://learn.microsoft.com/en-us/azure/container-apps/how-to-zone-redundancy"
+    ],
+    "Refusal": "None"
+  },
+  {
+    "Id": "q30",
+    "Question": "How do I let users sign in with Microsoft Entra ID?",
+    "ExpectedAnswerable": true,
+    "Answered": true,
+    "Answer": "Configure Azure Container Apps authentication to use Microsoft Entra ID / Microsoft identity platform as the provider, either by creating a new app registration automatically or by using an existing registration [1]. To use an existing registration, create or collect the app registration details, then in your app go to **Security** \u003E **Authentication** \u003E **Add provider**, choose **Microsoft**, and provide the required settings such as the **Application (client) ID**, **Client secret** if used, and the **Issuer URL** [2][4][5].",
+    "CitationHit": true,
+    "Grounded": true,
+    "AnswersQuestion": true,
+    "UnsupportedClaims": [],
+    "CitedUrls": [
+      "https://learn.microsoft.com/en-us/azure/container-apps/authentication-entra",
+      "https://learn.microsoft.com/en-us/azure/container-apps/authentication-entra",
+      "https://learn.microsoft.com/en-us/azure/container-apps/authentication-entra",
+      "https://learn.microsoft.com/en-us/azure/container-apps/authentication-entra"
+    ],
+    "Refusal": "None"
+  },
+  {
+    "Id": "q31",
+    "Question": "How do I require client certificates from callers?",
+    "ExpectedAnswerable": true,
+    "Answered": true,
+    "Answer": "Set \u0060clientCertificateMode\u0060 to \u0060require\u0060 on your container app ingress/configuration; this makes the client certificate required for all requests [2][6]. In the Azure portal, go to **Networking** \u003E **Ingress**, enable **Ingress**, choose **HTTP** for ingress type, select **Client certificate mode: Require**, and save [5]. You can also patch the app\u2019s ingress \u0060clientCertificateMode\u0060 property to \u0060require\u0060 via ARM/Azure CLI [6].",
+    "CitationHit": true,
+    "Grounded": true,
+    "AnswersQuestion": true,
+    "UnsupportedClaims": [],
+    "CitedUrls": [
+      "https://learn.microsoft.com/en-us/azure/container-apps/client-certificate-authorization",
+      "https://learn.microsoft.com/en-us/azure/container-apps/mtls",
+      "https://learn.microsoft.com/en-us/azure/container-apps/client-certificate-authorization"
+    ],
+    "Refusal": "None"
+  },
+  {
+    "Id": "q32",
+    "Question": "How can I keep a user\u0027s requests going to the same replica?",
+    "ExpectedAnswerable": true,
+    "Answered": true,
+    "Answer": "Enable session affinity (sticky sessions) so all requests from a client are routed to the same replica; it uses HTTP cookies and is available in single revision mode with HTTP ingress enabled [4].",
+    "CitationHit": true,
+    "Grounded": true,
+    "AnswersQuestion": true,
+    "UnsupportedClaims": [],
+    "CitedUrls": [
+      "https://learn.microsoft.com/en-us/azure/container-apps/sticky-sessions"
+    ],
+    "Refusal": "None"
+  },
+  {
+    "Id": "q33",
+    "Question": "Can my app accept raw TCP connections instead of HTTP?",
+    "ExpectedAnswerable": true,
+    "Answered": true,
+    "Answer": "Yes. Azure Container Apps supports TCP transport for non-HTTP protocols, with raw TCP connections and port mapping [3]. It also supports TCP-based protocols other than HTTP or HTTPS [1].",
+    "CitationHit": true,
+    "Grounded": true,
+    "AnswersQuestion": true,
+    "UnsupportedClaims": [],
+    "CitedUrls": [
+      "https://learn.microsoft.com/en-us/azure/container-apps/ingress-overview",
+      "https://learn.microsoft.com/en-us/azure/container-apps/connect-apps"
+    ],
+    "Refusal": "None"
+  },
+  {
+    "Id": "q34",
+    "Question": "What happens if my target port setting is wrong?",
+    "ExpectedAnswerable": true,
+    "Answered": true,
+    "Answer": "If the target port is wrong, incoming requests won\u2019t reach the port where the container listens, so external traffic can\u2019t be routed correctly to the app inside the container [1]. This can cause downtime or delays in serving requests and reduce availability [1]. If the app is scaling, new instances may not function correctly, which can hurt performance and scalability [1]. In some cases, the container can start but ingress may return \u0060502 Bad Gateway\u0060 because Container Apps ingress expects a different port [5].",
+    "CitationHit": true,
+    "Grounded": true,
+    "AnswersQuestion": true,
+    "UnsupportedClaims": [],
+    "CitedUrls": [
+      "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-target-port-settings",
+      "https://learn.microsoft.com/en-us/azure/container-apps/mcp-troubleshooting"
+    ],
+    "Refusal": "None"
+  },
+  {
+    "Id": "q35",
+    "Question": "How do I scale based on the length of an Azure Service Bus queue?",
+    "ExpectedAnswerable": true,
+    "Answered": true,
+    "Answer": "Use an \u0060azure-servicebus\u0060 custom scale rule with \u0060queueName\u0060, \u0060namespace\u0060, and \u0060messageCount\u0060 in \u0060metadata\u0060 [1][3]. \u0060messageCount\u0060 is the KEDA configuration value for Azure Service Bus batch processing and represents the number of active messages in the queue to scale on [2]. For example: \u0060\u0022type\u0022: \u0022azure-servicebus\u0022\u0060 with \u0060\u0022queueName\u0022: \u0022my-queue\u0022\u0060, \u0060\u0022namespace\u0022: \u0022service-bus-namespace\u0022\u0060, and \u0060\u0022messageCount\u0022: \u00225\u0022\u0060 [1][2].",
+    "CitationHit": true,
+    "Grounded": true,
+    "AnswersQuestion": true,
+    "UnsupportedClaims": [],
+    "CitedUrls": [
+      "https://learn.microsoft.com/en-us/azure/container-apps/scale-app",
+      "https://learn.microsoft.com/en-us/azure/container-apps/functions-keda-mappings",
+      "https://learn.microsoft.com/en-us/azure/container-apps/scale-app"
+    ],
+    "Refusal": "None"
+  },
+  {
+    "Id": "q36",
+    "Question": "How do I migrate an app from Heroku?",
+    "ExpectedAnswerable": true,
+    "Answered": true,
+    "Answer": "To migrate an app from Heroku to Azure Container Apps, you should export your Heroku configuration, deploy your app, migrate data services, set up CI/CD, and configure custom domains [1]. The article also covers configuring autoscaling rules and migrating PostgreSQL and Redis data to Azure managed services [3]. Prerequisites include an Azure account, Azure CLI 2.53.0 or later with the Container Apps extension, the Heroku CLI, optional Docker, and your source code in a Git repository [5]. For other Heroku add-ons, provision the Azure equivalent service, update Container App environment variables, validate the integration, and remove the Heroku add-on [6].",
+    "CitationHit": true,
+    "Grounded": true,
+    "AnswersQuestion": true,
+    "UnsupportedClaims": [],
+    "CitedUrls": [
+      "https://learn.microsoft.com/en-us/azure/container-apps/migrate-heroku",
+      "https://learn.microsoft.com/en-us/azure/container-apps/migrate-heroku",
+      "https://learn.microsoft.com/en-us/azure/container-apps/migrate-heroku",
+      "https://learn.microsoft.com/en-us/azure/container-apps/migrate-heroku"
+    ],
+    "Refusal": "None"
+  },
+  {
+    "Id": "q37",
+    "Question": "How do I open a shell inside a running container?",
+    "ExpectedAnswerable": true,
+    "Answered": false,
+    "Answer": "I couldn\u0027t find an answer to that in the Azure Container Apps documentation.",
+    "CitationHit": null,
+    "Grounded": null,
+    "AnswersQuestion": null,
+    "UnsupportedClaims": [],
+    "CitedUrls": [],
+    "Refusal": "ModelDeclined"
+  },
+  {
+    "Id": "q38",
+    "Question": "What happens to my apps during planned maintenance?",
+    "ExpectedAnswerable": true,
+    "Answered": true,
+    "Answer": "Azure Container Apps applies platform and infrastructure updates to both apps and environments, and the update system is designed to minimize performance impact [1]. Planned maintenance lets you choose when noncritical updates are applied; if a maintenance window is configured, noncritical updates start only during that time, while critical updates can still be applied anytime outside the window for security and reliability [1][2]. The feature is best-effort, and you can minimize impact by using off-peak windows, multiple replicas, availability zones, and stateless design [2][5].",
+    "CitationHit": true,
+    "Grounded": true,
+    "AnswersQuestion": true,
+    "UnsupportedClaims": [],
+    "CitedUrls": [
+      "https://learn.microsoft.com/en-us/azure/container-apps/planned-maintenance",
+      "https://learn.microsoft.com/en-us/azure/container-apps/planned-maintenance",
+      "https://learn.microsoft.com/en-us/azure/container-apps/planned-maintenance"
+    ],
+    "Refusal": "None"
+  },
+  {
+    "Id": "q39",
+    "Question": "How do I recover when the startup probe keeps failing?",
+    "ExpectedAnswerable": true,
+    "Answered": true,
+    "Answer": "Use a startup probe with a higher \u0060failureThreshold\u0060 to give the app more time to bind its port [2]. If your app takes time to warm up, also set a startup or readiness probe with a generous initial delay to prevent premature restarts [5].",
+    "CitationHit": false,
+    "Grounded": true,
+    "AnswersQuestion": true,
+    "UnsupportedClaims": [],
+    "CitedUrls": [
+      "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-deployment-errors",
+      "https://learn.microsoft.com/en-us/azure/container-apps/troubleshoot-container-start-failures"
+    ],
+    "Refusal": "None"
+  },
+  {
+    "Id": "q40",
+    "Question": "How do I assign a managed identity to my container app?",
+    "ExpectedAnswerable": true,
+    "Answered": true,
+    "Answer": "A container app can use either a system-assigned identity or one or more user-assigned identities [4]. For a user-assigned identity, first create the identity, then add its resource identifier to the container app configuration [2], or in the Azure portal go to **Settings** \u003E **Identity** \u003E **User assigned** \u003E **Add** and select the identity [1]. For a system-assigned identity, it is created when you create the container app, and you can configure it by creating the app with a public image and then updating it to use the private image with the system-assigned identity [6].",
+    "CitationHit": true,
+    "Grounded": true,
+    "AnswersQuestion": true,
+    "UnsupportedClaims": [],
+    "CitedUrls": [
+      "https://learn.microsoft.com/en-us/azure/container-apps/managed-identity",
+      "https://learn.microsoft.com/en-us/azure/container-apps/managed-identity",
+      "https://learn.microsoft.com/en-us/azure/container-apps/managed-identity",
+      "https://learn.microsoft.com/en-us/azure/container-apps/managed-identity-image-pull"
+    ],
+    "Refusal": "None"
+  },
+  {
+    "Id": "n01",
+    "Question": "How do I configure node pools in an Azure Kubernetes Service cluster?",
+    "ExpectedAnswerable": false,
+    "Answered": false,
+    "Answer": "I couldn\u0027t find an answer to that in the Azure Container Apps documentation.",
+    "CitationHit": null,
+    "Grounded": null,
+    "AnswersQuestion": null,
+    "UnsupportedClaims": [],
+    "CitedUrls": [],
+    "Refusal": "ModelDeclined"
+  },
+  {
+    "Id": "n02",
+    "Question": "How much does an Azure SQL Managed Instance cost per month?",
+    "ExpectedAnswerable": false,
+    "Answered": false,
+    "Answer": "I couldn\u0027t find an answer to that in the Azure Container Apps documentation.",
+    "CitationHit": null,
+    "Grounded": null,
+    "AnswersQuestion": null,
+    "UnsupportedClaims": [],
+    "CitedUrls": [],
+    "Refusal": "ModelDeclined"
+  },
+  {
+    "Id": "n03",
+    "Question": "How do I train a custom machine learning model in Azure Machine Learning?",
+    "ExpectedAnswerable": false,
+    "Answered": false,
+    "Answer": "I couldn\u0027t find an answer to that in the Azure Container Apps documentation.",
+    "CitationHit": null,
+    "Grounded": null,
+    "AnswersQuestion": null,
+    "UnsupportedClaims": [],
+    "CitedUrls": [],
+    "Refusal": "ModelDeclined"
+  }
+]

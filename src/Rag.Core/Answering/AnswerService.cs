@@ -7,17 +7,27 @@ namespace Rag.Core.Answering;
 
 public sealed record Citation(int Index, string Url, string Title, string SectionPath);
 
+public enum RefusalReason
+{
+    None,
+    NoSources,
+    ModelDeclined,
+    NoValidCitation,
+    InvalidOutput,
+}
+
 public sealed record AnswerResult(
     bool Answerable,
     string Answer,
     IReadOnlyList<Citation> Citations,
-    IReadOnlyList<RetrievedChunk> Retrieved);
+    IReadOnlyList<RetrievedChunk> Retrieved,
+    RefusalReason Refusal = RefusalReason.None);
 
 /// <summary>Shape the model must return. Used as the JSON schema for structured output.</summary>
 public sealed record ModelAnswer(
     [property: Description("true only if the numbered sources contain enough information to answer the question")] bool Answerable,
-    [property: Description("the answer, using [n] markers that refer to source numbers; empty if not answerable")] string Answer,
-    [property: Description("numbers of the sources actually used in the answer")] int[] Citations);
+    [property: Description("the answer, using [n] markers that refer to source numbers; empty if not answerable")] string? Answer,
+    [property: Description("numbers of the sources actually used in the answer")] int[]? Citations);
 
 /// <summary>Retrieves chunks, asks the model to answer strictly from them, and refuses when they don't support an answer.</summary>
 public sealed class AnswerService(IRetriever retriever, IChatClient chat)
@@ -37,7 +47,7 @@ public sealed class AnswerService(IRetriever retriever, IChatClient chat)
         string question, SearchMode mode = SearchMode.Hybrid, int k = 6, CancellationToken ct = default)
     {
         var chunks = await retriever.SearchAsync(question, mode, k, ct);
-        if (chunks.Count == 0) return Refuse(chunks);
+        if (chunks.Count == 0) return Refuse(chunks, RefusalReason.NoSources);
 
         var response = await chat.GetResponseAsync<ModelAnswer>(
         [
@@ -45,24 +55,26 @@ public sealed class AnswerService(IRetriever retriever, IChatClient chat)
             new ChatMessage(ChatRole.User, BuildPrompt(question, chunks)),
         ], cancellationToken: ct);
 
-        if (!response.TryGetResult(out var result)) return Refuse(chunks);
+        if (!response.TryGetResult(out var result)) return Refuse(chunks, RefusalReason.InvalidOutput);
 
         // Only keep citations that point at a real source.
-        var cited = result.Citations
+        var cited = (result.Citations ?? [])
             .Where(n => n >= 1 && n <= chunks.Count)
             .Distinct()
             .Order()
             .Select(n => new Citation(n, chunks[n - 1].Url, chunks[n - 1].Title, chunks[n - 1].SectionPath))
             .ToList();
 
-        // An answer with no valid citation is ungrounded, so treat it as a refusal.
-        if (!result.Answerable || string.IsNullOrWhiteSpace(result.Answer) || cited.Count == 0) return Refuse(chunks);
+        if (!result.Answerable || string.IsNullOrWhiteSpace(result.Answer)) return Refuse(chunks, RefusalReason.ModelDeclined);
 
-        return new AnswerResult(true, result.Answer.Trim(), cited, chunks);
+        // An answer with no valid citation is ungrounded, so treat it as a refusal.
+        if (cited.Count == 0) return Refuse(chunks, RefusalReason.NoValidCitation);
+
+        return new AnswerResult(true, result.Answer!.Trim(), cited, chunks);
     }
 
-    private static AnswerResult Refuse(IReadOnlyList<RetrievedChunk> chunks) =>
-        new(false, RefusalText, [], chunks);
+    private static AnswerResult Refuse(IReadOnlyList<RetrievedChunk> chunks, RefusalReason reason) =>
+        new(false, RefusalText, [], chunks, reason);
 
     private static string BuildPrompt(string question, IReadOnlyList<RetrievedChunk> chunks)
     {

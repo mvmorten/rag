@@ -19,5 +19,7 @@ public sealed class AzureClients(RagSettings settings)
     public IEmbeddingGenerator<string, Embedding<float>> Embeddings =>
         OpenAI.GetEmbeddingClient(settings.EmbeddingDeployment).AsIEmbeddingGenerator();
 
+    public IChatClient Judge => OpenAI.GetChatClient(settings.JudgeDeployment).AsIChatClient();
+
     public IChatClient Chat => OpenAI.GetChatClient(settings.ChatDeployment).AsIChatClient();
 }
