@@ -2,24 +2,29 @@ using System.Diagnostics;
 
 namespace Rag.Ingest;
 
-/// <summary>Sparse, shallow clone of a folder from MicrosoftDocs/azure-docs.</summary>
+/// <summary>Where the corpus comes from. Pinned to a commit so the index, eval labels and CI all see the same docs.</summary>
+public sealed record CorpusPin(string Repository, string Folder, string Commit);
+
+/// <summary>Sparse, shallow checkout of one folder of a docs repo at a pinned commit.</summary>
 public static class DocsSource
 {
-    private const string Repo = "https://github.com/MicrosoftDocs/azure-docs.git";
-
-    public static async Task<string> EnsureAsync(string cloneDir, string folder)
+    public static async Task<string> EnsureAsync(string cloneDir, CorpusPin pin)
     {
         if (!Directory.Exists(Path.Combine(cloneDir, ".git")))
         {
             Directory.CreateDirectory(cloneDir);
-            await Git(cloneDir, "clone", "--depth", "1", "--filter=blob:none", "--sparse", Repo, ".");
-            await Git(cloneDir, "sparse-checkout", "set", folder);
+            await Git(cloneDir, "clone", "--depth", "1", "--filter=blob:none", "--sparse", pin.Repository, ".");
+            await Git(cloneDir, "sparse-checkout", "set", pin.Folder);
         }
-        else
+
+        if ((await Git(cloneDir, "rev-parse", "HEAD")).Trim() != pin.Commit)
         {
-            await Git(cloneDir, "pull", "--depth", "1", "--ff-only");
+            // Fetch the exact commit rather than pulling: upstream history gets force-updated,
+            // which breaks fast-forward pulls on a shallow clone.
+            await Git(cloneDir, "fetch", "--depth", "1", "origin", pin.Commit);
+            await Git(cloneDir, "checkout", "--force", "--detach", pin.Commit);
         }
-        return Path.Combine(cloneDir, folder);
+        return Path.Combine(cloneDir, pin.Folder);
     }
 
     /// <summary>articles/container-apps/foo.md -> https://learn.microsoft.com/en-us/azure/container-apps/foo</summary>
@@ -31,13 +36,20 @@ public static class DocsSource
         return $"https://learn.microsoft.com/en-us/azure/{p}";
     }
 
-    private static async Task Git(string workDir, params string[] args)
+    private static async Task<string> Git(string workDir, params string[] args)
     {
-        var psi = new ProcessStartInfo("git") { WorkingDirectory = workDir, RedirectStandardError = true };
+        var psi = new ProcessStartInfo("git")
+        {
+            WorkingDirectory = workDir,
+            RedirectStandardOutput = true,
+            RedirectStandardError = true,
+        };
         foreach (var a in args) psi.ArgumentList.Add(a);
         using var p = Process.Start(psi)!;
-        var err = await p.StandardError.ReadToEndAsync();
+        var stdout = p.StandardOutput.ReadToEndAsync();
+        var stderr = p.StandardError.ReadToEndAsync();
         await p.WaitForExitAsync();
-        if (p.ExitCode != 0) throw new InvalidOperationException($"git {string.Join(' ', args)} failed: {err}");
+        if (p.ExitCode != 0) throw new InvalidOperationException($"git {string.Join(' ', args)} failed: {await stderr}");
+        return await stdout;
     }
 }

@@ -5,14 +5,18 @@ using Rag.Core.Chunking;
 using Rag.Core.Search;
 using Rag.Ingest;
 
-// Usage: dotnet run --project src/Rag.Ingest [--dry-run] [--docs-dir <path>] [--folder articles/container-apps]
+// Usage: dotnet run --project src/Rag.Ingest [--dry-run] [--docs-dir <path>] [--corpus corpus.json]
 //                                            [--max-chars 1800] [--overlap 200]
 // To index into a scratch index instead of the main one: set RAG_Rag__SearchIndex=<name>.
 var argv = args.ToList();
 string? Opt(string name) => argv.IndexOf(name) is var i and >= 0 && i + 1 < argv.Count ? argv[i + 1] : null;
 
 var dryRun = argv.Contains("--dry-run");
-var folder = Opt("--folder") ?? "articles/container-apps";
+var corpusPath = Opt("--corpus") ?? "corpus.json";
+var pin = System.Text.Json.JsonSerializer.Deserialize<CorpusPin>(
+    File.ReadAllText(corpusPath), new System.Text.Json.JsonSerializerOptions { PropertyNameCaseInsensitive = true })
+    ?? throw new InvalidOperationException($"Could not read {corpusPath}.");
+var folder = pin.Folder;
 var cloneDir = Path.GetFullPath(Opt("--docs-dir") ?? Path.Combine("data", "azure-docs"));
 
 var config = new ConfigurationBuilder()
@@ -23,8 +27,8 @@ var config = new ConfigurationBuilder()
 var settings = config.GetSection("Rag").Get<RagSettings>()
     ?? throw new InvalidOperationException("Missing 'Rag' configuration section.");
 
-Console.WriteLine($"Fetching {folder} ...");
-var docsRoot = await DocsSource.EnsureAsync(cloneDir, folder);
+Console.WriteLine($"Fetching {folder} at {pin.Commit[..10]} ...");
+var docsRoot = await DocsSource.EnsureAsync(cloneDir, pin);
 var chunker = new MarkdownChunker(new ChunkerOptions(
     MaxChars: int.Parse(Opt("--max-chars") ?? "1800"),
     OverlapChars: int.Parse(Opt("--overlap") ?? "200")));
