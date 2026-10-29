@@ -1,0 +1,46 @@
+name: deploy
+
+# Manual: provisions the Bicep stack, builds the image in ACR, and rolls the container app.
+# Needs the CI identity to have Contributor + Role Based Access Control Administrator on the target resource group.
+on:
+  workflow_dispatch:
+    inputs:
+      resource-group:
+        description: Target resource group (must already exist)
+        default: rg-rag-prod
+
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: azure/login@v2
+        with:
+          client-id: ${{ vars.AZURE_CLIENT_ID }}
+          tenant-id: ${{ vars.AZURE_TENANT_ID }}
+          subscription-id: ${{ vars.AZURE_SUBSCRIPTION_ID }}
+
+      - name: Provision infrastructure
+        id: infra
+        run: |
+          az deployment group create -g "${{ inputs.resource-group }}" -f infra/main.bicep \
+            -p baseName=ragprod searchLocation=centralus -n infra-${{ github.run_id }} \
+            --query "properties.outputs" -o json > outputs.json
+          echo "registry=$(jq -r .registryName.value outputs.json)" >> "$GITHUB_OUTPUT"
+          echo "server=$(jq -r .registryLoginServer.value outputs.json)" >> "$GITHUB_OUTPUT"
+
+      - name: Build image in ACR
+        run: az acr build -r "${{ steps.infra.outputs.registry }}" -t "rag-app:${{ github.sha }}" .
+
+      - name: Roll out the app
+        run: |
+          az deployment group create -g "${{ inputs.resource-group }}" -f infra/main.bicep \
+            -p baseName=ragprod searchLocation=centralus deployApp=true \
+               image="${{ steps.infra.outputs.server }}/rag-app:${{ github.sha }}" \
+            -n app-${{ github.run_id }} --query "properties.outputs.appUrl.value" -o tsv | tee url.txt
+          echo "Deployed: $(cat url.txt)" >> "$GITHUB_STEP_SUMMARY"

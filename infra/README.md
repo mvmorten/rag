@@ -1,6 +1,10 @@
-# Dev resources (manually provisioned)
+# Infrastructure
 
-Temporary, created with `az` before the Bicep templates exist. Bicep will replace this.
+[main.bicep](main.bicep) defines the full stack: managed identity, Azure OpenAI (+ 3 model deployments), AI Search, Container Apps environment and app, ACR, Log Analytics, and role assignments. Auth is Entra-only, so there is deliberately no Key Vault (nothing to store). The [deploy workflow](../.github/workflows/deploy.yml) provisions it, builds the image in ACR, and rolls the app. `az deployment group what-if` passes against this template.
+
+## Dev resources (manually provisioned)
+
+Created with `az` before the Bicep existed; `rg-rag-dev` is what the eval and CI currently use.
 Auth is Entra ID (`DefaultAzureCredential`); no keys are used or stored.
 
 | Resource | Name | Region |
