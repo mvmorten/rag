@@ -2,33 +2,22 @@
 
 [main.bicep](main.bicep) defines the full stack: managed identity, Azure OpenAI (+ 3 model deployments), AI Search, Container Apps environment and app, ACR, Log Analytics, and role assignments. Auth is Entra-only, so there is deliberately no Key Vault (nothing to store). The [deploy workflow](../.github/workflows/deploy.yml) provisions it, builds the image in ACR, and rolls the app. `az deployment group what-if` passes against this template.
 
-## Dev resources (manually provisioned)
+## Deployed environment
 
-Created with `az` before the Bicep existed; `rg-rag-dev` is what the eval and CI currently use.
-Auth is Entra ID (`DefaultAzureCredential`); no keys are used or stored.
+Deployed once from a developer login with `az deployment group create` (the Bicep above), resource group `rg-rag-prod` in eastus2 (Search in centralus, where Basic had capacity). The earlier hand-made `rg-rag-dev` was deleted once this reproduced its eval numbers exactly.
 
-| Resource | Name | Region |
-|---|---|---|
-| Resource group | `rg-rag-dev` | eastus2 |
-| Azure OpenAI | `ragdev-aoai-mvmorten` | eastus2 |
-| Azure AI Search (Basic) | `ragdev-search-mvmorten` | centralus (eastus2 had no capacity) |
-
-Endpoints:
-- OpenAI: `https://ragdev-aoai-mvmorten.openai.azure.com/`
-- Search: `https://ragdev-search-mvmorten.search.windows.net`
-
-Model deployments:
-
-| Deployment | Use |
+| Resource | Name |
 |---|---|
-| `text-embedding-3-small` | embeddings |
-| `gpt-5.4-mini` | answer generation |
-| `gpt-5.4` | eval judge |
-| `gpt-4o` | unused (deprecating); safe to delete |
+| Container App (API + UI) | `ca-ragprod-vqcwmpwlk3sw6` |
+| Azure OpenAI | `aoai-ragprod-vqcwmpwlk3sw6` |
+| Azure AI Search (Basic) | `srch-ragprod-vqcwmpwlk3sw6` |
+| Container Registry | `acrragprodvqcwmpwlk3sw6` |
 
-Roles for the developer user: Cognitive Services OpenAI User, Search Index Data Contributor, Search Service Contributor.
+Model deployments: `text-embedding-3-small` (embeddings), `gpt-5.4-mini` (answers), `gpt-5.4` (eval judge).
 
-**Cost:** Search Basic bills hourly (~$75/month) while it exists. Tear down with `az group delete -n rg-rag-dev`.
+The container app is public, scales to zero, and is capped at 2 replicas with a per-IP rate limit, because each request spends model tokens. Ingestion is not part of the app: run `Rag.Ingest` with a developer identity (the template can grant one via `developerPrincipalId`).
+
+**Cost:** Search Basic bills hourly (~$0.10/hr, ~$75/month) while it exists. Tear down with `az group delete -n rg-rag-prod`.
 
 ## CI identity
 
