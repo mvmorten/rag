@@ -24,3 +24,7 @@ Model deployments:
 Roles for the developer user: Cognitive Services OpenAI User, Search Index Data Contributor, Search Service Contributor.
 
 **Cost:** Search Basic bills hourly (~$75/month) while it exists. Tear down with `az group delete -n rg-rag-dev`.
+
+## CI identity
+
+Entra app registration `rag-ci-github` with federated credentials for this repo's `main` branch and pull requests. Its subjects use GitHub's immutable form (`repo:mvmorten@<owner-id>/rag@<repo-id>:...`) because the repo has `use_immutable_subject` enabled; a name-based subject does not match. Roles: Cognitive Services OpenAI User on the OpenAI account, Search Index Data Reader on the search service. Client, tenant and subscription IDs are stored as repo variables (not secrets).

@@ -2,7 +2,7 @@
 
 A grounded Q&A and search service over public Microsoft Learn documentation, built on Azure.
 
-**Status:** ingestion, retrieval, the retrieval eval and the answer API are working against a live Azure AI Search index. The answer API works locally (`POST /ask`, `GET /search`). The React UI and an MCP server work locally. CI and Bicep are not built yet.
+**Status:** ingestion, retrieval, the retrieval eval and the answer API are working against a live Azure AI Search index. The answer API works locally (`POST /ask`, `GET /search`). The React UI and an MCP server work locally, and CI runs the evals against Azure. Bicep is not built yet.
 
 ## Planned scope
 
@@ -33,6 +33,15 @@ cd web && npm install && npm run dev     # http://localhost:5173, proxies /api t
 
 Build it once (`dotnet build`), then the repo's [.mcp.json](.mcp.json) lets Claude Code pick it up from the repo root. For other MCP clients, run `dotnet src/Rag.Mcp/bin/Debug/net10.0/Rag.Mcp.dll`. It uses your `az login` credentials. Use the built DLL rather than `dotnet run`, because build output on stdout would corrupt the protocol.
 
+## CI
+
+[.github/workflows/ci.yml](.github/workflows/ci.yml) runs on every push and PR:
+
+1. **build-test:** build, unit tests, fetch the pinned corpus, validate eval labels against it, build the web app.
+2. **eval:** logs in to Azure with GitHub OIDC (federated credential, no stored secrets; the identity can only call OpenAI and read the search index), runs the retrieval and answer evals, and compares them with [eval/baseline.json](eval/baseline.json). A drop beyond tolerance fails the build, and the before/after table goes in the job summary. Tolerances are loose on purpose (5-10 points) because the question set is small and answer generation is nondeterministic. Refusing unanswerable questions has zero tolerance.
+
+The docs corpus is pinned to a commit in [corpus.json](corpus.json), so the index, labels and CI all see identical docs. Update the baseline deliberately with `dotnet run --project src/Rag.Eval -- ci --update-baseline`.
+
 ## Results
 
 ### Retrieval (40 hand-written questions over 236 Container Apps docs, 3,641 chunks)
@@ -52,6 +61,17 @@ Caveats, stated plainly:
 - Labels were checked against the corpus (`dotnet run --project src/Rag.Eval -- validate`). One label (q27) was widened after seeing results because a retrieved doc was a legitimate answer; the metrics above are from after that change.
 - Questions are written by the project author, not sampled from real user queries.
 
+### Chunk size experiment
+
+Same 40 questions, same corpus, hybrid retrieval. Chunking 1,800 chars / 200 overlap (default, 3,641 chunks) vs. 600 / 50 (6,050 chunks, built in a scratch index):
+
+| Chunking | hit@1 | hit@5 | MRR | Answered | Citation acc. |
+|---|---|---|---|---|---|
+| 1800 / 200 | 68% | 97.5% | 0.817 | 93% | 97% |
+| 600 / 50 | 78% | 97.5% | 0.856 | 97% | 95% |
+
+Smaller chunks ranked the right passage higher (MRR +0.04, hit@1 +10 points, which is 4 questions) at the cost of 66% more chunks to embed and store. With n = 40 this is suggestive, not conclusive, and I have not tested other sizes. The default stays at 1,800 for now. Chunk size is configurable (`--max-chars`, `--overlap`) and an eval run against another index is `RAG_Rag__SearchIndex=<name>`.
+
 Reproduce: `dotnet run --project src/Rag.Ingest`, then `dotnet run --project src/Rag.Eval -- run`. Requires the Azure resources in [infra/](infra/README.md).
 
 ### Answer quality (hybrid retrieval, `gpt-5.4-mini` answers, `gpt-5.4` judge)
@@ -69,6 +89,7 @@ Reproduce: `dotnet run --project src/Rag.Ingest`, then `dotnet run --project src
 Caveats:
 - An earlier run of the same code answered only 80% (32/40) of answerable questions. I could not reproduce it in four later runs and did not find the cause, so treat run-to-run variance as real. The answer model has no pinned temperature.
 - The LLM judge is a different model from the generator but the same model family, and I did not validate it against human labels. Only 3 unanswerable questions, so "100% refusal" is weak evidence.
+- The "answered" figure moved between 88% and 97% across runs of the same code, including in CI.
 - One question (q37, open a shell in a running container) is refused in every run even though a relevant doc is retrieved.
 - A bug found by this eval: when the model refused, it sometimes returned `citations: null`, which crashed the service. Fixed, with regression tests.
 
