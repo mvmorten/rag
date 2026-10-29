@@ -1,0 +1,8 @@
+{
+  "RetrievalHitAt5": 0.975,
+  "RetrievalMrr": 0.8166666666666668,
+  "Answered": 0.925,
+  "RefusedUnanswerable": 1,
+  "CitationAccuracy": 0.972972972972973,
+  "Groundedness": 1
+}

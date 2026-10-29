@@ -1,0 +1,51 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  build-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          global-json-file: global.json
+      - run: dotnet build --nologo
+      - run: dotnet test --nologo --no-build
+      # Fetches the docs corpus (no Azure needed) and prints chunk statistics.
+      - run: dotnet run --no-build --project src/Rag.Ingest -- --dry-run
+      - name: Validate eval labels against the corpus
+        run: dotnet run --no-build --project src/Rag.Eval -- validate
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+      - run: npm ci && npm run build
+        working-directory: web
+
+  eval:
+    needs: build-test
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write # OIDC token for azure/login; no stored secrets
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          global-json-file: global.json
+      - uses: azure/login@v2
+        with:
+          client-id: ${{ vars.AZURE_CLIENT_ID }}
+          tenant-id: ${{ vars.AZURE_TENANT_ID }}
+          subscription-id: ${{ vars.AZURE_SUBSCRIPTION_ID }}
+      - run: dotnet build --nologo
+      - name: Run retrieval + answer evals and compare with baseline
+        run: dotnet run --no-build --project src/Rag.Eval -- ci

@@ -9,6 +9,7 @@ using Rag.Eval;
 //   dotnet run --project src/Rag.Eval -- validate [--docs-dir data/azure-docs]
 //   dotnet run --project src/Rag.Eval -- run [--k 10] [--out eval/results]
 //   dotnet run --project src/Rag.Eval -- answers [--mode Hybrid] [--out eval/results]
+//   dotnet run --project src/Rag.Eval -- ci [--baseline eval/baseline.json] [--update-baseline]
 var argv = args.ToList();
 string? Opt(string name) => argv.IndexOf(name) is var i and >= 0 && i + 1 < argv.Count ? argv[i + 1] : null;
 
@@ -55,20 +56,63 @@ if (command == "answers")
     return 0;
 }
 
-var k = int.Parse(Opt("--k") ?? "10");
-var report = new List<ModeReport>();
-foreach (var mode in Enum.GetValues<SearchMode>())
+async Task<List<ModeReport>> RunRetrievalAsync(int topK, IEnumerable<SearchMode> modes)
 {
-    var outcomes = new List<QuestionOutcome>();
-    foreach (var q in questions.Where(q => q.Answerable))
+    var reports = new List<ModeReport>();
+    foreach (var mode in modes)
     {
-        var results = await retriever.SearchAsync(q.Question, mode, k);
-        var urls = results.Select(r => r.Url).ToList();
-        outcomes.Add(new QuestionOutcome(q.Id, Metrics.FirstRelevantRank(urls, q.Expected!), urls));
+        var outcomes = new List<QuestionOutcome>();
+        foreach (var q in questions.Where(q => q.Answerable))
+        {
+            var results = await retriever.SearchAsync(q.Question, mode, topK);
+            var urls = results.Select(r => r.Url).ToList();
+            outcomes.Add(new QuestionOutcome(q.Id, Metrics.FirstRelevantRank(urls, q.Expected!), urls));
+        }
+        reports.Add(new ModeReport(mode.ToString(), outcomes));
+        Console.WriteLine($"{mode}: done");
     }
-    report.Add(new ModeReport(mode.ToString(), outcomes));
-    Console.WriteLine($"{mode}: done");
+    return reports;
 }
+
+if (command == "ci")
+{
+    var baselinePath = Opt("--baseline") ?? Path.Combine("eval", "baseline.json");
+    var jsonOptions = new JsonSerializerOptions { WriteIndented = true };
+
+    var retrievalReport = await RunRetrievalAsync(10, Enum.GetValues<SearchMode>());
+    var ciService = new Rag.Core.Answering.AnswerService(retriever, azure.Chat);
+    var answerOutcomes = await AnswerEval.RunAsync(questions, ciService, new Judge(azure.Judge), SearchMode.Hybrid);
+    var current = EvalSummary.From(retrievalReport.Single(r => r.Mode == nameof(SearchMode.Hybrid)), answerOutcomes);
+
+    var body = new StringBuilder();
+    body.AppendLine("## RAG evaluation");
+    body.AppendLine();
+    body.AppendLine(Metrics.RenderMarkdown(retrievalReport, 10));
+    body.AppendLine(AnswerEval.RenderMarkdown(answerOutcomes, SearchMode.Hybrid));
+
+    if (argv.Contains("--update-baseline") || !File.Exists(baselinePath))
+    {
+        await File.WriteAllTextAsync(baselinePath, JsonSerializer.Serialize(current, jsonOptions));
+        body.AppendLine($"Baseline written to {baselinePath}.");
+        Console.WriteLine(body);
+        return 0;
+    }
+
+    var baseline = JsonSerializer.Deserialize<EvalSummary>(await File.ReadAllTextAsync(baselinePath))!;
+    var (table, passed) = Baseline.Compare(baseline, current);
+    body.AppendLine("### Against baseline");
+    body.AppendLine();
+    body.AppendLine(table);
+    body.AppendLine(passed ? "No regression beyond tolerance." : "**Regression detected.**");
+
+    Console.WriteLine(body);
+    if (Environment.GetEnvironmentVariable("GITHUB_STEP_SUMMARY") is { Length: > 0 } summaryPath)
+        await File.AppendAllTextAsync(summaryPath, body.ToString());
+    return passed ? 0 : 1;
+}
+
+var k = int.Parse(Opt("--k") ?? "10");
+var report = await RunRetrievalAsync(k, Enum.GetValues<SearchMode>());
 
 var markdown = Metrics.RenderMarkdown(report, k);
 Console.WriteLine();

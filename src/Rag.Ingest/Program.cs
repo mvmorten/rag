@@ -6,6 +6,8 @@ using Rag.Core.Search;
 using Rag.Ingest;
 
 // Usage: dotnet run --project src/Rag.Ingest [--dry-run] [--docs-dir <path>] [--folder articles/container-apps]
+//                                            [--max-chars 1800] [--overlap 200]
+// To index into a scratch index instead of the main one: set RAG_Rag__SearchIndex=<name>.
 var argv = args.ToList();
 string? Opt(string name) => argv.IndexOf(name) is var i and >= 0 && i + 1 < argv.Count ? argv[i + 1] : null;
 
@@ -23,7 +25,9 @@ var settings = config.GetSection("Rag").Get<RagSettings>()
 
 Console.WriteLine($"Fetching {folder} ...");
 var docsRoot = await DocsSource.EnsureAsync(cloneDir, folder);
-var chunker = new MarkdownChunker();
+var chunker = new MarkdownChunker(new ChunkerOptions(
+    MaxChars: int.Parse(Opt("--max-chars") ?? "1800"),
+    OverlapChars: int.Parse(Opt("--overlap") ?? "200")));
 
 if (dryRun)
 {
