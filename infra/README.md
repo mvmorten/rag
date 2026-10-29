@@ -19,7 +19,8 @@ Model deployments:
 |---|---|
 | `text-embedding-3-small` | embeddings |
 | `gpt-5.4-mini` | answer generation |
-| `gpt-4o` | eval judge (may need replacing; 4o is on a deprecation path) |
+| `gpt-5.4` | eval judge |
+| `gpt-4o` | unused (deprecating); safe to delete |
 
 Roles for the developer user: Cognitive Services OpenAI User, Search Index Data Contributor, Search Service Contributor.
 
