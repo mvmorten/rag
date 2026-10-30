@@ -2,17 +2,21 @@
 
 A grounded Q&A and search service over public Microsoft Learn documentation, built on Azure.
 
-**Status:** ingestion, retrieval, the retrieval eval and the answer API are working against a live Azure AI Search index. The answer API works locally (`POST /ask`, `GET /search`). The React UI and an MCP server work locally, and CI runs the evals against Azure. Bicep is not built yet.
+**Status:** complete and deployed. Ingestion, hybrid retrieval, the answer API (citations, refusal), the React UI, a stdio MCP server and the eval harness all work. The full Azure stack is defined in Bicep and deployed to a resource group (see [infra/](infra/README.md)). CI runs the evals against Azure on every push using GitHub OIDC, with no stored secrets. This is a personal project built to learn and measure RAG, not a production system.
 
-## Planned scope
+## Scope
 
 1. **Ingestion** (C#): heading-aware chunking, Azure OpenAI embeddings, Azure AI Search index; re-index only changed files.
 2. **Retrieval**: keyword vs. vector vs. hybrid (+ semantic ranker), compared on the same questions.
 3. **Answer API** (ASP.NET Core): grounded answers with citations; refuses when sources don't support an answer.
 4. **UI** (React): answer, cited sources, and retrieved chunks with scores.
-5. **Evaluation harness**: hand-written question/expected-source pairs; retrieval hit rate, groundedness, citation accuracy; runs in CI.
+5. **Evaluation harness**: hand-written question/expected-source pairs; retrieval hit rate, groundedness, citation accuracy; runs in CI as a quality gate.
 6. **MCP server**: search and answer exposed as MCP tools.
-7. **Infrastructure as code** (Bicep): AI Search, Azure OpenAI, Container Apps, Key Vault, managed identity.
+7. **Infrastructure as code** (Bicep): managed identity, Azure OpenAI with three model deployments, AI Search, Container Apps, ACR, Log Analytics, role assignments. Auth is Entra-only, so there is no Key Vault.
+
+## Deployment
+
+The Bicep template in [infra/](infra/README.md) was deployed once from a developer login with `az deployment group create`, and the earlier hand-built environment was deleted after the template reproduced its eval numbers exactly. The container app serves the API and UI, scales to zero, is capped at 2 replicas, and has a per-IP rate limit because each request spends model tokens. A manual [deploy workflow](.github/workflows/deploy.yml) (provision, build the image in ACR, roll the app) is in the repo but has not been run yet.
 
 ## Run locally
 
